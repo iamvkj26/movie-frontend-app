@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&family=Cedarville+Cursive&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Baloo Bhaina 2", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.f-cursive {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.nav-class {
+    background-color: yellow;
+    height: 200px;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-style: normal;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: fill;
+}
