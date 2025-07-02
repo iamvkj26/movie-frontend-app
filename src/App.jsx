@@ -10,8 +10,10 @@ const App = () => {
         <>
             <Toaster position="top-right" toastOptions={{ duration: 3000, style: { fontSize: "16px" } }} />
             <Navbar />
-            <Routes><Route path="/" element={<All />} /></Routes>
-            <Routes><Route path="/addMovieSeries" element={<AddMovieSeries />} /></Routes>
+            <Routes>
+                <Route path="/" element={<All />} />
+                <Route path="/addMovieSeries" element={<AddMovieSeries />} />
+            </Routes>
         </>
     );
 };
