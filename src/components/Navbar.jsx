@@ -1,44 +1,17 @@
 import { Link } from "react-router";
 
-const Navbar = ({ updateFilter }) => {
+const Navbar = () => {
     return (
         <>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary">
-                <div className="container-fluid">
-                    <Link
-                        className="navbar-brand f-cursive"
-                        to="/"
-                        onClick={() => updateFilter("type", "")}>
+            <nav className="navbar navbar-expand-lg">
+                <div className="container-fluid d-flex justify-content-around w-100">
+                    <Link className="navbar-brand hello-hood" to="/">
                         HelloHood
                     </Link>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav d-flex justify-content-around w-100 mb-lg-0">
-                            <li className="nav-item">
-                                <Link
-                                    className="nav-link"
-                                    onClick={() => updateFilter("type", "bollywood")}>
-                                    Bollywood
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link
-                                    className="nav-link"
-                                    onClick={() => updateFilter("type", "hollywood")}>
-                                    Hollywood
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link
-                                    className="nav-link"
-                                    onClick={() => updateFilter("type", "other")}>
-                                    Others
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
+                    <button className="visually-hidden"></button>
+                    <Link className="custom-button" to="/addMovieSeries">
+                        <i className="fa fa-film"></i> Add Movie/Series
+                    </Link>
                 </div>
             </nav>
         </>

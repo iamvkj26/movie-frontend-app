@@ -4,6 +4,7 @@ const CheckBox = ({ updateFilter, resetFilters, filters }) => {
 
     const selected = filters.category;
 
+    const handleChange = (e) => updateFilter("type", e.target.value);
     const handleClick = (e) => updateFilter("category", e.target.value);
     const handleReset = () => resetFilters();
 
@@ -12,7 +13,19 @@ const CheckBox = ({ updateFilter, resetFilters, filters }) => {
             <div className="container mt-3">
                 <div className="d-flex align-items-center justify-content-between flex-wrap">
                     <div className="d-flex">
-                        <div className="form-check">
+                        {/* <div className="form-check">
+                            <input className="form-check-input" type="radio" name="radio" value="bollywood" checked={selected === "bollywood"} onChange={handleChange} id="bollywoods" />
+                            <label className="form-check-label" htmlFor="bollywoods">Bollywood</label>
+                        </div>
+                        <div className="form-check ms-3">
+                            <input className="form-check-input" type="radio" name="radio" value="hollywood" checked={selected === "hollywood"} onChange={handleChange} id="hollywoods" />
+                            <label className="form-check-label" htmlFor="hollywoods">Hollywood</label>
+                        </div>
+                        <div className="form-check ms-3">
+                            <input className="form-check-input" type="radio" name="radio" value="other" checked={selected === "other"} onChange={handleChange} id="other" />
+                            <label className="form-check-label" htmlFor="moothervies">Others</label>
+                        </div> */}
+                        <div className="form-check ms-3">
                             <input className="form-check-input" type="radio" name="radio" value="movie" checked={selected === "movie"} onChange={handleClick} id="movies" />
                             <label className="form-check-label" htmlFor="movies">Movies</label>
                         </div>
