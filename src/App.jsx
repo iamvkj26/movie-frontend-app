@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router";
 import { Toaster } from "react-hot-toast";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import All from "./pages/All";
 import AddMovieSeries from "./pages/AddMovieSeries";
 
@@ -14,6 +15,7 @@ const App = () => {
                 <Route path="/" element={<All />} />
                 <Route path="/addMovieSeries" element={<AddMovieSeries />} />
             </Routes>
+            <Footer />
         </>
     );
 };
