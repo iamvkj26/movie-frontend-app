@@ -6,14 +6,7 @@ const Information = () => {
             <div className="container mt-3">
                 <div className="row justify-content-center">
                     <div className="col-md-12">
-                        <div className="alert alert-dark position-relative text-center"
-                            style={{
-                                background: "linear-gradient(360deg, #0000009c, #483e3e)",
-                                color: "#fff",
-                                borderRadius: "8px",
-                                padding: "1rem"
-                            }}
-                        >
+                        <div className="alert alert-dark position-relative text-center information">
                             <p className="mb-1">
                                 <strong className="text-danger"><i className="fa-solid fa-xmark text-success"></i> This Movie/Series Web App is for <strong>Personal and Professional</strong> use, </strong>
                                 Kindly always use <Link className="text-primary text-decoration-none fw-bold" to="/" target="_blank" rel="noopener noreferrer">

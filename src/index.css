@@ -38,8 +38,15 @@ body {
 }
 
 .search-background {
-    /* background-color: yellow; */
+    background-color: yellow;
     height: 175px;
+}
+
+.information {
+    background: linear-gradient(360deg, #0000009c, #483e3e);
+    color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
 }
 
 .btn-212529 {
