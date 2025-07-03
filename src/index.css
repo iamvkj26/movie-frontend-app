@@ -38,16 +38,16 @@ body {
 }
 
 .search-background {
-    background-color: yellow;
+    /* background-color: yellow; */
     height: 175px;
-}
-
-.form-control::placeholder {
-    color: white;
 }
 
 .btn-212529 {
     background-color: #212529;
+}
+
+.form-control:focus {
+    box-shadow: none;
 }
 
 .card-img-top {

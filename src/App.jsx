@@ -9,13 +9,17 @@ const App = () => {
 
     return (
         <>
-            <Toaster position="top-right" toastOptions={{ duration: 3000, style: { fontSize: "16px" } }} />
-            <Navbar />
-            <Routes>
-                <Route path="/" element={<All />} />
-                <Route path="/addMovieSeries" element={<AddMovieSeries />} />
-            </Routes>
-            <Footer />
+            <div className="d-flex flex-column min-vh-100">
+                <Toaster position="top-right" toastOptions={{ duration: 3000, style: { fontSize: "16px" } }} />
+                <Navbar />
+                <main className="flex-grow-1">
+                    <Routes>
+                        <Route path="/" element={<All />} />
+                        <Route path="/addMovieSeries" element={<AddMovieSeries />} />
+                    </Routes>
+                </main>
+                <Footer />
+            </div>
         </>
     );
 };
