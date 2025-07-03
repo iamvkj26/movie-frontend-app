@@ -3,6 +3,7 @@ import SearchBar from "../components/SearchBar";
 import CheckBox from "../components/CheckBox";
 import Card from "../components/Card";
 import Information from "../components/Information";
+import SearchResult from "../components/SearchResult";
 
 const All = () => {
 
@@ -12,10 +13,10 @@ const All = () => {
     return (
         <>
             <SearchBar updateFilter={updateFilter} filters={filters} />
-            <Information />
             <CheckBox updateFilter={updateFilter} resetFilters={resetFilters} filters={filters} />
+            <Information />
+            <SearchResult />
             <Card filters={filters} />
-
         </>
     );
 };

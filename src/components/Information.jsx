@@ -15,7 +15,7 @@ const Information = () => {
                                 <span className="text-warning"> for Latest Updates.</span>
                             </p>
                         </div>
-                        <hr className="bg-secondary" />
+                        <hr />
                     </div>
                 </div>
             </div>

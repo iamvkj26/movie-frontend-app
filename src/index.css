@@ -57,6 +57,10 @@ body {
     box-shadow: none;
 }
 
+.bg-141414 {
+    background: #141414 !important;
+}
+
 .card-img-top {
     height: 300px;
     object-fit: fill;
