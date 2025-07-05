@@ -65,6 +65,11 @@ body {
     background: #141414 !important;
 }
 
+.navbar-nav .nav-link {
+    font-weight: 600;
+    color: white;
+}
+
 .card .card-actions {
     opacity: 0;
     transform: translateY(8px);
@@ -79,4 +84,8 @@ body {
 .card-img-top {
     height: 300px;
     object-fit: fill;
+}
+
+.cp {
+    cursor: pointer;
 }

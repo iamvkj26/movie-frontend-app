@@ -1,19 +1,19 @@
 import { useFilters } from "../hooks/useFilters";
 import SearchBar from "../components/SearchBar";
-import CheckBox from "../components/CheckBox";
+import Filters from "../components/Filters";
 import Card from "../components/Card";
 import Information from "../components/Information";
 import SearchResult from "../components/SearchResult";
 
 const All = () => {
 
-    const { filters, updateFilter, resetFilters } = useFilters();
-    if (!filters) return null;
+    const { filters, ready, updateFilter, resetFilters } = useFilters();
+    if (!ready || !filters) return null;
 
     return (
         <>
-            <SearchBar updateFilter={updateFilter} filters={filters} />
-            <CheckBox updateFilter={updateFilter} resetFilters={resetFilters} filters={filters} />
+            <SearchBar updateFilter={updateFilter} />
+            <Filters updateFilter={updateFilter} resetFilters={resetFilters} />
             <Information />
             <SearchResult />
             <Card filters={filters} />

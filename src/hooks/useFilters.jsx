@@ -9,6 +9,7 @@ export const useFilters = () => {
     const navigate = useNavigate();
 
     const [filters, setFilters] = useState(null);
+    const [ready, setReady] = useState(false);
 
     useEffect(() => {
         const params = new URLSearchParams(location.search);
@@ -17,14 +18,19 @@ export const useFilters = () => {
         const i = params.get("i") || "";
 
         setFilters({ s, f, i });
-    }, []);
+        setReady(true);
+    }, [location.search]);
 
     useEffect(() => {
         if (!filters) return;
 
-        const params = new URLSearchParams(filters);
+        const params = new URLSearchParams();
+        if (filters.s) params.set("s", filters.s);
+        if (filters.f) params.set("f", filters.f);
+        if (filters.i) params.set("i", filters.i);
+
         navigate({ search: params.toString() }, { replace: true });
-    }, [filters]);
+    }, [filters, navigate]);
 
     const updateFilter = (key, value) => {
         setFilters((prev) => ({ ...prev, [key]: value }));
@@ -34,5 +40,5 @@ export const useFilters = () => {
         setFilters({ ...defaultFilters });
     };
 
-    return { filters, updateFilter, resetFilters };
+    return { filters, ready, updateFilter, resetFilters };
 };
