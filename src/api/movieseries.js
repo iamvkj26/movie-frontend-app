@@ -10,12 +10,12 @@ export const postAllMovieSeries = async (addData) => {
     };
 };
 
-export const getAllMovieSeries = async ({ search = "", type = "", category = "" }) => {
+export const getAllMovieSeries = async ({ s = "", f = "", i = "" }) => {
     try {
         const query = new URLSearchParams();
-        if (search) query.append("search", search);
-        if (type) query.append("type", type);
-        if (category) query.append("category", category);
+        if (s) query.append("search", s);
+        if (f) query.append("format", f);
+        if (i) query.append("industry", i);
 
         const response = await api.get(`/all?${query.toString()}`);
         return response.data;
@@ -25,9 +25,9 @@ export const getAllMovieSeries = async ({ search = "", type = "", category = "" 
     };
 };
 
-export const updateMovieSeries = async ({ id, msName }) => {
+export const updateMovieSeries = async ({ id, msName, msAbout, msPoster, msLink, msSeason, msFormat, msIndustry, msYear, msGenre, msRating, msUploadedBy }) => {
     try {
-        const response = await api.patch(`/update/${id}`, { msName, });
+        const response = await api.patch(`/update/${id}`, { msName, msAbout, msPoster, msLink, msSeason, msFormat, msIndustry, msYear, msGenre, msRating, msUploadedBy });
         return response;
     } catch (error) {
         console.error(error.message);

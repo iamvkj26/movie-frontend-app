@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router";
 
-const defaultFilters = { search: "", type: "", category: "" };
+const defaultFilters = { s: "", f: "", i: "" };
 
 export const useFilters = () => {
 
@@ -12,11 +12,11 @@ export const useFilters = () => {
 
     useEffect(() => {
         const params = new URLSearchParams(location.search);
-        const search = params.get("search") || "";
-        const type = params.get("type") || "";
-        const category = params.get("category") || "";
+        const s = params.get("s") || "";
+        const f = params.get("f") || "";
+        const i = params.get("i") || "";
 
-        setFilters({ search, type, category });
+        setFilters({ s, f, i });
     }, []);
 
     useEffect(() => {

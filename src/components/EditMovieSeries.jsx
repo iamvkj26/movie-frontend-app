@@ -47,17 +47,16 @@ const EditMovieSeries = ({ refOpenCanvas, editMovieSeries, setEditMoviSeries, ge
                             <input type="text" className="form-control" id="link" name="emsLink" value={editMovieSeries.emsLink} onChange={changeUpdateUser} placeholder="Eg: https://www.primevideo.com/region/eu/detail/Interstellar/0PUNMGZEWOMYFKR1XIGOLTL2YM" autoComplete="off" required />
                         </div>
                         <div className="mb-3 col-6">
-                            <label htmlFor="category" className="form-label">Select the categorgy...</label>
-                            <select className="form-select" id="category" name="emsCategory" value={editMovieSeries.emsCategory} onChange={changeUpdateUser} autoComplete="off" required>
+                            <label htmlFor="format" className="form-label">Select the format...</label>
+                            <select className="form-select" id="format" name="emsFormat" value={editMovieSeries.emsFormat} onChange={changeUpdateUser} autoComplete="off" required>
                                 <option value="">---Select---</option>
                                 <option value="movie">Movie</option>
-                                <option value="tv-show">Tv Show</option>
-                                <option value="other">Other</option>
+                                <option value="Series">Series</option>
                             </select>
                         </div>
                         <div className="mb-3 col-6">
-                            <label htmlFor="type" className="form-label">Select the type...</label>
-                            <select className="form-select" id="type" name="emsType" value={editMovieSeries.emsType} onChange={changeUpdateUser} autoComplete="off" required>
+                            <label htmlFor="industry" className="form-label">Select the industry...</label>
+                            <select className="form-select" id="industry" name="emsIndustry" value={editMovieSeries.emsIndustry} onChange={changeUpdateUser} autoComplete="off" required>
                                 <option value="">---Select---</option>
                                 <option value="bollywood">Bollywood</option>
                                 <option value="hollywood">Hollywood</option>

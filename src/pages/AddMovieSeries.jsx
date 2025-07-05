@@ -4,7 +4,7 @@ import { postAllMovieSeries } from "../api/movieseries";
 
 const AddMovieSeries = () => {
 
-    const [addMovie, setAddMovie] = useState({ msName: "", msAbout: "", msPoster: "", msLink: "", msSeason: "", msCategory: "", msType: "", msYear: "", msGenre: [], msRating: "", msUploadedBy: "" });
+    const [addMovie, setAddMovie] = useState({ msName: "", msAbout: "", msPoster: "", msLink: "", msSeason: "", msFormat: "", msIndustry: "", msYear: "", msGenre: [], msRating: "", msUploadedBy: "" });
 
     const [loading, setLoading] = useState(false);
 
@@ -17,8 +17,8 @@ const AddMovieSeries = () => {
                 toast.success(`${addMovie.msName} added successfully.`);
                 setLoading(false);
                 setAddMovie({
-                    msName: "", msAbout: "", msPoster: "", msLink: "", msSeason: "", msCategory: "",
-                    msType: "", msYear: "", msGenre: [], msRating: "", msUploadedBy: ""
+                    msName: "", msAbout: "", msPoster: "", msLink: "", msSeason: "", msFormat: "",
+                    msIndustry: "", msYear: "", msGenre: [], msRating: "", msUploadedBy: ""
                 });
             };
         } catch (error) {
@@ -78,21 +78,20 @@ const AddMovieSeries = () => {
                                 <input type="text" className="form-control" id="link" name="msLink" value={addMovie.msLink} onChange={onChangeAddMovie} placeholder="Eg: https://www.primevideo.com/region/eu/detail/Interstellar/0PUNMGZEWOMYFKR1XIGOLTL2YM" autoComplete="off" required />
                             </div>
                             <div className="mb-3 col-6">
-                                <label htmlFor="category" className="form-label">Select the categorgy...</label>
-                                <select className="form-select" id="category" name="msCategory" value={addMovie.msCategory} onChange={onChangeAddMovie} autoComplete="off" required>
+                                <label htmlFor="format" className="form-label">Select the format...</label>
+                                <select className="form-select" id="format" name="msFormat" value={addMovie.msFormat} onChange={onChangeAddMovie} autoComplete="off" required>
                                     <option value="">---Select---</option>
-                                    <option value="movie">Movie</option>
-                                    <option value="tv-show">Tv Show</option>
-                                    <option value="other">Other</option>
+                                    <option value="Movie">Movie</option>
+                                    <option value="Series">Series</option>
                                 </select>
                             </div>
                             <div className="mb-3 col-6">
-                                <label htmlFor="type" className="form-label">Select the type...</label>
-                                <select className="form-select" id="type" name="msType" value={addMovie.msType} onChange={onChangeAddMovie} autoComplete="off" required>
+                                <label htmlFor="industry" className="form-label">Select the industry...</label>
+                                <select className="form-select" id="industry" name="msIndustry" value={addMovie.msIndustry} onChange={onChangeAddMovie} autoComplete="off" required>
                                     <option value="">---Select---</option>
-                                    <option value="bollywood">Bollywood</option>
-                                    <option value="hollywood">Hollywood</option>
-                                    <option value="other">Other</option>
+                                    <option value="Bollywood">Bollywood</option>
+                                    <option value="Hollywood">Hollywood</option>
+                                    <option value="Other">Other</option>
                                 </select>
                             </div>
                             <div className="mb-3 col-6">

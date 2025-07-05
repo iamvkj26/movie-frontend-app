@@ -2,13 +2,13 @@ import { useState, useEffect } from "react";
 
 const SearchBar = ({ updateFilter, filters }) => {
 
-    const [input, setInput] = useState(filters.search || "");
+    const [input, setInput] = useState(filters.s || "");
 
     useEffect(() => {
-        setInput(filters.search || "");
-    }, [filters.search]);
+        setInput(filters.s || "");
+    }, [filters.s]);
 
-    const handleSearch = () => updateFilter("search", input);
+    const handleSearch = () => updateFilter("s", input);
 
     return (
         <>
@@ -17,7 +17,7 @@ const SearchBar = ({ updateFilter, filters }) => {
                     <div className="mx-auto">
                         <div className="h4 text-black mb-3">Search for movies, tv shows here...</div>
                         <div className="d-flex">
-                            <input className="form-control me-2" type="search" placeholder="Search the movies, tv shows..." aria-label="Search" value={input} onChange={(e) => setInput(e.target.value)} />
+                            <input type="search" className="form-control me-2" placeholder="Search the movies, tv shows..." aria-label="Search" value={input} onChange={(e) => setInput(e.target.value)} />
                             <button className="btn btn-dark btn-212529" type="button" onClick={handleSearch}>
                                 <i className="fa-solid fa-magnifying-glass"></i>
                             </button>

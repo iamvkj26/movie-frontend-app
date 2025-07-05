@@ -5,7 +5,7 @@ import EditMovieSeries from "./EditMovieSeries";
 const Card = ({ filters }) => {
 
     const [data, setData] = useState([]);
-    const [editMovieSeries, setEditMoviSeries] = useState({ id: "", emsName: "", emsAbout: "", emsPoster: "", emsLink: "", emsSeason: "", emsCategory: "", emsType: "", emsYear: "", emsGenre: [], emsRating: "", emsUploadedBy: "" });
+    const [editMovieSeries, setEditMoviSeries] = useState({ id: "", emsName: "", emsAbout: "", emsPoster: "", emsLink: "", emsSeason: "", emsFormat: "", emsIndustry: "", emsYear: "", emsGenre: [], emsRating: "", emsUploadedBy: "" });
     const refOpenCanvas = useRef(null);
 
     const getMovieSeries = async () => {
@@ -19,7 +19,7 @@ const Card = ({ filters }) => {
 
     const updateMovieSeries = (currentMovieSeies) => {
         refOpenCanvas.current.click();
-        setEditMoviSeries({ id: currentMovieSeies._id, emsName: currentMovieSeies.msName, emsAbout: currentMovieSeies.msAbout, emsPoster: currentMovieSeies.msPoster, emsLink: currentMovieSeies.msLink, emsSeason: currentMovieSeies.msSeason, emsCategory: currentMovieSeies.msCategory, emsType: currentMovieSeies.msType, emsYear: currentMovieSeies.msYear, emsGenre: currentMovieSeies.msGenre, emsRating: currentMovieSeies.msRating, emsUploadedBy: currentMovieSeies.msUploadedBy });
+        setEditMoviSeries({ id: currentMovieSeies._id, emsName: currentMovieSeies.msName, emsAbout: currentMovieSeies.msAbout, emsPoster: currentMovieSeies.msPoster, emsLink: currentMovieSeies.msLink, emsSeason: currentMovieSeies.msSeason, emsFormat: currentMovieSeies.msFormat, emsIndustry: currentMovieSeies.msIndustry, emsYear: currentMovieSeies.msYear, emsGenre: currentMovieSeies.msGenre, emsRating: currentMovieSeies.msRating, emsUploadedBy: currentMovieSeies.msUploadedBy });
     };
 
     useEffect(() => {
@@ -45,11 +45,16 @@ const Card = ({ filters }) => {
                                             <img src={element.msPoster} className="card-img-top" alt="poster" />
                                             <div className="card-body">
                                                 <h5 className="card-title fw-medium"><strong>{element.msName}{" - "}{element.msSeason === 0 ? "(Part-1)" : element.msSeason ? `(Season ${element.msSeason})` : "Not Available"}</strong></h5>
-                                                <p className="card-text small">{element.msAbout}</p>
-                                                <p className="card-text"><strong>Category:</strong> {element.msCategory}</p>
-                                                <p className="card-text text-left"><strong>Type:</strong> {element.msType}</p>
-                                                <p className="card-text text-right"><strong>Genre:</strong> {element.msGenre?.join(", ")}</p>
-                                                <a href={element.msLink} className="btn btn-sm btn-primary mt-2" target="_blank" rel="noopener noreferrer">Watch Now</a>
+                                                <p className="card-text small clamp-text" title={element.msAbout}>{`${element.msAbout?.slice(0, 100)}...`}</p>
+                                                <p className="card-text text-center">
+                                                    <strong>F/I:</strong>{" "}
+                                                    {element.msFormat}/{element.msIndustry}
+                                                </p>
+                                                <p className="card-text text-center text-danger">
+                                                    <strong className="text-light">Genre:</strong>
+                                                    <br />
+                                                    {element.msGenre?.join(", ")}
+                                                </p>
                                             </div>
                                             <div className="d-flex justify-content-end gap-2 card-actions me-2 mb-2">
                                                 <span className="badge text-bg-warning text-light text-141414"><i className="fa-solid fa-pen-to-square" onClick={() => { updateMovieSeries(element) }}></i></span>
