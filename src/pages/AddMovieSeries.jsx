@@ -8,9 +8,8 @@ const AddMovieSeries = () => {
 
     const [loading, setLoading] = useState(false);
 
-    const handleAddMovie = async (e) => {
+    const handleAddMovieSeries = async (e) => {
         e.preventDefault();
-
         setLoading(true);
         try {
             const response = await postAllMovieSeries(addMovie);
@@ -58,9 +57,9 @@ const AddMovieSeries = () => {
             <div className="container mt-5 mb-5">
                 <div className="card p-3">
                     <div className="card-body text-center">
-                        <h1 className="bg-primary-subtle text-primary-emphasis">Add Movie/Tv-Show</h1><hr />
+                        <h1 className="bg-primary-subtle text-primary-emphasis">Add Movie/Series</h1><hr />
                     </div>
-                    <form onSubmit={handleAddMovie}>
+                    <form onSubmit={handleAddMovieSeries}>
                         <div className="row">
                             <div className="mb-3">
                                 <label htmlFor="name" className="form-label">Enter the title...</label>

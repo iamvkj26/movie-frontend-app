@@ -9,7 +9,7 @@ const Information = () => {
                         <div className="alert alert-dark position-relative text-center information">
                             <p className="mb-1">
                                 <strong className="text-danger"><i className="fa-solid fa-xmark text-success"></i> This Movie/Series Web App is for <strong>Personal and Professional</strong> use, </strong>
-                                Kindly always use <Link className="text-primary text-decoration-none fw-bold" to="/" target="_blank" rel="noopener noreferrer">
+                                Kindly always use <Link className="text-primary fw-bolder" to="/" target="_blank" rel="noopener noreferrer">
                                     HelloHood
                                 </Link>
                                 <span className="text-warning"> for Latest Updates.</span>

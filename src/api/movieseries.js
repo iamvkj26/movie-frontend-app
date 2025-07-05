@@ -24,3 +24,13 @@ export const getAllMovieSeries = async ({ search = "", type = "", category = "" 
         throw error;
     };
 };
+
+export const updateMovieSeries = async ({ id, msName }) => {
+    try {
+        const response = await api.patch(`/update/${id}`, { msName, });
+        return response;
+    } catch (error) {
+        console.error(error.message);
+        throw error;
+    };
+};

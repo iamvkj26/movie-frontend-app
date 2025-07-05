@@ -61,6 +61,21 @@ body {
     background: #141414 !important;
 }
 
+.text-141414 {
+    background: #141414 !important;
+}
+
+.card .card-actions {
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover .card-actions {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .card-img-top {
     height: 300px;
     object-fit: fill;
