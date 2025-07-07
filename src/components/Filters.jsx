@@ -23,10 +23,34 @@ const Filters = ({ updateFilter, resetFilters }) => {
                                 <Link className="nav-link" onClick={() => updateFilter("i", "bollywood")}><i className="fa-solid fa-star text-warning me-1"></i> Bollywood</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" onClick={() => updateFilter("i", "hollywood")}><i className="fa-solid fa-clapperboard text-info me-1"></i> Hollywood</Link>
+                                <Link className="nav-link" onClick={() => updateFilter("i", "hollywood")}><i className="fa-solid fa-clapperboard text-black me-1"></i> Hollywood</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" onClick={() => updateFilter("i", "other")}><i className="fa-solid fa-globe text-success me-1"></i> Other</Link>
+                                <Link className="nav-link" onClick={() => updateFilter("i", "other")}><i className="fa-solid fa-globe text-info me-1"></i> Other</Link>
+                            </li>
+                            <li className="nav-item dropdown">
+                                <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i className="fa-solid fa-burst text-light me-1"></i> Genere
+                                </Link>
+                                <ul className="dropdown-menu">
+                                    <li><Link className="dropdown-item" to="#">🎬 Action</Link></li>
+                                    <li><Link className="dropdown-item" to="#">🧭 Adventure</Link></li>
+                                    <li><Link className="dropdown-item" to="#">🎭 Drama</Link></li>
+                                    <li><Link className="dropdown-item" to="#">💖 Romance</Link></li>
+                                    <li><Link className="dropdown-item" to="#">😂 Comedy</Link></li>
+                                    <li><Link className="dropdown-item" to="#">👻 Horror</Link></li>
+                                    <li><Link className="dropdown-item" to="#">👁️ Thriller</Link></li>
+                                    <li><Link className="dropdown-item" to="#">⚖️ Crime</Link></li>
+                                    <li><Link className="dropdown-item" to="#">🤖 Si-Fi</Link></li>
+                                    <li><Link className="dropdown-item" to="#">🧙 Fantasy</Link></li>
+                                    <li><Link className="dropdown-item" to="#">🕵️ Mystery</Link></li>
+                                    <li><Link className="dropdown-item" to="#">🎞️ Animation</Link></li>
+                                    <li><Link className="dropdown-item" to="#">📚 Documentary</Link></li>
+                                    <li><Link className="dropdown-item" to="#">🔖 Other</Link></li>
+                                </ul>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link"><i className="fa-solid fa-check-double text-success me-1"></i> Watched</Link>
                             </li>
                         </ul>
                     </div>

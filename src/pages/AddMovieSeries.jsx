@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { toast } from "react-hot-toast";
-import { postAllMovieSeries } from "../api/movieseries";
+import { postMovieSeries } from "../api/movieseries";
 
 const AddMovieSeries = () => {
 
@@ -12,7 +12,7 @@ const AddMovieSeries = () => {
         e.preventDefault();
         setLoading(true);
         try {
-            const response = await postAllMovieSeries(addMovie);
+            const response = await postMovieSeries(addMovie);
             if (response.status === 200) {
                 toast.success(`${addMovie.msName} added successfully.`);
                 setLoading(false);
@@ -28,7 +28,7 @@ const AddMovieSeries = () => {
                 toast.error(`A MovieSeries named '${addMovie.msName}' already exists.`);
             } else {
                 toast.error(error.message);
-            }
+            };
         } finally {
             setLoading(false);
         };

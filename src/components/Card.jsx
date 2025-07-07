@@ -1,17 +1,20 @@
 import { useState, useRef, useEffect } from "react";
-import { getAllMovieSeries } from "../api/movieseries";
+import { toast } from "react-hot-toast";
+import { getMovieSeries, deleteMovieSeries } from "../api/movieseries";
 import EditMovieSeries from "./EditMovieSeries";
 
 const Card = ({ filters }) => {
 
-    const [data, setData] = useState([]);
-    const [editMovieSeries, setEditMoviSeries] = useState({ id: "", emsName: "", emsAbout: "", emsPoster: "", emsLink: "", emsSeason: "", emsFormat: "", emsIndustry: "", emsYear: "", emsGenre: [], emsRating: "", emsUploadedBy: "" });
+    const [movieSeries, setMovieSeries] = useState([]);
+    const [editMovieSeries, setEditMoviSeries] = useState({ _id: "", emsName: "", emsAbout: "", emsPoster: "", emsLink: "", emsSeason: "", emsFormat: "", emsIndustry: "", emsYear: "", emsGenre: [], emsRating: "", emsUploadedBy: "" });
+    const [deleteMoviSeries, setDeleteMoviSeries] = useState(null);
+
     const refOpenCanvas = useRef(null);
 
-    const getMovieSeries = async () => {
+    const handleGetMovieSeries = async () => {
         try {
-            const res = await getAllMovieSeries(filters);
-            setData(res?.data);
+            const response = await getMovieSeries(filters);
+            setMovieSeries(response.data);
         } catch (err) {
             console.error(err);
         };
@@ -19,19 +22,36 @@ const Card = ({ filters }) => {
 
     const updateMovieSeries = (currentMovieSeies) => {
         refOpenCanvas.current.click();
-        setEditMoviSeries({ id: currentMovieSeies._id, emsName: currentMovieSeies.msName, emsAbout: currentMovieSeies.msAbout, emsPoster: currentMovieSeies.msPoster, emsLink: currentMovieSeies.msLink, emsSeason: currentMovieSeies.msSeason, emsFormat: currentMovieSeies.msFormat, emsIndustry: currentMovieSeies.msIndustry, emsYear: currentMovieSeies.msYear, emsGenre: currentMovieSeies.msGenre, emsRating: currentMovieSeies.msRating, emsUploadedBy: currentMovieSeies.msUploadedBy });
+        setEditMoviSeries({ _id: currentMovieSeies._id, emsName: currentMovieSeies.msName, emsAbout: currentMovieSeies.msAbout, emsPoster: currentMovieSeies.msPoster, emsLink: currentMovieSeies.msLink, emsSeason: currentMovieSeies.msSeason, emsFormat: currentMovieSeies.msFormat, emsIndustry: currentMovieSeies.msIndustry, emsYear: currentMovieSeies.msYear, emsGenre: currentMovieSeies.msGenre, emsRating: currentMovieSeies.msRating, emsUploadedBy: currentMovieSeies.msUploadedBy });
+    };
+
+    const handleDeleteMovieSeries = async (id, msName) => {
+        try {
+            const response = await deleteMovieSeries(id);
+            if (response.status === 200) {
+                toast.success(`${msName} deleted successfully.`);
+                setDeleteMoviSeries(null);
+                handleGetMovieSeries();
+            };
+        } catch (error) {
+            if (error.status === 400) {
+                toast.error("Server cannot or will not process request right now, try again after sometimes");
+            } else {
+                toast.error(error.message);
+            };
+        };
     };
 
     useEffect(() => {
         if (!filters) return;
-        getMovieSeries();
+        handleGetMovieSeries();
     }, [filters]);
 
     return (
         <>
             <div className="container">
-                {data &&
-                    Object?.entries(data)?.reverse()?.map(([year, movies]) => (
+                {movieSeries &&
+                    Object?.entries(movieSeries)?.reverse()?.map(([year, movies]) => (
                         <div key={year} className="mt-3">
                             <h4 className="">Year: {year}</h4>
                             <hr />
@@ -57,8 +77,24 @@ const Card = ({ filters }) => {
                                                 </p>
                                             </div>
                                             <div className="d-flex justify-content-end gap-2 card-actions me-2 mb-2">
-                                                <span className="badge text-bg-warning text-light text-141414"><i className="fa-solid fa-pen-to-square" onClick={() => { updateMovieSeries(element) }}></i></span>
-                                                <span className="badge text-bg-danger text-light text-141414"><i className="fa-solid fa-trash"></i></span>
+                                                <span className="badge text-141414">
+                                                    <i className="fa-solid fa-pen-to-square cp" onClick={() => { updateMovieSeries(element) }}></i>
+                                                </span>
+                                                {deleteMoviSeries === element._id ? (
+                                                    <div className="d-flex gap-2">
+                                                        <span className="badge bg-warning text-dark cp">Confirm delete?</span>
+                                                        <span className="badge bg-success">
+                                                            <i className="fa-solid fa-check cp" onClick={() => handleDeleteMovieSeries(element._id, element.msName)}></i>
+                                                        </span>
+                                                        <span className="badge bg-secondary">
+                                                            <i className="fa-solid fa-xmark cp" onClick={() => setDeleteMoviSeries(null)}></i>
+                                                        </span>
+                                                    </div>
+                                                ) : (
+                                                    <span className="badge text-141414">
+                                                        <i className="fa-solid fa-trash cp" onClick={() => setDeleteMoviSeries(element._id)}></i>
+                                                    </span>
+                                                )}
                                             </div>
                                             <div className="card-footer text-end">
                                                 <figcaption className="blockquote-footer mt-1">
@@ -73,7 +109,9 @@ const Card = ({ filters }) => {
                     ))}
             </div>
 
-            <EditMovieSeries refOpenCanvas={refOpenCanvas} editMovieSeries={editMovieSeries} setEditMoviSeries={setEditMoviSeries} getMovieSeries={getMovieSeries} />
+            <EditMovieSeries refOpenCanvas={refOpenCanvas} editMovieSeries={editMovieSeries} setEditMoviSeries={setEditMoviSeries} handleGetMovieSeries={handleGetMovieSeries} />
+
+
         </>
     );
 };

@@ -1,17 +1,33 @@
-import { useRef } from "react";
+import { useState, useRef } from "react";
+import { toast } from "react-hot-toast";
 import { updateMovieSeries } from "../api/movieseries";
 
-const EditMovieSeries = ({ refOpenCanvas, editMovieSeries, setEditMoviSeries, getMovieSeries }) => {
+const EditMovieSeries = ({ refOpenCanvas, editMovieSeries, setEditMoviSeries, handleGetMovieSeries }) => {
 
+    const [loading, setLoading] = useState(false);
     const refCloseCanvas = useRef(null);
 
-    const handleUpdateMovieSeries = async () => {
+    const handleUpdateMovieSeries = async (e) => {
+        e.preventDefault();
+        setLoading(true);
         try {
-            await updateMovieSeries(editMovieSeries._id, editMovieSeries.eemail, editMovieSeries.ename, editMovieSeries.eage, editMovieSeries.egender, editMovieSeries.ecity);
-            refCloseCanvas.current.click();
-            getMovieSeries();
-        } catch (err) {
-            console.error("Update failed:", err.message);
+            const response = await updateMovieSeries(editMovieSeries._id, editMovieSeries.emsName, editMovieSeries.emsAbout, editMovieSeries.emsPoster, editMovieSeries.emsLink, editMovieSeries.emsSeason, editMovieSeries.emsFormat, editMovieSeries.emsIndustry, editMovieSeries.emsYear, editMovieSeries.emsGenre, editMovieSeries.emsRating, editMovieSeries.emsUploadedBy);
+            if (response.status === 200) {
+                toast.success(`${editMovieSeries.emsName} updated successfully.`);
+                setLoading(false);
+                refCloseCanvas.current.click();
+                handleGetMovieSeries();
+            };
+        } catch (error) {
+            if (error.status === 400) {
+                toast.error("Server cannot or will not process request right now, try again after sometimes");
+            } else if (error.status === 409) {
+                toast.error(`A MovieSeries named '${editMovieSeries.emsName}' already exists.`);
+            } else {
+                toast.error(error.message);
+            };
+        } finally {
+            setLoading(false);
         };
     };
 
@@ -50,7 +66,7 @@ const EditMovieSeries = ({ refOpenCanvas, editMovieSeries, setEditMoviSeries, ge
                             <label htmlFor="format" className="form-label">Select the format...</label>
                             <select className="form-select" id="format" name="emsFormat" value={editMovieSeries.emsFormat} onChange={changeUpdateUser} autoComplete="off" required>
                                 <option value="">---Select---</option>
-                                <option value="movie">Movie</option>
+                                <option value="Movie">Movie</option>
                                 <option value="Series">Series</option>
                             </select>
                         </div>
@@ -58,9 +74,9 @@ const EditMovieSeries = ({ refOpenCanvas, editMovieSeries, setEditMoviSeries, ge
                             <label htmlFor="industry" className="form-label">Select the industry...</label>
                             <select className="form-select" id="industry" name="emsIndustry" value={editMovieSeries.emsIndustry} onChange={changeUpdateUser} autoComplete="off" required>
                                 <option value="">---Select---</option>
-                                <option value="bollywood">Bollywood</option>
-                                <option value="hollywood">Hollywood</option>
-                                <option value="other">Other</option>
+                                <option value="Bollywood">Bollywood</option>
+                                <option value="Hollywood">Hollywood</option>
+                                <option value="Other">Other</option>
                             </select>
                         </div>
                         <div className="mb-3">
@@ -88,8 +104,8 @@ const EditMovieSeries = ({ refOpenCanvas, editMovieSeries, setEditMoviSeries, ge
                             </select>
                         </div>
                         <div className="text-center">
-                            <button type="submit" className="btn btn-secondary" disabled>
-                                Update movie/series
+                            <button type="submit" className="btn btn-secondary">
+                                {loading ? "Loading" : "Update movie/series"}
                             </button>
                         </div>
                     </form>
