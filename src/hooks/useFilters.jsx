@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router";
 
-const defaultFilters = { s: "", f: "", i: "" };
+const defaultFilters = { s: "", f: "", i: "", g: "" };
 
 export const useFilters = () => {
 
@@ -16,8 +16,9 @@ export const useFilters = () => {
         const s = params.get("s") || "";
         const f = params.get("f") || "";
         const i = params.get("i") || "";
+        const g = params.get("g") || "";
 
-        setFilters({ s, f, i });
+        setFilters({ s, f, i, g });
         setReady(true);
     }, [location.search]);
 
@@ -28,6 +29,7 @@ export const useFilters = () => {
         if (filters.s) params.set("s", filters.s);
         if (filters.f) params.set("f", filters.f);
         if (filters.i) params.set("i", filters.i);
+        if (filters.g) params.set("g", filters.g);
 
         navigate({ search: params.toString() }, { replace: true });
     }, [filters, navigate]);

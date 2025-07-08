@@ -4,7 +4,7 @@ import { postMovieSeries } from "../api/movieseries";
 
 const AddMovieSeries = () => {
 
-    const [addMovie, setAddMovie] = useState({ msName: "", msAbout: "", msPoster: "", msLink: "", msSeason: "", msFormat: "", msIndustry: "", msYear: "", msGenre: [], msRating: "", msUploadedBy: "" });
+    const [addMovie, setAddMovie] = useState({ msName: "", msAbout: "", msPoster: "", msLink: "", msSeason: "", msFormat: "", msIndustry: "", msOrigin: "", msYear: "", msGenre: [], msRating: "", msUploadedBy: "" });
 
     const [loading, setLoading] = useState(false);
 
@@ -14,18 +14,18 @@ const AddMovieSeries = () => {
         try {
             const response = await postMovieSeries(addMovie);
             if (response.status === 200) {
-                toast.success(`${addMovie.msName} added successfully.`);
+                toast.success(response.data.message);
                 setLoading(false);
                 setAddMovie({
                     msName: "", msAbout: "", msPoster: "", msLink: "", msSeason: "", msFormat: "",
-                    msIndustry: "", msYear: "", msGenre: [], msRating: "", msUploadedBy: ""
+                    msIndustry: "", msOrigin: "", msYear: "", msGenre: [], msRating: "", msUploadedBy: ""
                 });
             };
         } catch (error) {
             if (error.status === 400) {
                 toast.error("Server cannot or will not process request right now, try again after sometimes");
             } else if (error.status === 409) {
-                toast.error(`A MovieSeries named '${addMovie.msName}' already exists.`);
+                toast.error(`The '${addMovie.msName}' already exists.`);
             } else {
                 toast.error(error.message);
             };
@@ -95,6 +95,10 @@ const AddMovieSeries = () => {
                                 </select>
                             </div>
                             <div className="mb-3 col-6">
+                                <label htmlFor="origin" className="form-label">Enter the origin...</label>
+                                <input type="text" className="form-control" id="origin" name="msOrigin" value={addMovie.msOrigin} onChange={onChangeAddMovie} placeholder="Eg: British-American" autoComplete="off" required />
+                            </div>
+                            <div className="mb-3 col-6">
                                 <label htmlFor="genre" className="form-label">Enter the genre (comma-separated)...</label>
                                 <input type="text" className="form-control" id="genre" name="msGenre" value={addMovie.msGenre} onChange={onChangeAddMovie} placeholder="Eg: Science Fiction, Adventure, Intense, Action" autoComplete="off" required />
                             </div>
@@ -110,7 +114,7 @@ const AddMovieSeries = () => {
                                 <label htmlFor="rating" className="form-label">Enter the imdb rating...</label>
                                 <input type="text" className="form-control" id="rating" name="msRating" value={addMovie.msRating} onChange={onChangeAddMovie} placeholder="Eg: 8.7" maxLength={3} autoComplete="off" required />
                             </div>
-                            <div className="mb-3">
+                            <div className="mb-3 col-6">
                                 <label htmlFor="uploadedBy" className="form-label">Select the person who is uploading the...</label>
                                 <select className="form-select" id="uploadedBy" name="msUploadedBy" value={addMovie.msUploadedBy} onChange={onChangeAddMovie} autoComplete="off" required>
                                     <option value="">---Select the name---</option>

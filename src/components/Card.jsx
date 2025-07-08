@@ -6,7 +6,7 @@ import EditMovieSeries from "./EditMovieSeries";
 const Card = ({ filters }) => {
 
     const [movieSeries, setMovieSeries] = useState([]);
-    const [editMovieSeries, setEditMoviSeries] = useState({ _id: "", emsName: "", emsAbout: "", emsPoster: "", emsLink: "", emsSeason: "", emsFormat: "", emsIndustry: "", emsYear: "", emsGenre: [], emsRating: "", emsUploadedBy: "" });
+    const [editMovieSeries, setEditMoviSeries] = useState({ _id: "", emsName: "", emsAbout: "", emsPoster: "", emsLink: "", emsSeason: "", emsFormat: "", emsIndustry: "", emsOrigin: "", emsYear: "", emsGenre: [], emsRating: "", emsUploadedBy: "" });
     const [deleteMoviSeries, setDeleteMoviSeries] = useState(null);
 
     const refOpenCanvas = useRef(null);
@@ -22,14 +22,14 @@ const Card = ({ filters }) => {
 
     const updateMovieSeries = (currentMovieSeies) => {
         refOpenCanvas.current.click();
-        setEditMoviSeries({ _id: currentMovieSeies._id, emsName: currentMovieSeies.msName, emsAbout: currentMovieSeies.msAbout, emsPoster: currentMovieSeies.msPoster, emsLink: currentMovieSeies.msLink, emsSeason: currentMovieSeies.msSeason, emsFormat: currentMovieSeies.msFormat, emsIndustry: currentMovieSeies.msIndustry, emsYear: currentMovieSeies.msYear, emsGenre: currentMovieSeies.msGenre, emsRating: currentMovieSeies.msRating, emsUploadedBy: currentMovieSeies.msUploadedBy });
+        setEditMoviSeries({ _id: currentMovieSeies._id, emsName: currentMovieSeies.msName, emsAbout: currentMovieSeies.msAbout, emsPoster: currentMovieSeies.msPoster, emsLink: currentMovieSeies.msLink, emsSeason: currentMovieSeies.msSeason, emsFormat: currentMovieSeies.msFormat, emsIndustry: currentMovieSeies.msIndustry, emsOrigin: currentMovieSeies.msOrigin, emsYear: currentMovieSeies.msYear, emsGenre: currentMovieSeies.msGenre, emsRating: currentMovieSeies.msRating, emsUploadedBy: currentMovieSeies.msUploadedBy });
     };
 
-    const handleDeleteMovieSeries = async (id, msName) => {
+    const handleDeleteMovieSeries = async (id) => {
         try {
             const response = await deleteMovieSeries(id);
             if (response.status === 200) {
-                toast.success(`${msName} deleted successfully.`);
+                toast.success(response.data.message);
                 setDeleteMoviSeries(null);
                 handleGetMovieSeries();
             };
@@ -65,15 +65,18 @@ const Card = ({ filters }) => {
                                             <img src={element.msPoster} className="card-img-top" alt="poster" />
                                             <div className="card-body">
                                                 <h5 className="card-title fw-medium"><strong>{element.msName}{" - "}{element.msSeason === 0 ? "(Part-1)" : element.msSeason ? `(Season ${element.msSeason})` : "Not Available"}</strong></h5>
-                                                <p className="card-text small clamp-text" title={element.msAbout}>{`${element.msAbout?.slice(0, 100)}...`}</p>
-                                                <p className="card-text text-center">
+                                                <p className="card-text small clamp-text" title={element.msAbout}>{element.msAbout?.slice(0, 105)}...</p>
+                                                <p className="card-text small">
                                                     <strong>F/I:</strong>{" "}
                                                     {element.msFormat}/{element.msIndustry}
+                                                </p>
+                                                <p className="card-text small">
+                                                    <strong>Origin:</strong>{" "}{element.msOrigin}
                                                 </p>
                                                 <p className="card-text text-center text-danger">
                                                     <strong className="text-light">Genre:</strong>
                                                     <br />
-                                                    {element.msGenre?.join(", ")}
+                                                    <i className="fst-italic">{element.msGenre?.join(", ")}</i>
                                                 </p>
                                             </div>
                                             <div className="d-flex justify-content-end gap-2 card-actions me-2 mb-2">
@@ -84,7 +87,7 @@ const Card = ({ filters }) => {
                                                     <div className="d-flex gap-2">
                                                         <span className="badge bg-warning text-dark cp">Confirm delete?</span>
                                                         <span className="badge bg-success">
-                                                            <i className="fa-solid fa-check cp" onClick={() => handleDeleteMovieSeries(element._id, element.msName)}></i>
+                                                            <i className="fa-solid fa-check cp" onClick={() => handleDeleteMovieSeries(element._id)}></i>
                                                         </span>
                                                         <span className="badge bg-secondary">
                                                             <i className="fa-solid fa-xmark cp" onClick={() => setDeleteMoviSeries(null)}></i>

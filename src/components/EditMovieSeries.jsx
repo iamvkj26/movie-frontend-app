@@ -11,9 +11,9 @@ const EditMovieSeries = ({ refOpenCanvas, editMovieSeries, setEditMoviSeries, ha
         e.preventDefault();
         setLoading(true);
         try {
-            const response = await updateMovieSeries(editMovieSeries._id, editMovieSeries.emsName, editMovieSeries.emsAbout, editMovieSeries.emsPoster, editMovieSeries.emsLink, editMovieSeries.emsSeason, editMovieSeries.emsFormat, editMovieSeries.emsIndustry, editMovieSeries.emsYear, editMovieSeries.emsGenre, editMovieSeries.emsRating, editMovieSeries.emsUploadedBy);
+            const response = await updateMovieSeries(editMovieSeries._id, editMovieSeries.emsName, editMovieSeries.emsAbout, editMovieSeries.emsPoster, editMovieSeries.emsLink, editMovieSeries.emsSeason, editMovieSeries.emsFormat, editMovieSeries.emsIndustry, editMovieSeries.emsOrigin, editMovieSeries.emsYear, editMovieSeries.emsGenre, editMovieSeries.emsRating, editMovieSeries.emsUploadedBy);
             if (response.status === 200) {
-                toast.success(`${editMovieSeries.emsName} updated successfully.`);
+                toast.success(response.data.message);
                 setLoading(false);
                 refCloseCanvas.current.click();
                 handleGetMovieSeries();
@@ -22,7 +22,7 @@ const EditMovieSeries = ({ refOpenCanvas, editMovieSeries, setEditMoviSeries, ha
             if (error.status === 400) {
                 toast.error("Server cannot or will not process request right now, try again after sometimes");
             } else if (error.status === 409) {
-                toast.error(`A MovieSeries named '${editMovieSeries.emsName}' already exists.`);
+                toast.error(`The '${editMovieSeries.emsName}' already exists.`);
             } else {
                 toast.error(error.message);
             };
@@ -80,16 +80,20 @@ const EditMovieSeries = ({ refOpenCanvas, editMovieSeries, setEditMoviSeries, ha
                             </select>
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="season" className="form-label">Enter the part/season, enter 0 if movie...</label>
-                            <input type="number" className="form-control" id="season" name="emsSeason" value={editMovieSeries.emsSeason} onChange={changeUpdateUser} placeholder="Eg: 0" maxLength={2} autoComplete="off" required />
+                            <label htmlFor="origin" className="form-label">Enter the origin...</label>
+                            <input type="text" className="form-control" id="origin" name="emsOrigin" value={editMovieSeries.emsOrigin} onChange={changeUpdateUser} placeholder="Eg: American-British" autoComplete="off" required />
+                        </div>
+                        <div className="mb-3 col-6">
+                            <label htmlFor="genre" className="form-label">Enter the genre...</label>
+                            <input type="text" className="form-control" id="genre" name="emsGenre" value={editMovieSeries.emsGenre} onChange={changeUpdateUser} placeholder="Eg: Science Fiction, Adventure, Intense, Action" autoComplete="off" required />
                         </div>
                         <div className="mb-3 col-6">
                             <label htmlFor="year" className="form-label">Enter the year...</label>
                             <input type="text" className="form-control" id="year" name="emsYear" value={editMovieSeries.emsYear} onChange={changeUpdateUser} placeholder="Eg: 2014" maxLength={4} autoComplete="off" required />
                         </div>
-                        <div className="mb-3 col-6">
-                            <label htmlFor="genre" className="form-label">Enter the genre...</label>
-                            <input type="text" className="form-control" id="genre" name="emsGenre" value={editMovieSeries.emsGenre} onChange={changeUpdateUser} placeholder="Eg: Science Fiction, Adventure, Intense, Action" autoComplete="off" required />
+                        <div className="mb-3">
+                            <label htmlFor="season" className="form-label">Enter the part/season, enter 0 if movie...</label>
+                            <input type="number" className="form-control" id="season" name="emsSeason" value={editMovieSeries.emsSeason} onChange={changeUpdateUser} placeholder="Eg: 0" maxLength={2} autoComplete="off" required />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="rating" className="form-label">Enter the imdb rating...</label>

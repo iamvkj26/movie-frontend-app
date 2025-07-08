@@ -86,6 +86,10 @@ body {
     object-fit: fill;
 }
 
+p {
+    margin-bottom: 5px;
+}
+
 .cp {
     cursor: pointer;
 }

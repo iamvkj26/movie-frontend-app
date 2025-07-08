@@ -33,20 +33,20 @@ const Filters = ({ updateFilter, resetFilters }) => {
                                     <i className="fa-solid fa-burst text-light me-1"></i> Genere
                                 </Link>
                                 <ul className="dropdown-menu">
-                                    <li><Link className="dropdown-item" to="#">🎬 Action</Link></li>
-                                    <li><Link className="dropdown-item" to="#">🧭 Adventure</Link></li>
-                                    <li><Link className="dropdown-item" to="#">🎭 Drama</Link></li>
-                                    <li><Link className="dropdown-item" to="#">💖 Romance</Link></li>
-                                    <li><Link className="dropdown-item" to="#">😂 Comedy</Link></li>
-                                    <li><Link className="dropdown-item" to="#">👻 Horror</Link></li>
-                                    <li><Link className="dropdown-item" to="#">👁️ Thriller</Link></li>
-                                    <li><Link className="dropdown-item" to="#">⚖️ Crime</Link></li>
-                                    <li><Link className="dropdown-item" to="#">🤖 Si-Fi</Link></li>
-                                    <li><Link className="dropdown-item" to="#">🧙 Fantasy</Link></li>
-                                    <li><Link className="dropdown-item" to="#">🕵️ Mystery</Link></li>
-                                    <li><Link className="dropdown-item" to="#">🎞️ Animation</Link></li>
-                                    <li><Link className="dropdown-item" to="#">📚 Documentary</Link></li>
-                                    <li><Link className="dropdown-item" to="#">🔖 Other</Link></li>
+                                    <li><Link className="dropdown-item" onClick={() => updateFilter("g", "Action")}>🎬 Action</Link></li>
+                                    <li><Link className="dropdown-item" onClick={() => updateFilter("g", "Adventure")}>🧭 Adventure</Link></li>
+                                    <li><Link className="dropdown-item" onClick={() => updateFilter("g", "Drama")}>🎭 Drama</Link></li>
+                                    <li><Link className="dropdown-item" onClick={() => updateFilter("g", "Romance")}>💖 Romance</Link></li>
+                                    <li><Link className="dropdown-item" onClick={() => updateFilter("g", "Comedy")}>😂 Comedy</Link></li>
+                                    <li><Link className="dropdown-item" onClick={() => updateFilter("g", "Horror")}>👻 Horror</Link></li>
+                                    <li><Link className="dropdown-item" onClick={() => updateFilter("g", "Thriller")}>👁️ Thriller</Link></li>
+                                    <li><Link className="dropdown-item" onClick={() => updateFilter("g", "Crime")}>⚖️ Crime</Link></li>
+                                    <li><Link className="dropdown-item" onClick={() => updateFilter("g", "Si-Fi")}>🤖 Si-Fi</Link></li>
+                                    <li><Link className="dropdown-item" onClick={() => updateFilter("g", "Fantasy")}>🧙 Fantasy</Link></li>
+                                    <li><Link className="dropdown-item" onClick={() => updateFilter("g", "Mystery")}>🕵️ Mystery</Link></li>
+                                    <li><Link className="dropdown-item" onClick={() => updateFilter("g", "Animation")}>🎞️ Animation</Link></li>
+                                    <li><Link className="dropdown-item" onClick={() => updateFilter("g", "Documentary")}>📚 Documentary</Link></li>
+                                    <li><Link className="dropdown-item" onClick={() => updateFilter("g", "Other")}>🔖 Other</Link></li>
                                 </ul>
                             </li>
                             <li className="nav-item">
