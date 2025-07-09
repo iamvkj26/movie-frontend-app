@@ -3,7 +3,7 @@ import SearchBar from "../components/SearchBar";
 import Filters from "../components/Filters";
 import Card from "../components/Card";
 import Information from "../components/Information";
-import SearchResult from "../components/SearchResult";
+import FiltersMessage from "../components/FiltersMessage";
 
 const All = () => {
 
@@ -15,7 +15,7 @@ const All = () => {
             <SearchBar updateFilter={updateFilter} />
             <Filters updateFilter={updateFilter} resetFilters={resetFilters} />
             <Information />
-            <SearchResult />
+            <FiltersMessage updateFilter={updateFilter} filters={filters} />
             <Card filters={filters} />
         </>
     );

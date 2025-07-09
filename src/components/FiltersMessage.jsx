@@ -1,4 +1,7 @@
-const SearchResult = () => {
+const FiltersMessage = ({ filters }) => {
+
+    const { s, f, i, g, w } = filters;
+
     return (
         <>
             <div className="container mt-3">
@@ -10,7 +13,7 @@ const SearchResult = () => {
                                     <i className="fa-solid fa-folder"></i>
                                 </span>
                                 <strong>
-                                    Sorted A-Z and grouped by year (latest first: 2025 → oldest).
+                                    {`Showing ${w === true ? "Watched" : "Unwatched"} Movie/Series${g ? ` in the '${g}' genre` : ""}${i ? ` from the '${i}' industry` : ""}${f ? ` in '${f}' format` : ""}${s ? ` matching '${s}'` : ""}, sorted A-Z and grouped by year (latest first: 2025 → oldest).`}
                                 </strong>
                             </h6>
                         </div>
@@ -21,4 +24,4 @@ const SearchResult = () => {
     );
 };
 
-export default SearchResult;
+export default FiltersMessage;

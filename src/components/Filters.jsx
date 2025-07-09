@@ -50,7 +50,7 @@ const Filters = ({ updateFilter, resetFilters }) => {
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link"><i className="fa-solid fa-check-double text-success me-1"></i> Watched</Link>
+                                <Link className="nav-link" onClick={() => updateFilter("w", true)}><i className="fa-solid fa-check-double text-success me-1"></i> Watched</Link>
                             </li>
                         </ul>
                     </div>

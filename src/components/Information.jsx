@@ -8,7 +8,7 @@ const Information = () => {
                     <div className="col-md-12">
                         <div className="alert alert-dark position-relative text-center information">
                             <p className="mb-1">
-                                <strong className="text-danger"><i className="fa-solid fa-xmark text-success"></i> This Movie/Series Web App is for <strong>Personal and Professional</strong> use, </strong>
+                                <strong className="text-danger">This Movie/Series Web App is for <strong>Personal and Professional</strong> use, </strong>
                                 Kindly always use <Link className="text-primary fw-bolder" to="/" target="_blank" rel="noopener noreferrer">
                                     HelloHood
                                 </Link>
