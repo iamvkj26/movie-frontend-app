@@ -11,7 +11,7 @@ const EditMovieSeries = ({ refOpenCanvas, editMovieSeries, setEditMoviSeries, ha
         e.preventDefault();
         setLoading(true);
         try {
-            const response = await updateMovieSeries(editMovieSeries._id, editMovieSeries.emsName, editMovieSeries.emsAbout, editMovieSeries.emsPoster, editMovieSeries.emsLink, editMovieSeries.emsSeason, editMovieSeries.emsFormat, editMovieSeries.emsIndustry, editMovieSeries.emsOrigin, editMovieSeries.emsYear, editMovieSeries.emsGenre, editMovieSeries.emsRating, editMovieSeries.emsUploadedBy);
+            const response = await updateMovieSeries(editMovieSeries._id, editMovieSeries.emsName, editMovieSeries.emsAbout, editMovieSeries.emsPoster, editMovieSeries.emsLink, editMovieSeries.emsSeason, editMovieSeries.emsFormat, editMovieSeries.emsIndustry, editMovieSeries.emsOrigin, editMovieSeries.emsReleaseDate, editMovieSeries.emsGenre, editMovieSeries.emsRating, editMovieSeries.emsUploadedBy);
             if (response.status === 200) {
                 toast.success(response.data.message);
                 setLoading(false);
@@ -88,8 +88,8 @@ const EditMovieSeries = ({ refOpenCanvas, editMovieSeries, setEditMoviSeries, ha
                             <input type="text" className="form-control" id="genre" name="emsGenre" value={editMovieSeries.emsGenre} onChange={changeUpdateUser} placeholder="Eg: Science Fiction, Adventure, Intense, Action" autoComplete="off" required />
                         </div>
                         <div className="mb-3 col-6">
-                            <label htmlFor="year" className="form-label">Enter the year...</label>
-                            <input type="text" className="form-control" id="year" name="emsYear" value={editMovieSeries.emsYear} onChange={changeUpdateUser} placeholder="Eg: 2014" maxLength={4} autoComplete="off" required />
+                            <label htmlFor="releaseDate" className="form-label">Enter the release date...</label>
+                            <input type="date" className="form-control" id="releaseDate" name="emsReleaseDate" value={editMovieSeries.emsReleaseDate} onChange={changeUpdateUser} autoComplete="off" required />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="season" className="form-label">Enter the part/season, enter 0 if movie...</label>

@@ -12,7 +12,7 @@ const All = () => {
 
     return (
         <>
-            <SearchBar updateFilter={updateFilter} />
+            <SearchBar updateFilter={updateFilter} searchValue={filters.s} />
             <Filters updateFilter={updateFilter} resetFilters={resetFilters} />
             <Information />
             <FiltersMessage updateFilter={updateFilter} filters={filters} />

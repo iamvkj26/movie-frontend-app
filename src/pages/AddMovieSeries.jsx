@@ -4,7 +4,8 @@ import { postMovieSeries } from "../api/movieseries";
 
 const AddMovieSeries = () => {
 
-    const [addMovie, setAddMovie] = useState({ msName: "", msAbout: "", msPoster: "", msLink: "", msSeason: "", msFormat: "", msIndustry: "", msOrigin: "", msYear: "", msGenre: [], msRating: "", msUploadedBy: "" });
+    const [addMovie, setAddMovie] = useState({ msName: "", msAbout: "", msPoster: "", msLink: "", msSeason: "", msFormat: "", msIndustry: "", msOrigin: "", msReleaseDate: "", msGenre: [], msRating: "", msUploadedBy: "" });
+    console.log(addMovie.msReleaseDate);
 
     const [loading, setLoading] = useState(false);
 
@@ -18,7 +19,7 @@ const AddMovieSeries = () => {
                 setLoading(false);
                 setAddMovie({
                     msName: "", msAbout: "", msPoster: "", msLink: "", msSeason: "", msFormat: "",
-                    msIndustry: "", msOrigin: "", msYear: "", msGenre: [], msRating: "", msUploadedBy: ""
+                    msIndustry: "", msOrigin: "", msReleaseDate: "", msGenre: [], msRating: "", msUploadedBy: ""
                 });
             };
         } catch (error) {
@@ -38,9 +39,7 @@ const AddMovieSeries = () => {
         const { name, value } = e.target;
 
         if (name === "msSeason" && !/^\d{0,2}$/.test(value)) return;
-        if (name === "msYear" && !/^\d{0,4}$/.test(value)) return;
         if (name === "msRating" && !/^\d{0,1}(\.\d{0,1})?$/.test(value)) return;
-
         if (name === "msGenre") {
             setAddMovie((prev) => ({
                 ...prev, [name]: value.split(",").map((genre) => genre.trim())
@@ -107,8 +106,8 @@ const AddMovieSeries = () => {
                                 <input type="number" className="form-control" id="season" name="msSeason" value={addMovie.msSeason} onChange={onChangeAddMovie} placeholder="Eg: 0" maxLength={2} autoComplete="off" required />
                             </div>
                             <div className="mb-3 col-6">
-                                <label htmlFor="year" className="form-label">Enter the year...</label>
-                                <input type="text" className="form-control" id="year" name="msYear" value={addMovie.msYear} onChange={onChangeAddMovie} placeholder="Eg: 2014" maxLength={4} autoComplete="off" required />
+                                <label htmlFor="releaseDate" className="form-label">Enter the release date...</label>
+                                <input type="date" className="form-control" id="releaseDate" name="msReleaseDate" value={addMovie.msReleaseDate} onChange={onChangeAddMovie} autoComplete="off" required />
                             </div>
                             <div className="mb-3 col-6">
                                 <label htmlFor="rating" className="form-label">Enter the imdb rating...</label>

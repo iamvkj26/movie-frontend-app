@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import moment from "moment";
 import { toast } from "react-hot-toast";
 import { getMovieSeries, deleteMovieSeries } from "../api/movieseries";
 import EditMovieSeries from "./EditMovieSeries";
@@ -6,7 +7,7 @@ import EditMovieSeries from "./EditMovieSeries";
 const Card = ({ filters }) => {
 
     const [movieSeries, setMovieSeries] = useState([]);
-    const [editMovieSeries, setEditMoviSeries] = useState({ _id: "", emsName: "", emsAbout: "", emsPoster: "", emsLink: "", emsSeason: "", emsFormat: "", emsIndustry: "", emsOrigin: "", emsYear: "", emsGenre: [], emsRating: "", emsUploadedBy: "" });
+    const [editMovieSeries, setEditMoviSeries] = useState({ _id: "", emsName: "", emsAbout: "", emsPoster: "", emsLink: "", emsSeason: "", emsFormat: "", emsIndustry: "", emsOrigin: "", emsReleaseDate: "", emsGenre: [], emsRating: "", emsUploadedBy: "" });
     const [deleteMoviSeries, setDeleteMoviSeries] = useState(null);
 
     const refOpenCanvas = useRef(null);
@@ -22,7 +23,7 @@ const Card = ({ filters }) => {
 
     const updateMovieSeries = (currentMovieSeies) => {
         refOpenCanvas.current.click();
-        setEditMoviSeries({ _id: currentMovieSeies._id, emsName: currentMovieSeies.msName, emsAbout: currentMovieSeies.msAbout, emsPoster: currentMovieSeies.msPoster, emsLink: currentMovieSeies.msLink, emsSeason: currentMovieSeies.msSeason, emsFormat: currentMovieSeies.msFormat, emsIndustry: currentMovieSeies.msIndustry, emsOrigin: currentMovieSeies.msOrigin, emsYear: currentMovieSeies.msYear, emsGenre: currentMovieSeies.msGenre, emsRating: currentMovieSeies.msRating, emsUploadedBy: currentMovieSeies.msUploadedBy });
+        setEditMoviSeries({ _id: currentMovieSeies._id, emsName: currentMovieSeies.msName, emsAbout: currentMovieSeies.msAbout, emsPoster: currentMovieSeies.msPoster, emsLink: currentMovieSeies.msLink, emsSeason: currentMovieSeies.msSeason, emsFormat: currentMovieSeies.msFormat, emsIndustry: currentMovieSeies.msIndustry, emsOrigin: currentMovieSeies.msOrigin, emsReleaseDate: currentMovieSeies.msReleaseDate, emsGenre: currentMovieSeies.msGenre, emsRating: currentMovieSeies.msRating, emsUploadedBy: currentMovieSeies.msUploadedBy });
     };
 
     const handleDeleteMovieSeries = async (id) => {
@@ -50,7 +51,7 @@ const Card = ({ filters }) => {
     return (
         <>
             <div className="container">
-                {movieSeries &&
+                {movieSeries && Object.keys(movieSeries).length > 0 ? (
                     Object?.entries(movieSeries)?.reverse()?.map(([year, movies]) => (
                         <div key={year} className="mt-3">
                             <h4 className="">Year: {year}</h4>
@@ -66,6 +67,10 @@ const Card = ({ filters }) => {
                                             <div className="card-body">
                                                 <h5 className="card-title fw-medium"><strong>{element.msName}{" - "}{element.msSeason === 0 ? "(Part-1)" : element.msSeason ? `(Season ${element.msSeason})` : "Not Available"}</strong></h5>
                                                 <p className="card-text small clamp-text" title={element.msAbout}>{element.msAbout?.slice(0, 105)}...</p>
+                                                <p className="card-text small">
+                                                    <strong>Release Date:</strong>{" "}
+                                                    <i className="text-danger">{moment(element.msReleaseDate).format("DD-MMMM-YYYY")}</i>
+                                                </p>
                                                 <p className="card-text small">
                                                     <strong>F/I:</strong>{" "}
                                                     {element.msFormat}/{element.msIndustry}
@@ -109,12 +114,14 @@ const Card = ({ filters }) => {
                                 ))}
                             </div>
                         </div>
-                    ))}
+                    ))) : (
+                    <div className="text-center mt-5">
+                        <h5 className="text-muted">🎬 No Movie/Series Found</h5>
+                    </div>
+                )}
             </div>
 
             <EditMovieSeries refOpenCanvas={refOpenCanvas} editMovieSeries={editMovieSeries} setEditMoviSeries={setEditMoviSeries} handleGetMovieSeries={handleGetMovieSeries} />
-
-
         </>
     );
 };

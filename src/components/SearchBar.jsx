@@ -1,8 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-const SearchBar = ({ updateFilter }) => {
+const SearchBar = ({ updateFilter, searchValue }) => {
 
-    const [search, setSearch] = useState("");
+    const [search, setSearch] = useState(searchValue || "");
+
+    useEffect(() => {
+        setSearch(searchValue);
+    }, [searchValue]);
+
     const handleSearch = () => updateFilter("s", search);
 
     return (

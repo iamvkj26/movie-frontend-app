@@ -1,69 +1,74 @@
 {
-    "movies": [
-        {
-            "id": 1,
-            "title": "Inception",
-            "year": 2010,
-            "genre": "Sci-Fi",
-            "type": "Hollywood",
-            "poster": "https://image.tmdb.org/t/p/w500/qmDpIHrmpJINaRKAfWQfftjCdyi.jpg",
-            "rating": 8.8
-        },
-        {
-            "id": 2,
-            "title": "The Dark Knight",
-            "year": 2008,
-            "genre": "Action",
-            "type": "Hollywood",
-            "poster": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
-            "rating": 9.0
-        },
-        {
-            "id": 4,
-            "title": "Dangal",
-            "year": 2016,
-            "genre": "Drama",
-            "type": "Bollywood",
-            "poster": "https://image.tmdb.org/t/p/w500/p2lVAcPuRPSO8Al6hDDGw0OgMi8.jpg",
-            "rating": 8.3
-        }
-    ],
-    "tvShows": [
-        {
-            "id": 1,
-            "title": "Stranger Things",
-            "year": 2016,
-            "genre": "Mystery",
-            "type": "Hollywood",
-            "poster": "https://image.tmdb.org/t/p/w500/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg",
-            "rating": 8.7
-        },
-        {
-            "id": 2,
-            "title": "Breaking Bad",
-            "year": 2008,
-            "genre": "Crime",
-            "type": "Hollywood",
-            "poster": "https://image.tmdb.org/t/p/w500/ggFHVNu6YYI5L9pCfOacjizRGt.jpg",
-            "rating": 9.5
-        },
-        {
-            "id": 3,
-            "title": "Sacred Games",
-            "year": 2018,
-            "genre": "Thriller",
-            "type": "Bollywood",
-            "poster": "https://image.tmdb.org/t/p/w500/9Gz8dYv1HdVBIM3S8p85vGJ8gD2.jpg",
-            "rating": 8.6
-        },
-        {
-            "id": 4,
-            "title": "Mirzapur",
-            "year": 2018,
-            "genre": "Action",
-            "type": "Bollywood",
-            "poster": "https://image.tmdb.org/t/p/w500/mw2bGaPjcN4tpnA30UO4PtOD7uK.jpg",
-            "rating": 8.5
-        }
-    ]
+    "data": {
+        "2010": [
+            {
+                "_id": "6870b6f2bcf0e868382f79cb",
+                "msName": "Inception",
+                "msAbout": "A troubled thief who extracts secrets from people's dreams takes one last job: leading a dangerous mission to plant an idea in a target's subconscious.",
+                "msPoster": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQovCe0H45fWwAtV31ajOdXRPTxSsMQgPIQ3lcZX_mAW0jXV3kH",
+                "msLink": "https://www.netflix.com/in/title/70131314",
+                "msGenre": [
+                    "Action",
+                    "Sc-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msOrigin": "American",
+                "msSeason": 0,
+                "msReleaseDate": "2010-07-16",
+                "msRating": 8.8,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "2023": [
+            {
+                "_id": "6870b640bcf0e868382f79c1",
+                "msName": "Rana Naidu",
+                "msAbout": "Rana Naidu is the go-to problem solver for the rich and famous. But when his father is released from jail, the one mess he can't handle may be his own.",
+                "msPoster": "https://m.media-amazon.com/images/M/MV5BMjcxOTk2ZDAtZGNmMC00MTQzLWEwNzctZDMwNjc5OWE0NGNhXkEyXkFqcGc@._V1_FMjpg_UX1350_.jpg",
+                "msLink": "https://www.netflix.com/in/title/81313283",
+                "msGenre": [
+                    "Thriller"
+                ],
+                "msFormat": "Series",
+                "msIndustry": "Bollywood",
+                "msOrigin": "Indian",
+                "msSeason": 1,
+                "msReleaseDate": "2023-03-10",
+                "msRating": 7.1,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "2025": [
+            {
+                "_id": "6870b584bcf0e868382f79ba",
+                "msName": "Rana Naidu",
+                "msAbout": "Rana Naidu is an Indian action crime drama television series on Netflix directed by Karan Anshuman and Suparn Verma.",
+                "msPoster": "https://m.media-amazon.com/images/M/MV5BOGRjMmQzMjQtMzViYi00YjIxLTkwYWMtOTJjNDFhMzA3NzNmXkEyXkFqcGc@._V1_FMjpg_UY2048_.jpg",
+                "msLink": "https://www.netflix.com/in/title/81313283",
+                "msGenre": [
+                    "Thriller"
+                ],
+                "msFormat": "Series",
+                "msIndustry": "Bollywood",
+                "msOrigin": "Indian",
+                "msSeason": 2,
+                "msReleaseDate": "2025-06-13",
+                "msRating": 7.8,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ]
+    },
+    "totalYears": 3,
+    "totalData": 3,
+    "message": "The MovieSeries fetched, sorted A-Z."
 }
