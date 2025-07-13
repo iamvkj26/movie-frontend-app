@@ -4,7 +4,7 @@ import { postMovieSeries } from "../api/movieseries";
 
 const AddMovieSeries = () => {
 
-    const [addMovie, setAddMovie] = useState({ msName: "", msAbout: "", msPoster: "", msLink: "", msSeason: "", msFormat: "", msIndustry: "", msOrigin: "", msReleaseDate: "", msGenre: [], msRating: "", msUploadedBy: "" });
+    const [addMovie, setAddMovie] = useState({ msName: "", msAbout: "", msPoster: "", msLink: "", msSeason: "", msFormat: "", msIndustry: "", msReleaseDate: "", msGenre: [], msRating: "", msUploadedBy: "" });
     console.log(addMovie.msReleaseDate);
 
     const [loading, setLoading] = useState(false);
@@ -19,7 +19,7 @@ const AddMovieSeries = () => {
                 setLoading(false);
                 setAddMovie({
                     msName: "", msAbout: "", msPoster: "", msLink: "", msSeason: "", msFormat: "",
-                    msIndustry: "", msOrigin: "", msReleaseDate: "", msGenre: [], msRating: "", msUploadedBy: ""
+                    msIndustry: "", msReleaseDate: "", msGenre: [], msRating: "", msUploadedBy: ""
                 });
             };
         } catch (error) {
@@ -38,7 +38,7 @@ const AddMovieSeries = () => {
     const onChangeAddMovie = (e) => {
         const { name, value } = e.target;
 
-        if (name === "msSeason" && !/^\d{0,2}$/.test(value)) return;
+        if (name === "msSeason" && !/^\d{0,1}(\.\d{0,1})?$/.test(value)) return;
         if (name === "msRating" && !/^\d{0,1}(\.\d{0,1})?$/.test(value)) return;
         if (name === "msGenre") {
             setAddMovie((prev) => ({
@@ -93,17 +93,13 @@ const AddMovieSeries = () => {
                                     <option value="Other">Other</option>
                                 </select>
                             </div>
-                            <div className="mb-3 col-6">
-                                <label htmlFor="origin" className="form-label">Enter the origin...</label>
-                                <input type="text" className="form-control" id="origin" name="msOrigin" value={addMovie.msOrigin} onChange={onChangeAddMovie} placeholder="Eg: British-American" autoComplete="off" required />
-                            </div>
-                            <div className="mb-3 col-6">
+                            <div className="mb-3">
                                 <label htmlFor="genre" className="form-label">Enter the genre (comma-separated)...</label>
                                 <input type="text" className="form-control" id="genre" name="msGenre" value={addMovie.msGenre} onChange={onChangeAddMovie} placeholder="Eg: Science Fiction, Adventure, Intense, Action" autoComplete="off" required />
                             </div>
                             <div className="mb-3 col-6">
                                 <label htmlFor="season" className="form-label">Enter the part/season, enter 0 if movie...</label>
-                                <input type="number" className="form-control" id="season" name="msSeason" value={addMovie.msSeason} onChange={onChangeAddMovie} placeholder="Eg: 0" maxLength={2} autoComplete="off" required />
+                                <input type="text" className="form-control" id="season" name="msSeason" value={addMovie.msSeason} onChange={onChangeAddMovie} placeholder="Eg: 0" maxLength={3} autoComplete="off" required />
                             </div>
                             <div className="mb-3 col-6">
                                 <label htmlFor="releaseDate" className="form-label">Enter the release date...</label>

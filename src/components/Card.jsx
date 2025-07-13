@@ -7,7 +7,7 @@ import EditMovieSeries from "./EditMovieSeries";
 const Card = ({ filters }) => {
 
     const [movieSeries, setMovieSeries] = useState([]);
-    const [editMovieSeries, setEditMoviSeries] = useState({ _id: "", emsName: "", emsAbout: "", emsPoster: "", emsLink: "", emsSeason: "", emsFormat: "", emsIndustry: "", emsOrigin: "", emsReleaseDate: "", emsGenre: [], emsRating: "", emsUploadedBy: "" });
+    const [editMovieSeries, setEditMoviSeries] = useState({ _id: "", emsName: "", emsAbout: "", emsPoster: "", emsLink: "", emsSeason: "", emsFormat: "", emsIndustry: "", emsReleaseDate: "", emsGenre: [], emsRating: "", emsUploadedBy: "" });
     const [deleteMoviSeries, setDeleteMoviSeries] = useState(null);
 
     const refOpenCanvas = useRef(null);
@@ -23,7 +23,7 @@ const Card = ({ filters }) => {
 
     const updateMovieSeries = (currentMovieSeies) => {
         refOpenCanvas.current.click();
-        setEditMoviSeries({ _id: currentMovieSeies._id, emsName: currentMovieSeies.msName, emsAbout: currentMovieSeies.msAbout, emsPoster: currentMovieSeies.msPoster, emsLink: currentMovieSeies.msLink, emsSeason: currentMovieSeies.msSeason, emsFormat: currentMovieSeies.msFormat, emsIndustry: currentMovieSeies.msIndustry, emsOrigin: currentMovieSeies.msOrigin, emsReleaseDate: currentMovieSeies.msReleaseDate, emsGenre: currentMovieSeies.msGenre, emsRating: currentMovieSeies.msRating, emsUploadedBy: currentMovieSeies.msUploadedBy });
+        setEditMoviSeries({ _id: currentMovieSeies._id, emsName: currentMovieSeies.msName, emsAbout: currentMovieSeies.msAbout, emsPoster: currentMovieSeies.msPoster, emsLink: currentMovieSeies.msLink, emsSeason: currentMovieSeies.msSeason, emsFormat: currentMovieSeies.msFormat, emsIndustry: currentMovieSeies.msIndustry, emsReleaseDate: currentMovieSeies.msReleaseDate, emsGenre: currentMovieSeies.msGenre, emsRating: currentMovieSeies.msRating, emsUploadedBy: currentMovieSeies.msUploadedBy });
     };
 
     const handleDeleteMovieSeries = async (id) => {
@@ -58,14 +58,14 @@ const Card = ({ filters }) => {
                             <hr />
                             <div className="row">
                                 {movies?.map((element) => (
-                                    <div className="col-md-3 mt-3" key={element._id}>
+                                    <div className="col-6 col-sm-6 col-md-3 mt-3" key={element._id}>
                                         <div className="card position-relative">
                                             <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-black">
                                                 <i className="fa-solid fa-star"></i> {element.msRating}
                                             </span>
                                             <img src={element.msPoster} className="card-img-top" alt="poster" />
                                             <div className="card-body">
-                                                <h5 className="card-title fw-medium"><strong>{element.msName}{" - "}{element.msSeason === 0 ? "(Part-1)" : element.msSeason ? `(Season ${element.msSeason})` : "Not Available"}</strong></h5>
+                                                <h5 className="card-title fw-medium"><strong>{element.msName}{element.msSeason === 0 ? "" : element.msSeason ? ` - (Season ${element.msSeason})` : "Not Available"}</strong></h5>
                                                 <p className="card-text small clamp-text" title={element.msAbout}>{element.msAbout?.slice(0, 105)}...</p>
                                                 <p className="card-text small">
                                                     <strong>Release Date:</strong>{" "}
@@ -74,9 +74,6 @@ const Card = ({ filters }) => {
                                                 <p className="card-text small">
                                                     <strong>F/I:</strong>{" "}
                                                     {element.msFormat}/{element.msIndustry}
-                                                </p>
-                                                <p className="card-text small">
-                                                    <strong>Origin:</strong>{" "}{element.msOrigin}
                                                 </p>
                                                 <p className="card-text text-center text-danger">
                                                     <strong className="text-light">Genre:</strong>

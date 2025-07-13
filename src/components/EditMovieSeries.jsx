@@ -11,7 +11,7 @@ const EditMovieSeries = ({ refOpenCanvas, editMovieSeries, setEditMoviSeries, ha
         e.preventDefault();
         setLoading(true);
         try {
-            const response = await updateMovieSeries(editMovieSeries._id, editMovieSeries.emsName, editMovieSeries.emsAbout, editMovieSeries.emsPoster, editMovieSeries.emsLink, editMovieSeries.emsSeason, editMovieSeries.emsFormat, editMovieSeries.emsIndustry, editMovieSeries.emsOrigin, editMovieSeries.emsReleaseDate, editMovieSeries.emsGenre, editMovieSeries.emsRating, editMovieSeries.emsUploadedBy);
+            const response = await updateMovieSeries(editMovieSeries._id, editMovieSeries.emsName, editMovieSeries.emsAbout, editMovieSeries.emsPoster, editMovieSeries.emsLink, editMovieSeries.emsSeason, editMovieSeries.emsFormat, editMovieSeries.emsIndustry, editMovieSeries.emsReleaseDate, editMovieSeries.emsGenre, editMovieSeries.emsRating, editMovieSeries.emsUploadedBy);
             if (response.status === 200) {
                 toast.success(response.data.message);
                 setLoading(false);
@@ -78,10 +78,6 @@ const EditMovieSeries = ({ refOpenCanvas, editMovieSeries, setEditMoviSeries, ha
                                 <option value="Hollywood">Hollywood</option>
                                 <option value="Other">Other</option>
                             </select>
-                        </div>
-                        <div className="mb-3">
-                            <label htmlFor="origin" className="form-label">Enter the origin...</label>
-                            <input type="text" className="form-control" id="origin" name="emsOrigin" value={editMovieSeries.emsOrigin} onChange={changeUpdateUser} placeholder="Eg: American-British" autoComplete="off" required />
                         </div>
                         <div className="mb-3 col-6">
                             <label htmlFor="genre" className="form-label">Enter the genre...</label>

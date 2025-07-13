@@ -28,9 +28,9 @@ export const getMovieSeries = async ({ s = "", f = "", i = "", g = "", w = "" })
     };
 };
 
-export const updateMovieSeries = async (_id, msName, msAbout, msPoster, msLink, msSeason, msFormat, msIndustry, msOrigin, msReleaseDate, msGenre, msRating, msUploadedBy) => {
+export const updateMovieSeries = async (_id, msName, msAbout, msPoster, msLink, msSeason, msFormat, msIndustry, msReleaseDate, msGenre, msRating, msUploadedBy) => {
     try {
-        const response = await api.patch(`/update/${_id}`, { msName, msAbout, msPoster, msLink, msSeason, msFormat, msIndustry, msOrigin, msReleaseDate, msGenre, msRating, msUploadedBy });
+        const response = await api.patch(`/update/${_id}`, { msName, msAbout, msPoster, msLink, msSeason, msFormat, msIndustry, msReleaseDate, msGenre, msRating, msUploadedBy });
         return response;
     } catch (error) {
         console.error(error.message);
