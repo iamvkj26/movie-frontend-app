@@ -58,7 +58,7 @@ const Card = ({ filters }) => {
                             <hr />
                             <div className="row">
                                 {movies?.map((element) => (
-                                    <div className="col-6 col-sm-6 col-md-3 mt-3" key={element._id}>
+                                    <div className="col-md-3 mt-3" key={element._id}>
                                         <div className="card position-relative">
                                             <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-black">
                                                 <i className="fa-solid fa-star"></i> {element.msRating}

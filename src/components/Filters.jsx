@@ -30,7 +30,7 @@ const Filters = ({ updateFilter, resetFilters }) => {
                             </li>
                             <li className="nav-item dropdown">
                                 <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i className="fa-solid fa-burst text-light me-1"></i> Genere
+                                    <i className="fa-solid fa-burst text-secondary me-1"></i> Genere
                                 </Link>
                                 <ul className="dropdown-menu">
                                     <li><Link className="dropdown-item" onClick={() => updateFilter("g", "Action")}>🎬 Action</Link></li>
@@ -54,7 +54,7 @@ const Filters = ({ updateFilter, resetFilters }) => {
                             </li>
                         </ul>
                     </div>
-                    <Link className="nav-link" onClick={handleReset}><i className="fa-solid fa-rotate-left text-secondary me-1"></i> Clear filters</Link>
+                    <Link className="nav-link" onClick={handleReset}><i className="fa-solid fa-rotate-left me-1"></i> Clear filters</Link>
                 </div>
             </nav>
         </>

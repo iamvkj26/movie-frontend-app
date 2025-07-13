@@ -5,7 +5,6 @@ import { postMovieSeries } from "../api/movieseries";
 const AddMovieSeries = () => {
 
     const [addMovie, setAddMovie] = useState({ msName: "", msAbout: "", msPoster: "", msLink: "", msSeason: "", msFormat: "", msIndustry: "", msReleaseDate: "", msGenre: [], msRating: "", msUploadedBy: "" });
-    console.log(addMovie.msReleaseDate);
 
     const [loading, setLoading] = useState(false);
 
