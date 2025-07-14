@@ -38,8 +38,7 @@ body {
 }
 
 .search-background {
-    background-color: yellow;
-    height: 175px;
+    height: 150px;
 }
 
 .information {
@@ -91,6 +90,10 @@ body {
     transform: translateY(0);
 }
 
+.top-n10 {
+    top: -10px !important;
+}
+
 .card-img-top {
     height: 300px;
     object-fit: fill;
@@ -113,4 +116,9 @@ p {
 .nav-link:hover {
     background-color: black !important;
     color: white !important;
+}
+
+.btn-watch {
+    border: none;
+    background: linear-gradient(to right, #ffc107 0%, #000000 60%);
 }

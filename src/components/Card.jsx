@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import moment from "moment";
+import { Link } from "react-router";
 import { toast } from "react-hot-toast";
 import { getMovieSeries, deleteMovieSeries } from "../api/movieseries";
 import EditMovieSeries from "./EditMovieSeries";
@@ -60,7 +61,7 @@ const Card = ({ filters }) => {
                                 {movies?.map((element) => (
                                     <div className="col-md-3 mt-3" key={element._id}>
                                         <div className="card position-relative">
-                                            <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-black">
+                                            <span className="position-absolute top-n10 end-0 badge rounded-pill bg-warning text-black">
                                                 <i className="fa-solid fa-star"></i> {element.msRating}
                                             </span>
                                             <img src={element.msPoster} className="card-img-top" alt="poster" />
@@ -81,25 +82,28 @@ const Card = ({ filters }) => {
                                                     <i className="fst-italic">{element.msGenre?.join(", ")}</i>
                                                 </p>
                                             </div>
-                                            <div className="d-flex justify-content-end gap-2 card-actions me-2 mb-2">
-                                                <span className="badge text-141414">
-                                                    <i className="fa-solid fa-pen-to-square cp" onClick={() => { updateMovieSeries(element) }}></i>
-                                                </span>
-                                                {deleteMoviSeries === element._id ? (
-                                                    <div className="d-flex gap-2">
-                                                        <span className="badge bg-warning text-dark cp">Confirm delete?</span>
-                                                        <span className="badge bg-success">
-                                                            <i className="fa-solid fa-check cp" onClick={() => handleDeleteMovieSeries(element._id)}></i>
-                                                        </span>
-                                                        <span className="badge bg-secondary">
-                                                            <i className="fa-solid fa-xmark cp" onClick={() => setDeleteMoviSeries(null)}></i>
-                                                        </span>
-                                                    </div>
-                                                ) : (
+                                            <div className="d-flex justify-content-between align-items-center px-2 mb-2">
+                                                <Link className="d-flex btn btn-watch text-decoration-none gap-1" to={element.msLink} target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-play"></i></Link>
+                                                <div className="d-flex gap-2 card-actions">
                                                     <span className="badge text-141414">
-                                                        <i className="fa-solid fa-trash cp" onClick={() => setDeleteMoviSeries(element._id)}></i>
+                                                        <i className="fa-solid fa-pen-to-square cp" onClick={() => { updateMovieSeries(element) }}></i>
                                                     </span>
-                                                )}
+                                                    {deleteMoviSeries === element._id ? (
+                                                        <div className="d-flex gap-2">
+                                                            <span className="badge bg-warning text-dark cp">Confirm delete?</span>
+                                                            <span className="badge bg-success">
+                                                                <i className="fa-solid fa-check cp" onClick={() => handleDeleteMovieSeries(element._id)}></i>
+                                                            </span>
+                                                            <span className="badge bg-secondary">
+                                                                <i className="fa-solid fa-xmark cp" onClick={() => setDeleteMoviSeries(null)}></i>
+                                                            </span>
+                                                        </div>
+                                                    ) : (
+                                                        <span className="badge text-141414">
+                                                            <i className="fa-solid fa-trash cp" onClick={() => setDeleteMoviSeries(element._id)}></i>
+                                                        </span>
+                                                    )}
+                                                </div>
                                             </div>
                                             <div className="card-footer text-end">
                                                 <figcaption className="blockquote-footer mt-1">

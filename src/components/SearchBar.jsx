@@ -12,10 +12,10 @@ const SearchBar = ({ updateFilter, searchValue }) => {
 
     return (
         <>
-            <nav className="navbar navbar-expand-lg search-background">
+            <nav className="navbar navbar-expand-lg bg-body-tertiary search-background">
                 <div className="container-fluid">
                     <div className="mx-auto">
-                        <div className="h4 text-black mb-3">Search for movies, web series here...</div>
+                        <div className="h4 mb-3">Search for movies, web series here...</div>
                         <div className="d-flex">
                             <input type="search" className="form-control me-2" placeholder="Search the movies, web series..." value={search} onChange={(e) => setSearch(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") handleSearch() }} />
                             <button className="btn btn-dark btn-212529" type="button" onClick={handleSearch}>
