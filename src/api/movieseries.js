@@ -47,3 +47,13 @@ export const deleteMovieSeries = async (id) => {
         throw error;
     };
 };
+
+export const watchedMovieSeries = async (id) => {
+    try {
+        const response = await api.patch(`/watched/${id}`);
+        return response;
+    } catch (error) {
+        console.error(error.message);
+        throw error;
+    };
+};

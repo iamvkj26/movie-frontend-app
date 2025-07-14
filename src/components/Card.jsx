@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import moment from "moment";
 import { Link } from "react-router";
 import { toast } from "react-hot-toast";
-import { getMovieSeries, deleteMovieSeries } from "../api/movieseries";
+import { getMovieSeries, deleteMovieSeries, watchedMovieSeries } from "../api/movieseries";
 import EditMovieSeries from "./EditMovieSeries";
 
 const Card = ({ filters }) => {
@@ -30,6 +30,23 @@ const Card = ({ filters }) => {
     const handleDeleteMovieSeries = async (id) => {
         try {
             const response = await deleteMovieSeries(id);
+            if (response.status === 200) {
+                toast.success(response.data.message);
+                setDeleteMoviSeries(null);
+                handleGetMovieSeries();
+            };
+        } catch (error) {
+            if (error.status === 400) {
+                toast.error("Server cannot or will not process request right now, try again after sometimes");
+            } else {
+                toast.error(error.message);
+            };
+        };
+    };
+
+    const handleWatchedMovieSeries = async (id) => {
+        try {
+            const response = await watchedMovieSeries(id);
             if (response.status === 200) {
                 toast.success(response.data.message);
                 setDeleteMoviSeries(null);
@@ -105,8 +122,14 @@ const Card = ({ filters }) => {
                                                     )}
                                                 </div>
                                             </div>
-                                            <div className="card-footer text-end">
-                                                <figcaption className="blockquote-footer mt-1">
+                                            <div className="card-footer d-flex justify-content-between align-items-center py-2">
+                                                <div className="form-check">
+                                                    <input className="form-check-input" type="checkbox" checked={element.msWatched} onChange={() => handleWatchedMovieSeries(element._id)} />
+                                                    <label className="form-check-label text-secondary small" title={element.msWatchedAt ? `Watched on: ${moment(element.msWatchedAt).format("DD MMMM YYYY hh:mm A")}` : ""}>
+                                                        {element.msWatched ? "Watched" : "Mark as Watched"}
+                                                    </label>
+                                                </div>
+                                                <figcaption className="blockquote-footer mt-2">
                                                     {element.msUploadedBy}
                                                 </figcaption>
                                             </div>
