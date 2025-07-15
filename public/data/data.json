@@ -1,23 +1,998 @@
 {
     "data": {
-        "2010": [
+        "1999": [
             {
-                "_id": "6870b6f2bcf0e868382f79cb",
-                "msName": "Inception",
-                "msAbout": "A troubled thief who extracts secrets from people's dreams takes one last job: leading a dangerous mission to plant an idea in a target's subconscious.",
-                "msPoster": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQovCe0H45fWwAtV31ajOdXRPTxSsMQgPIQ3lcZX_mAW0jXV3kH",
-                "msLink": "https://www.netflix.com/in/title/70131314",
+                "_id": "687374150ca443ea99fbc8b7",
+                "msName": "Fight Club",
+                "msAbout": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/a26cQPRhJPX6GbWfQbvZdrrp9j9.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/fight-club/1260080658",
                 "msGenre": [
-                    "Action",
-                    "Sc-Fi"
+                    "Drama",
+                    "Thriller"
                 ],
                 "msFormat": "Movie",
                 "msIndustry": "Hollywood",
-                "msOrigin": "American",
+                "msSeason": 0,
+                "msReleaseDate": "1999-10-15",
+                "msRating": 8.8,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "68737b550ca443ea99fbc8e4",
+                "msName": "The Matrix",
+                "msAbout": "Set in the 22nd century, The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/p96dm7sCMn4VYAStA6siNz30G1r.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/the-matrix/1971000620",
+                "msGenre": [
+                    "Action",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "1999-03-31",
+                "msRating": 8.7,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "2002": [
+            {
+                "_id": "687257d00037d6197417eed6",
+                "msName": "The Ring",
+                "msAbout": "Rachel Keller is a journalist investigating a videotape that may have killed four teenagers. There is an urban legend about this tape: the viewer will die seven days after watching it. Rachel tracks down the video... and watches it. Now she has just seven days to unravel the mystery of the Ring so she can save herself and her son.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/gghD2ZIPjMzLnnBuT3AZQGYnIW9.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/the-ring/1971001499",
+                "msGenre": [
+                    "Horror",
+                    "Mystery"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2002-10-18",
+                "msRating": 7.1,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": true,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "2003": [
+            {
+                "_id": "68737c4b0ca443ea99fbc8e7",
+                "msName": "The Matrix Reloaded",
+                "msAbout": "Six months after the events depicted in The Matrix, Neo has proved to be a good omen for the free humans, as more and more humans are being freed from the matrix and brought to Zion, the one and only stronghold of the Resistance. Neo himself has discovered his superpowers including super speed, ability to see the codes of the things inside the matrix and a certain degree of pre-cognition. But a nasty piece of news hits the human resistance: 250,000 machine sentinels are digging to Zion and would reach them in 72 hours. As Zion prepares for the ultimate war, Neo, Morpheus and Trinity are advised by the Oracle to find the Keymaker who would help them reach the Source. Meanwhile Neo's recurrent dreams depicting Trinity's death have got him worried and as if it was not enough, Agent Smith has somehow escaped deletion, has become more powerful than before and has fixed Neo as his next target.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/9TGHDvWrqKBzwDxDodHYXEmOE6J.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/the-matrix-reloaded/1971000535",
+                "msGenre": [
+                    "Adventure",
+                    "Action",
+                    "Thriller",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2003-05-15",
+                "msRating": 7.2,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "68737cdc0ca443ea99fbc8ea",
+                "msName": "The Matrix Revolutions",
+                "msAbout": "The human city of Zion defends itself against the massive invasion of the machines as Neo fights to end the war at another front while also opposing the rogue Agent Smith.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/t1wm4PgOQ8e4z1C6tk1yDNrps4T.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/the-matrix-revolutions/1971000534",
+                "msGenre": [
+                    "Adventure",
+                    "Action",
+                    "Thriller",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2003-11-05",
+                "msRating": 6.7,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "2004": [
+            {
+                "_id": "687379090ca443ea99fbc8d6",
+                "msName": "The Girl Next Door",
+                "msAbout": "Exceptionally ambitious high schooler Matthew has aspirations for a career in politics when he falls in love with his gorgeous 19-year-old neighbor, Danielle. But Matthew's bright future is jeopardized when he finds Danielle was once a porn star. As Danielle's past catches up with her, Matthew's love for her forces him to re-evaluate his goals.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/5mVyFHSY2rSsNgD4NfEwV82HigU.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/the-girl-next-door/1260106714",
+                "msGenre": [
+                    "Comedy",
+                    "Romance"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2004-04-09",
+                "msRating": 6.7,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "2009": [
+            {
+                "_id": "68764d91273f03479105574f",
+                "msName": "13B",
+                "msAbout": "Manohar and his family move into a new apartment on the 13th floor. However, their peace is disturbed by a spirit that uses the television set as a medium to communicate with them.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/3rt6upSI2RHV3IAFg1fW4DUNuuk.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/13-padamoodu/1000055660",
+                "msGenre": [
+                    "Mystery",
+                    "Horror"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Bollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2009-03-06",
+                "msRating": 7.4,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": true,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "6876485b273f034791055733",
+                "msName": "Love Aaj Kal",
+                "msAbout": "Two lovers break up after they realize that their career goals are pulling them in different directions.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/36hkylLil37eF45uIeSTe31NRVq.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/love-aaj-kal/1971011094",
+                "msGenre": [
+                    "Comedy",
+                    "Drama",
+                    "Romance"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Bollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2009-07-31",
+                "msRating": 6.8,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "2010": [
+            {
+                "_id": "687254ca0037d6197417eec1",
+                "msName": "Inception",
+                "msAbout": "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/inception/1971000530",
+                "msGenre": [
+                    "Action",
+                    "Si-Fi",
+                    "Adventure"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
                 "msSeason": 0,
                 "msReleaseDate": "2010-07-16",
                 "msRating": 8.8,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": true,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687256970037d6197417eed3",
+                "msName": "Shutter Island",
+                "msAbout": "World War II soldier-turned-U.S. Marshal Teddy Daniels investigates the disappearance of a patient from a hospital for the criminally insane, but his efforts are compromised by troubling visions and a mysterious doctor.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/nrmXQ0zcZUL8jFLrakWc90IR8z9.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/shutter-island/1971001342",
+                "msGenre": [
+                    "Drama",
+                    "Thriller",
+                    "Mystery"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2010-02-19",
+                "msRating": 8.2,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "2012": [
+            {
+                "_id": "687254400037d6197417eebe",
+                "msName": "Battleship",
+                "msAbout": "When mankind beams a radio signal into space, a reply comes from ‘Planet G’, in the form of several alien crafts that splash down in the waters off Hawaii. Lieutenant Alex Hopper is a weapons officer assigned to the USS John Paul Jones, part of an international naval coalition which becomes the world's last hope for survival as they engage the hostile alien force of unimaginable strength. While taking on the invaders, Hopper must also try to live up to the potential that his brother, and his fiancée's father—an Admiral—expect of him.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/9b0Im7SfedHiajTwzSL9zGyBI7M.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/battleship/1971000735",
+                "msGenre": [
+                    "Thriller",
+                    "Action",
+                    "Adventure",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2012-04-13",
+                "msRating": 5.8,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "68737f0a0ca443ea99fbc8f2",
+                "msName": "Prometheus",
+                "msAbout": "A team of explorers discover a clue to the origins of mankind on Earth, leading them on a journey to the darkest corners of the universe. There, they must fight a terrifying battle to save the future of the human race.",
+                "msPoster": "https://image.tmdb.org/t/p/original/m7nZCtHJyDLncBUarfM5h5mrppx.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/prometheus/1770000300",
+                "msGenre": [
+                    "Adventure",
+                    "Mystery",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2012-06-08",
+                "msRating": 7,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "2013": [
+            {
+                "_id": "68720e047597f59af2b9cd8c",
+                "msName": "Don Jon",
+                "msAbout": "A New Jersey guy dedicated to his family, friends, and church, develops unrealistic expectations from watching porn and works to find happiness and intimacy with his potential true love.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/8h3UJbJzAoMB916asMdvUiy0W0Y.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/don-jon/1971311490",
+                "msGenre": [
+                    "Romance",
+                    "Comedy",
+                    "Drama"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2013-10-19",
+                "msRating": 6.5,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "6876280c273f034791055717",
+                "msName": "Gravity",
+                "msAbout": "Dr. Ryan Stone, a brilliant medical engineer, is on her first Shuttle mission, with veteran astronaut Matt Kowalsky in command of his last flight before retiring. But on a seemingly routine spacewalk, disaster strikes. The Shuttle is destroyed, leaving Stone and Kowalsky completely alone-tethered to nothing but each other and spiraling out into the blackness of space. The deafening silence tells them they have lost any link to Earth and any chance for rescue. As fear turns to panic, every gulp of air eats away at what little oxygen is left. But the only way home may be to go further out into the terrifying expanse of space.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/kZ2nZw8D681aphje8NJi8EfbL1U.jpg",
+                "msLink": "https://www.primevideo.com/detail/Gravity/0MW3B1AN9EBQN5F5825WH831MA",
+                "msGenre": [
+                    "Si-Fi",
+                    "Thriller",
+                    "Drama"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2013-10-04",
+                "msRating": 7.7,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "68764f6e273f034791055758",
+                "msName": "The Attacks Of 26/11",
+                "msAbout": "The real-life story of eight Pakistani terrorists, who sail to Mumbai and wage war on the populace for the next 24 hours.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/peDKpbfsQ4YdWjUllEQrUbGJLQW.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/the-attacks-of-26-11/1971011085",
+                "msGenre": [
+                    "Action",
+                    "Crime",
+                    "History",
+                    "Thriller"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Bollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2013-03-01",
+                "msRating": 6.9,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "2014": [
+            {
+                "_id": "68764cc9273f03479105574a",
+                "msName": "Interstellar",
+                "msAbout": "A team of explorers travel beyond this galaxy through a newly discovered wormhole to discover whether mankind has a future among the stars.",
+                "msPoster": "https://image.tmdb.org/t/p/original/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+                "msLink": "https://www.primevideo.com/region/eu/detail/Interstellar/0PUNMGZEWOMYFKR1XIGOLTL2YM",
+                "msGenre": [
+                    "Si-Fi",
+                    "Adventure",
+                    "Intense",
+                    "Action"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2014-11-07",
+                "msRating": 8.7,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": true,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "68724edd0037d6197417ee79",
+                "msName": "True Detective",
+                "msAbout": "An American anthology police detective series utilizing multiple timelines in which investigations seem to unearth personal and professional secrets of those involved, both within or outside the law.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/mV16EBXQ6kDWpj31P6BEhmzTTkd.jpg",
+                "msLink": "https://www.hotstar.com/in/shows/true-detective/1971002860",
+                "msGenre": [
+                    "Crime",
+                    "Mystery",
+                    "Thriller",
+                    "Detective"
+                ],
+                "msFormat": "Series",
+                "msIndustry": "Hollywood",
+                "msSeason": 1,
+                "msReleaseDate": "2014-01-12",
+                "msRating": 8.9,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "2015": [
+            {
+                "_id": "6872088e7597f59af2b9cd74",
+                "msName": "Baahubali: The Beginning",
+                "msAbout": "The young Shivudu is left as a foundling in a small village by his mother. By the time he’s grown up, it has become apparent that he possesses exceptional gifts. He meets the beautiful warrior princess Avanthika and learns that her queen has been held captive for the last 25 years. Shividu sets off to rescue her, discovering his own origins in the process.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/9BAjt8nSSms62uOVYn1t3C3dVto.jpg",
+                "msLink": "https://www.netflix.com/in/title/80204117",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Fantasy",
+                    "Drama"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Other",
+                "msSeason": 0,
+                "msReleaseDate": "2015-07-10",
+                "msRating": 8,
                 "msUploadedBy": "Trisha Sharma",
+                "msWatched": true,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "6876241a273f0347910556fd",
+                "msName": "Jurassic World",
+                "msAbout": "Twenty-two years after the events of Jurassic Park, Isla Nublar now features a fully functioning dinosaur theme park, Jurassic World, as originally envisioned by John Hammond.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/rhr4y79GpxQF9IsfJItRXVaoGs4.jpg",
+                "msLink": "https://www.primevideo.com/detail/Jurassic-World/0KEKSTSQLSZRHAQQDLF83OP4AO",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Thriller",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2015-06-12",
+                "msRating": 6.9,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "6873798b0ca443ea99fbc8d9",
+                "msName": "The Boy Next Door",
+                "msAbout": "A recently cheated on married woman falls for a younger man who has moved in next door, but their torrid affair soon takes a dangerous turn.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/gicmSeLG6Uh7BF1r1mxZHUQ8r26.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/the-boy-next-door/1971000636",
+                "msGenre": [
+                    "Thriller"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2015-01-23",
+                "msRating": 4.7,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687256020037d6197417eecd",
+                "msName": "The Martian",
+                "msAbout": "During a manned mission to Mars, Astronaut Mark Watney is presumed dead after a fierce storm and left behind by his crew. But Watney has survived and finds himself stranded and alone on the hostile planet. With only meager supplies, he must draw upon his ingenuity, wit and spirit to subsist and find a way to signal to Earth that he is alive.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/5l6LzyRpinZ74GTiM9qdHdg5hYT.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/the-martian/1770002321",
+                "msGenre": [
+                    "Drama",
+                    "Adventure",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2015-10-02",
+                "msRating": 8,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "2016": [
+            {
+                "_id": "6876498c273f034791055739",
+                "msName": "Independence Day: Resurgence",
+                "msAbout": "We always knew they were coming back. Using recovered alien technology, the nations of Earth have collaborated on an immense defense program to protect the planet. But nothing can prepare us for the aliens’ advanced and unprecedented force. Only the ingenuity of a few brave men and women can bring our world back from the brink of extinction.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/9S50foUIYGwiNPWOxi1WJF6IPwI.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/independence-day-resurgence/1770015385",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2016-06-24",
+                "msRating": 5.2,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "68764b7c273f034791055747",
+                "msName": "Neerja",
+                "msAbout": "Neerja is a portrayal on the life of the courageous Neerja Bhanot, who sacrificed her life while protecting the lives of 359 passengers on the Pan Am flight 73 in 1986. The flight was hijacked by a terrorist organization.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/alDRJWHI1TfqB9ev6cMbVE5P92x.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/neerja/1000090704",
+                "msGenre": [
+                    "Drama",
+                    "Thriller",
+                    "Biopic"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Bollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2016-02-19",
+                "msRating": 7.6,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "2017": [
+            {
+                "_id": "68737fff0ca443ea99fbc8f5",
+                "msName": "Alien: Covenant",
+                "msAbout": "The crew of the colony ship Covenant, bound for a remote planet on the far side of the galaxy, discovers what they think is an uncharted paradise but is actually a dark, dangerous world.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/sRITPlHYjHiOLQXr0sFxVz5TPmj.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/alien-covenant/1770016999",
+                "msGenre": [
+                    "Horror",
+                    "Thriller",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2017-05-19",
+                "msRating": 6.4,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "6872098d7597f59af2b9cd7c",
+                "msName": "Baahubali: The Conclusion",
+                "msAbout": "When Mahendra, the son of Bāhubali, learns about his heritage, he begins to look for answers. His story is juxtaposed with past events that unfolded in the Mahishmati Kingdom.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/xQ22LOWSkClP3maYhR9nZH0dnWM.jpg",
+                "msLink": "https://www.netflix.com/in/title/80203996",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Fantasy"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Other",
+                "msSeason": 0,
+                "msReleaseDate": "2017-04-28",
+                "msRating": 8.2,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": true,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "68764ad1273f034791055740",
+                "msName": "Dunkirk",
+                "msAbout": "The story of the miraculous evacuation of Allied soldiers from Belgium, Britain, Canada and France, who were cut off and surrounded by the German army from the beaches and harbour of Dunkirk between May 26th and June 4th 1940 during World War II.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/ebSnODDg9lbsMIaWg2uAbjn7TO5.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/dunkirk/1971000528",
+                "msGenre": [
+                    "Action",
+                    "War",
+                    "Survival",
+                    "Military"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2017-07-21",
+                "msRating": 7.8,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "6872556b0037d6197417eeca",
+                "msName": "Geostorm",
+                "msAbout": "After an unprecedented series of natural disasters threatened the planet, the world's leaders came together to create an intricate network of satellites to control the global climate and keep everyone safe. But now, something has gone wrong: the system built to protect Earth is attacking it, and it becomes a race against the clock to uncover the real threat before a worldwide geostorm wipes out everything and everyone along with it.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/nrsx0jEaBgXq4PWo7SooSnYJTv.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/geostorm/1971000670",
+                "msGenre": [
+                    "Action",
+                    "Si-Fi",
+                    "Thriller"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2017-10-27",
+                "msRating": 5.4,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "2018": [
+            {
+                "_id": "687624b0273f034791055700",
+                "msName": "Jurassic World: Fallen Kingdom",
+                "msAbout": "Three years after Jurassic World was destroyed, Isla Nublar now sits abandoned. When the island's dormant volcano begins roaring to life, Owen and Claire mount a campaign to rescue the remaining dinosaurs from this extinction-level event.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/270MrJNqJovumHXGE6SSt0zwUIF.jpg",
+                "msLink": "https://www.primevideo.com/detail/Jurassic-World-Fallen-Kingdom/0LH09ABNE00LEN3RRUMG5VCPXS",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Thriller",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2018-06-22",
+                "msRating": 6.1,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "68720acd7597f59af2b9cd81",
+                "msName": "KGF: Chapter 1",
+                "msAbout": "A period drama set in the 1970s, KGF follows the story of a fierce rebel who rises against the brutal oppression in Kolar Gold Fields and becomes the symbol of hope to legions of downtrodden people.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/ltHlJwvxKv7d0ooCiKSAvfwV9tX.jpg",
+                "msLink": "https://www.primevideo.com/detail/KGF-Chapter-1-Hindi/0S3QBNP7336VVT7JJCVVIRHA1L",
+                "msGenre": [
+                    "Action",
+                    "Thriller",
+                    "Adventure",
+                    "Crime"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Other",
+                "msSeason": 0,
+                "msReleaseDate": "2018-12-21",
+                "msRating": 8.2,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": true,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "68724fe80037d6197417ee7c",
+                "msName": "Venom",
+                "msAbout": "Investigative journalist Eddie Brock attempts a comeback following a scandal, but accidentally becomes the host of Venom, a violent, super powerful alien symbiote. Soon, he must rely on his newfound powers to protect the world from a shadowy organization looking for a symbiote of their own.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/p4if93blsrhU5NUlHxUlEySTPak.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/venom/1971001874",
+                "msGenre": [
+                    "Si-Fi",
+                    "Action"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2018-10-05",
+                "msRating": 6.6,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "2019": [
+            {
+                "_id": "68724daa0037d6197417ee73",
+                "msName": "Chernobyl",
+                "msAbout": "The true story of one of the worst man-made catastrophes in history: the catastrophic nuclear accident at Chernobyl. A tale of the brave men and women who sacrificed to save Europe from unimaginable disaster.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg",
+                "msLink": "https://www.hotstar.com/in/shows/chernobyl/1971002867",
+                "msGenre": [
+                    "Drama",
+                    "Historical",
+                    "Survival",
+                    "Intense"
+                ],
+                "msFormat": "Series",
+                "msIndustry": "Hollywood",
+                "msSeason": 1,
+                "msReleaseDate": "2019-05-06",
+                "msRating": 9.3,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "6873770e0ca443ea99fbc8cd",
+                "msName": "Fast & Furious Presents: Hobbs & Shaw",
+                "msAbout": "Ever since US Diplomatic Security Service Agent Hobbs and lawless outcast Shaw first faced off, they just have traded smack talk and body blows. But when cyber-genetically enhanced anarchist Brixton's ruthless actions threaten the future of humanity, they join forces to defeat him.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/qRyy2UmjC5ur9bDi3kpNNRCc5nc.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/fast-and-furious-presents-hobbs-and-shaw/1971011091",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Comedy"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2019-02-08",
+                "msRating": 6.5,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687647ca273f03479105572e",
+                "msName": "In the Shadow of the Towers: Stuyvesant High on 9/11",
+                "msAbout": "Eight student eyewitnesses from Stuyvesant High School in New York City recount their experiences of the Twin Towers attack on September 11, 2001, who as young teenagers, found themselves fleeing debris in the heart of the danger zone and faced with a harrowing journey home.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/hjFjQjgmf88PYj357TT1CXwT0QH.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/in-the-shadow-of-the-towers-stuyvesant-high-on-9-11/1971000837",
+                "msGenre": [
+                    "Documentary"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2019-09-11",
+                "msRating": 6.4,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "2020": [
+            {
+                "_id": "68724abc0037d6197417ee53",
+                "msName": "Asur",
+                "msAbout": "Set in the backdrop of the mystical city of Varanasi, Asur follows Nikhil Nair, a forensic-expert-turned-teacher, who returns to his roots at the Central Bureau of Investigation, and along with his former mentor Dhananjay Rajpoot, finds himself caught in a cat-and-mouse game with a brutal serial killer. What follows is a blend of suspense, mythology and the murders of some people totally unrelated.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/njUrr755WzIrNfuUwQhpu2ljjH4.jpg",
+                "msLink": "https://www.hotstar.com/in/shows/asur/1971002845",
+                "msGenre": [
+                    "Crime",
+                    "Drama",
+                    "Mystery"
+                ],
+                "msFormat": "Series",
+                "msIndustry": "Bollywood",
+                "msSeason": 1,
+                "msReleaseDate": "2020-03-02",
+                "msRating": 8.5,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": true,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687626cc273f03479105570f",
+                "msName": "Scam 1992: The Harshad Mehta Story",
+                "msAbout": "Set in 1980's & 90's Bombay, Scam 1992 follows the life of Harshad Mehta - a stockbroker who single-handedly took the stock market to dizzying heights & his catastrophic downfall. Being directed by National Award-winning filmmaker Hansal Mehta, the series is based on journalist Debashis Basu & Sucheta Dalal's book \"The Scam\".",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/8e929S9lSeXhj6mBebynmsUQj5K.jpg",
+                "msLink": "https://www.sonyliv.com/shows/scam-1992-the-harshad-mehta-story-1700000292",
+                "msGenre": [
+                    "Crime",
+                    "Drama"
+                ],
+                "msFormat": "Series",
+                "msIndustry": "Bollywood",
+                "msSeason": 1,
+                "msReleaseDate": "2020-10-09",
+                "msRating": 9.2,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687248580037d6197417ee4b",
+                "msName": "Special OPS",
+                "msAbout": "The series follows Himmat Singh of Research and Analysis Wing who draws similar patterns in terrorist attacks and is convinced a single person is behind all the attacks. His task force team of five agents living in various parts of the world aim to catch the mastermind. The story is based on an inspiration taken from nineteen years worth of national significant events.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/7p0nbWCGsHf2sgxJer2AuCx6zwF.jpg",
+                "msLink": "https://www.hotstar.com/in/shows/special-ops/1260022894",
+                "msGenre": [
+                    "Mystery",
+                    "Drama",
+                    "Crime"
+                ],
+                "msFormat": "Series",
+                "msIndustry": "Bollywood",
+                "msSeason": 1,
+                "msReleaseDate": "2020-03-17",
+                "msRating": 8.6,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "68764905273f034791055736",
+                "msName": "The Outsider",
+                "msAbout": "When an insidious supernatural force edges its way into a seemingly straightforward investigation into the gruesome murder of a young boy, it leads a seasoned cop and an unorthodox investigator to question everything they believe in.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/aMiPwPQjQI1EZN3xP2V0sSU37dc.jpg",
+                "msLink": "https://www.hotstar.com/in/shows/the-outsider/1971002981",
+                "msGenre": [
+                    "Drama",
+                    "Mystery",
+                    "Crime"
+                ],
+                "msFormat": "Series",
+                "msIndustry": "Hollywood",
+                "msSeason": 1,
+                "msReleaseDate": "2020-01-12",
+                "msRating": 7.6,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "2021": [
+            {
+                "_id": "687249660037d6197417ee4e",
+                "msName": "Special Ops: The Himmat Story",
+                "msAbout": "After the 2001 Parliament attack, a young and idealistic RA&W officer had a theory. In 2003, he had a mystery. This is the story of Himmat Singh.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/nH5LDmNofN4p5mldUxxhVzfn4sk.jpg",
+                "msLink": "https://www.hotstar.com/in/shows/special-ops-1-5/1260071971",
+                "msGenre": [
+                    "Action & Adventure",
+                    "Crime",
+                    "Drama"
+                ],
+                "msFormat": "Series",
+                "msIndustry": "Bollywood",
+                "msSeason": 1.5,
+                "msReleaseDate": "2021-11-12",
+                "msRating": 8.3,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "68737dcc0ca443ea99fbc8ed",
+                "msName": "The Matrix Resurrections",
+                "msAbout": "Plagued by strange memories, Neo's life takes an unexpected turn when he finds himself back inside the Matrix.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/8c4a8kE7PizaGQQnditMmI1xbRp.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/the-matrix-resurrections/1271412373",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2021-12-22",
+                "msRating": 5.6,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687250df0037d6197417ee7f",
+                "msName": "Venom: Let There Be Carnage",
+                "msAbout": "After finding a host body in investigative reporter Eddie Brock, the alien symbiote must face a new enemy, Carnage, the alter ego of serial killer Cletus Kasady.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/1MJNcPZy46hIy2CmSqOeru0yr5C.jpg",
+                "msLink": "https://www.primevideo.com/detail/0IDPIWRVOMSGAQ81Y88AXQS1VC",
+                "msGenre": [
+                    "Si-Fi",
+                    "Action",
+                    "Adventure"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2021-10-01",
+                "msRating": 5.9,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "2022": [
+            {
+                "_id": "6873756e0ca443ea99fbc8bf",
+                "msName": "Hostages",
+                "msAbout": "On November 4, 1979, Iranian student activists stormed the U.S. embassy in Tehran, taking over 60 Americans hostage. What was planned as a 48-hour sit-in to protest American imperialism, ballooned into an international crisis and 24/7 media event that would last 444 days. With never-before-seen archival footage and revelatory new interviews with the American hostages and Iranian hostage-takers alike, the series is a gripping chronicle of one of the most dramatic international deadlocks in American history, a deep dive into the geo-political history that led to the crisis, and an exploration of the political fallout that reverberates today.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/p1pPd1HcXdlmXfC1uOzCXTCwIhZ.jpg",
+                "msLink": "https://www.hotstar.com/in/shows/hostages/1971003258",
+                "msGenre": [
+                    "Documentary"
+                ],
+                "msFormat": "Series",
+                "msIndustry": "Hollywood",
+                "msSeason": 1,
+                "msReleaseDate": "2022-09-29",
+                "msRating": 7.9,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "68762530273f034791055703",
+                "msName": "Jurassic World Dominion",
+                "msAbout": "Four years after Isla Nublar was destroyed, dinosaurs now live—and hunt—alongside humans all over the world. This fragile balance will reshape the future and determine, once and for all, whether human beings are to remain the apex predators on a planet they now share with history's most fearsome creatures.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/jbAvCACjLf1ZG0unB2tdmx5HAf1.jpg",
+                "msLink": "https://www.primevideo.com/detail/Jurassic-World-Dominion/0RE082YLFEWM5NF6S779E6NZLL",
+                "msGenre": [
+                    "Adventure",
+                    "Action",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2022-06-10",
+                "msRating": 5.6,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "68720b627597f59af2b9cd84",
+                "msName": "KGF: Chapter 2",
+                "msAbout": "The blood-soaked land of Kolar Gold Fields (KGF) has a new overlord now - Rocky, whose name strikes fear in the heart of his foes. His allies look up to Rocky as their Savior, the government sees him as a threat to law and order; enemies are clamoring for revenge and conspiring for his downfall. Bloodier battles and darker days await as Rocky continues on his quest for unchallenged supremacy.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/khNVygolU0TxLIDWff5tQlAhZ23.jpg",
+                "msLink": "https://www.primevideo.com/detail/KGF-Chapter-2-Hindi/0OLFV66669RCQ9BSC7YCWOZA6S",
+                "msGenre": [
+                    "Action",
+                    "Thriller",
+                    "Adventure",
+                    "Crime"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Other",
+                "msSeason": 0,
+                "msReleaseDate": "2022-04-14",
+                "msRating": 8.2,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": true,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "68764ede273f034791055755",
+                "msName": "RRR",
+                "msAbout": "A fictional history of two legendary revolutionaries' journey away from home before they began fighting for their country in the 1920s.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/ncXklBeNi7X7OETqmDVEgaf8ItQ.jpg",
+                "msLink": "https://www.netflix.com/in/title/81476453",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Drama"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Other",
+                "msSeason": 0,
+                "msReleaseDate": "2022-03-25",
+                "msRating": 7.8,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "68764629273f03479105571e",
+                "msName": "Rocketry: The Nambi Effect",
+                "msAbout": "The story of the great Indian rocket scientist, Shri Nambi Narayanan's life, a true patriot, who was turned into a villain in the blink of an eye after being falsely accused of treason.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/o7A1agEoXvwyyOmIbHnUhfnC34j.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/rocketry-the-nambi-effect/1971010934",
+                "msGenre": [
+                    "Drama",
+                    "History",
+                    "Biopic"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Bollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2022-07-01",
+                "msRating": 8.6,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687377990ca443ea99fbc8d0",
+                "msName": "Super Pumped: The Battle for Uber",
+                "msAbout": "Each season of this anthology series explores a story that rocked the business world to its core and changed culture. The first season tells the story of Uber, one of Silicon Valley’s most successful and most destructive unicorns.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/7MasydBJS4qNATfRpCmeC4biDqK.jpg",
+                "msLink": "https://www.hotstar.com/in/shows/super-pumped-the-battle-for-uber/1971311990",
+                "msGenre": [
+                    "Drama"
+                ],
+                "msFormat": "Series",
+                "msIndustry": "Hollywood",
+                "msSeason": 1,
+                "msReleaseDate": "2022-04-10",
+                "msRating": 7.3,
+                "msUploadedBy": "Vijayant Joshi",
                 "msWatched": false,
                 "msWatchedAt": null,
                 "__v": 0
@@ -25,20 +1000,188 @@
         ],
         "2023": [
             {
-                "_id": "6870b640bcf0e868382f79c1",
-                "msName": "Rana Naidu",
-                "msAbout": "Rana Naidu is the go-to problem solver for the rich and famous. But when his father is released from jail, the one mess he can't handle may be his own.",
-                "msPoster": "https://m.media-amazon.com/images/M/MV5BMjcxOTk2ZDAtZGNmMC00MTQzLWEwNzctZDMwNjc5OWE0NGNhXkEyXkFqcGc@._V1_FMjpg_UX1350_.jpg",
-                "msLink": "https://www.netflix.com/in/title/81313283",
+                "_id": "6873762d0ca443ea99fbc8c8",
+                "msName": "12th Fail",
+                "msAbout": "Based on the true story of IPS officer Manoj Kumar Sharma, 12th Fail sheds limelight on fearlessly embracing the idea of restarting the academic journey despite the setbacks and challenges and reclaiming one's destiny at a place where millions of students attempt the world's toughest competitive exam: UPSC.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/eebUPRI4Z5e1Z7Hev4JZAwMIFkX.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/12th-fail/1260161273",
                 "msGenre": [
-                    "Thriller"
+                    "Biopic",
+                    "Drama"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Bollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2023-10-27",
+                "msRating": 8.7,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": true,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "68724b560037d6197417ee56",
+                "msName": "Asur: Rise of the Dark Side",
+                "msAbout": "Shubh returns for revenge and this season he takes the challenge to a whole new level. With the heroes fallen apart, will a desolate Dhananjay Rajpoot and a torn Nikhil Nair be able to stop him?",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/fx58e04ezKiKMRBVQVWUUhERMiA.jpg",
+                "msLink": "https://www.hotstar.com/in/shows/asur/1971002845",
+                "msGenre": [
+                    "Crime",
+                    "Drama",
+                    "Mystery"
                 ],
                 "msFormat": "Series",
                 "msIndustry": "Bollywood",
-                "msOrigin": "Indian",
-                "msSeason": 1,
-                "msReleaseDate": "2023-03-10",
+                "msSeason": 2,
+                "msReleaseDate": "2023-06-07",
+                "msRating": 8.5,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": true,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687253be0037d6197417eebb",
+                "msName": "IB71",
+                "msAbout": "A two- front war between Indian intelligence agencies and the Pakistani establishment.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/n3tDKjw14Ig3suHOx8GSBtCxEX7.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/ib71/1260143875",
+                "msGenre": [
+                    "Action",
+                    "Thriller",
+                    "War"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Bollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2023-12-05",
                 "msRating": 7.1,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "68762756273f034791055712",
+                "msName": "Scam 2003: The Telgi Story",
+                "msAbout": "It will follow the life of Telgi, born in Khanapur in the state of Karnataka, as he became the mastermind behind one of India’s most ingenious scams, which spread across 18 states and shook the entire country.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/t7mRKHha7S56tSgxZWyyWLkVReA.jpg",
+                "msLink": "https://www.sonyliv.com/shows/scam-2003-the-telgi-story-hindi-1700001283",
+                "msGenre": [
+                    "Drama",
+                    "Crime"
+                ],
+                "msFormat": "Series",
+                "msIndustry": "Bollywood",
+                "msSeason": 1,
+                "msReleaseDate": "2023-09-01",
+                "msRating": 7.9,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "68724c6a0037d6197417ee6b",
+                "msName": "The Last of Us",
+                "msAbout": "Twenty years after modern civilization has been destroyed, Joel, a hardened survivor, is hired to smuggle Ellie, a 14-year-old girl, out of an oppressive quarantine zone. What starts as a small job soon becomes a brutal, heartbreaking journey, as they both must traverse the United States and depend on each other for survival.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg",
+                "msLink": "https://www.hotstar.com/in/shows/the-last-of-us/1971002868",
+                "msGenre": [
+                    "Si-Fi",
+                    "Action",
+                    "Adventure",
+                    "Fantasy"
+                ],
+                "msFormat": "Series",
+                "msIndustry": "Hollywood",
+                "msSeason": 1,
+                "msReleaseDate": "2023-01-15",
+                "msRating": 8.6,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "2024": [
+            {
+                "_id": "687380840ca443ea99fbc8f8",
+                "msName": "Alien: Romulus",
+                "msAbout": "While scavenging the deep ends of a derelict space station, a group of young space colonizers come face to face with the most terrifying life form in the universe.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/b33nnKl1GSFbao4l3fZDDqsMx0F.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/alien-romulus/1271337435",
+                "msGenre": [
+                    "Horror",
+                    "Thriller",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2024-08-16",
+                "msRating": 7.1,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "68764a15273f03479105573c",
+                "msName": "Life Hill Gayi",
+                "msAbout": "Siblings turn rivals when they are put on an inheritance race by reviving a down-in-the-dumps hotel in the hills. Who will emerge victorious?",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/x19oZ3M4NxYSNFQRmVRnhknSUow.jpg",
+                "msLink": "https://www.hotstar.com/in/shows/life-hill-gayi/1271323639",
+                "msGenre": [
+                    "Comedy",
+                    "Romance"
+                ],
+                "msFormat": "Series",
+                "msIndustry": "Bollywood",
+                "msSeason": 1,
+                "msReleaseDate": "2024-08-09",
+                "msRating": 6.5,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687374950ca443ea99fbc8ba",
+                "msName": "Ranneeti: Balakot & Beyond",
+                "msAbout": "Post the deadly Pulwama attacks, Kashyap and his team strike back with a fitting reply. In the age of hybrid warfare, they must race against time to bring back their captured pilot while also battling Pakistan’s lies in global media.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/tNZZddRoMCxqYRoQvI8bNoUgeUY.jpg",
+                "msLink": "https://www.hotstar.com/in/shows/ranneeti-balakot-and-beyond/1971003528",
+                "msGenre": [
+                    "Action",
+                    "Adventure"
+                ],
+                "msFormat": "Series",
+                "msIndustry": "Bollywood",
+                "msSeason": 1,
+                "msReleaseDate": "2024-04-25",
+                "msRating": 7.8,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687252cc0037d6197417eea8",
+                "msName": "Venom: The Last Dance",
+                "msAbout": "Eddie and Venom are on the run. Hunted by both of their worlds and with the net closing in, the duo are forced into a devastating decision that will bring the curtains down on Venom and Eddie's last dance.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/vGXptEdgZIhPg3cGlc7e8sNPC2e.jpg",
+                "msLink": "https://www.netflix.com/in/title/81680567",
+                "msGenre": [
+                    "Action",
+                    "Si-Fi",
+                    "Adventure"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2024-10-25",
+                "msRating": 6,
                 "msUploadedBy": "Vijayant Joshi",
                 "msWatched": false,
                 "msWatchedAt": null,
@@ -47,20 +1190,82 @@
         ],
         "2025": [
             {
-                "_id": "6870b584bcf0e868382f79ba",
-                "msName": "Rana Naidu",
-                "msAbout": "Rana Naidu is an Indian action crime drama television series on Netflix directed by Karan Anshuman and Suparn Verma.",
-                "msPoster": "https://m.media-amazon.com/images/M/MV5BOGRjMmQzMjQtMzViYi00YjIxLTkwYWMtOTJjNDFhMzA3NzNmXkEyXkFqcGc@._V1_FMjpg_UY2048_.jpg",
-                "msLink": "https://www.netflix.com/in/title/81313283",
+                "_id": "687625ef273f034791055706",
+                "msName": "Jurassic World Rebirth",
+                "msAbout": "Five years after the events of Jurassic World Dominion, covert operations expert Zora Bennett is contracted to lead a skilled team on a top-secret mission to secure genetic material from the world's three most massive dinosaurs. When Zora's operation intersects with a civilian family whose boating expedition was capsized, they all find themselves stranded on an island where they come face-to-face with a sinister, shocking discovery that's been hidden from the world for decades.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/q0fGCmjLu42MPlSO9OYWpI5w86I.jpg",
+                "msLink": "https://www.primevideo.com/detail/Jurassic-World-Rebirth/0LDEOBW5YKKQBSLD80CPD0J6UY",
                 "msGenre": [
-                    "Thriller"
+                    "Si-Fi",
+                    "Adventure",
+                    "Action"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2025-07-02",
+                "msRating": 6.2,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687646eb273f034791055723",
+                "msName": "Jurassic World Rebirth: The Making of a New Era",
+                "msAbout": "A behind-the-scenes look with the cast and crew, featuring thrilling locations, deadly new dinosaurs and the next evolution of the iconic franchise. We don't have any crew added to this movie. You can help by adding some!",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/uJUzfTtbCUG1GXmVS24h8h0hXX3.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/jurassic-world-rebirth-the-making-of-a-new-era/1271428621",
+                "msGenre": [
+                    "Documentary"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2025-06-29",
+                "msRating": 6.8,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "68764e51273f034791055752",
+                "msName": "MobLand",
+                "msAbout": "Two mob families clash in a war that threatens to topple empires and lives.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/hWFzOAK9cxjmO0eeIyuWCMGkQ6z.jpg",
+                "msLink": "https://www.primevideo.com/detail/MobLand/0KQS7JC4ENL8YNTOPRPQLSATNJ",
+                "msGenre": [
+                    "Crime",
+                    "Drama"
                 ],
                 "msFormat": "Series",
-                "msIndustry": "Bollywood",
-                "msOrigin": "Indian",
+                "msIndustry": "Hollywood",
+                "msSeason": 1,
+                "msReleaseDate": "2025-03-30",
+                "msRating": 8.4,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "68724cd60037d6197417ee6e",
+                "msName": "The Last of Us",
+                "msAbout": "After five years of peace following the events of the first season, Joel and Ellie's collective past catches up to them, drawing them into conflict with each other and a world even more dangerous and unpredictable than the one they left behind.",
+                "msPoster": "https://image.tmdb.org/t/p/original/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg",
+                "msLink": "https://www.hotstar.com/in/shows/the-last-of-us/1971002868",
+                "msGenre": [
+                    "Si-Fi",
+                    "Action",
+                    "Adventure",
+                    "Fantasy"
+                ],
+                "msFormat": "Series",
+                "msIndustry": "Hollywood",
                 "msSeason": 2,
-                "msReleaseDate": "2025-06-13",
-                "msRating": 7.8,
+                "msReleaseDate": "2025-05-25",
+                "msRating": 8.6,
                 "msUploadedBy": "Vijayant Joshi",
                 "msWatched": false,
                 "msWatchedAt": null,
@@ -68,7 +1273,7 @@
             }
         ]
     },
-    "totalYears": 3,
-    "totalData": 3,
+    "totalYears": 20,
+    "totalData": 59,
     "message": "The MovieSeries fetched, sorted A-Z."
 }

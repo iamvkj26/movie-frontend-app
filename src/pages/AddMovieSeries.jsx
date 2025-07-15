@@ -69,7 +69,7 @@ const AddMovieSeries = () => {
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="poster" className="form-label">Enter the poster link...</label>
-                                <input type="text" className="form-control" id="poster" name="msPoster" value={addMovie.msPoster} onChange={onChangeAddMovie} placeholder="Eg: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9oW0XQlu1lo1G_49M-YwGzKR6rUg-CtflZj07HfbT8d2GwKWg" autoComplete="off" required />
+                                <input type="text" className="form-control" id="poster" name="msPoster" value={addMovie.msPoster} onChange={onChangeAddMovie} placeholder="Eg: https://image.tmdb.org/t/p/original/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" autoComplete="off" required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="link" className="form-label">Enter the ott link...</label>

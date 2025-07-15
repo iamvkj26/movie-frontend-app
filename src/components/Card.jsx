@@ -4,12 +4,14 @@ import { Link } from "react-router";
 import { toast } from "react-hot-toast";
 import { getMovieSeries, deleteMovieSeries, watchedMovieSeries } from "../api/movieseries";
 import EditMovieSeries from "./EditMovieSeries";
+import NextWatch from "./NextWatch";
 
 const Card = ({ filters }) => {
 
     const [movieSeries, setMovieSeries] = useState([]);
     const [editMovieSeries, setEditMoviSeries] = useState({ _id: "", emsName: "", emsAbout: "", emsPoster: "", emsLink: "", emsSeason: "", emsFormat: "", emsIndustry: "", emsReleaseDate: "", emsGenre: [], emsRating: "", emsUploadedBy: "" });
     const [deleteMoviSeries, setDeleteMoviSeries] = useState(null);
+    const [nextToWatch, setNextToWatch] = useState(null);
 
     const refOpenCanvas = useRef(null);
 
@@ -17,6 +19,15 @@ const Card = ({ filters }) => {
         try {
             const response = await getMovieSeries(filters);
             setMovieSeries(response.data);
+
+            let allMovies = Object.values(response.data).flat();
+            let unwatchedMovies = allMovies.filter(m => !m.msWatched);
+            const randomIndex = Math.floor(Math.random() * unwatchedMovies.length);
+            if (unwatchedMovies.length > 0) {
+                setNextToWatch(unwatchedMovies[randomIndex]);
+            } else {
+                setNextToWatch(null);
+            };
         } catch (err) {
             console.error(err);
         };
@@ -68,6 +79,8 @@ const Card = ({ filters }) => {
 
     return (
         <>
+            <NextWatch nextToWatch={nextToWatch} />
+
             <div className="container">
                 {movieSeries && Object.keys(movieSeries).length > 0 ? (
                     Object?.entries(movieSeries)?.reverse()?.map(([year, movies]) => (
@@ -122,16 +135,14 @@ const Card = ({ filters }) => {
                                                     )}
                                                 </div>
                                             </div>
-                                            <div className="card-footer d-flex justify-content-between align-items-center py-2">
-                                                <div className="form-check">
+                                            <div className="card-footer d-flex justify-content-between align-items-center">
+                                                <div className="form-check mt-1">
                                                     <input className="form-check-input" type="checkbox" checked={element.msWatched} onChange={() => handleWatchedMovieSeries(element._id)} />
                                                     <label className="form-check-label text-secondary small" title={element.msWatchedAt ? `Watched on: ${moment(element.msWatchedAt).format("DD MMMM YYYY hh:mm A")}` : ""}>
                                                         {element.msWatched ? "Watched" : "Mark as Watched"}
                                                     </label>
                                                 </div>
-                                                <figcaption className="blockquote-footer mt-2">
-                                                    {element.msUploadedBy}
-                                                </figcaption>
+                                                <div className="blockquote-footer mt-1">{element.msUploadedBy}</div>
                                             </div>
                                         </div>
                                     </div>
