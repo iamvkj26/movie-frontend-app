@@ -7,11 +7,11 @@ const Footer = () => {
                 <div className="container">
                     <div className="d-flex flex-column flex-md-row justify-content-between align-items-center">
                         <div className="mb-2 mb-md-0">
-                            2025 © <strong><Link className="text-light" to="/">HelloHood</Link></strong> | All Rights Reserved.
+                            2025 © <Link className="text-primary fw-semibold" to="/">HelloHood</Link> | All Rights Reserved.
                         </div>
                         <div className="d-flex flex-wrap justify-content-center justify-content-md-end">
-                            <Link to="/addMovieSeries" className="text-light text-decoration-none">
-                                <strong className="text-info">+ Add Movie/Series</strong>
+                            <Link to="/addMovieSeries" className="text-info fw-semibold text-decoration-none">
+                                + Add Movie/Series
                             </Link>
                         </div>
                     </div>

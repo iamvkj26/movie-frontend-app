@@ -1,59 +1,58 @@
 import api from "./api";
+import retryRequest from "./retryRequest";
+
+const extractErrorMessage = (error) => error.response?.data?.message || error.message || "Something went wrong";
 
 export const postMovieSeries = async (addData) => {
     try {
-        const response = await api.post("/post", addData);
-        return response;
+        return await api.post("/post", addData);
     } catch (error) {
         console.error(error.message);
-        throw error;
+        throw new Error(extractErrorMessage(error));
     };
 };
 
-export const getMovieSeries = async ({ s = "", f = "", i = "", g = "", w = "" }) => {
+export const getMovieSeries = async ({ w = "", s = "", f = "", i = "", g = "" }) => {
     try {
         const query = new URLSearchParams();
 
+        if (w) query.append("watched", w);
         if (s) query.append("search", s);
         if (f) query.append("format", f);
         if (i) query.append("industry", i);
         if (g) query.append("genre", g);
-        if (w) query.append("watched", w);
 
-        const response = await api.get(`/get?${query.toString()}`);
+        const response = await retryRequest(() => api.get(`/get?${query.toString()}`));
         return response.data;
     } catch (error) {
         console.error(error.message);
-        throw error;
+        throw new Error(extractErrorMessage(error));
     };
 };
 
 export const updateMovieSeries = async (_id, msName, msAbout, msPoster, msLink, msSeason, msFormat, msIndustry, msReleaseDate, msGenre, msRating, msUploadedBy) => {
     try {
-        const response = await api.patch(`/update/${_id}`, { msName, msAbout, msPoster, msLink, msSeason, msFormat, msIndustry, msReleaseDate, msGenre, msRating, msUploadedBy });
-        return response;
+        return await api.patch(`/update/${_id}`, { msName, msAbout, msPoster, msLink, msSeason, msFormat, msIndustry, msReleaseDate, msGenre, msRating, msUploadedBy });
     } catch (error) {
         console.error(error.message);
-        throw error;
+        throw new Error(extractErrorMessage(error));
     };
 };
 
 export const deleteMovieSeries = async (id) => {
     try {
-        const response = await api.delete(`/delete/${id}`);
-        return response;
+        return await api.delete(`/delete/${id}`);
     } catch (error) {
         console.error(error.message);
-        throw error;
+        throw new Error(extractErrorMessage(error));
     };
 };
 
 export const watchedMovieSeries = async (id) => {
     try {
-        const response = await api.patch(`/watched/${id}`);
-        return response;
+        return await api.patch(`/watched/${id}`);
     } catch (error) {
         console.error(error.message);
-        throw error;
+        throw new Error(extractErrorMessage(error));
     };
 };

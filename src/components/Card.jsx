@@ -12,7 +12,6 @@ const Card = ({ filters }) => {
     const [editMovieSeries, setEditMoviSeries] = useState({ _id: "", emsName: "", emsAbout: "", emsPoster: "", emsLink: "", emsSeason: "", emsFormat: "", emsIndustry: "", emsReleaseDate: "", emsGenre: [], emsRating: "", emsUploadedBy: "" });
     const [deleteMoviSeries, setDeleteMoviSeries] = useState(null);
     const [nextToWatch, setNextToWatch] = useState(null);
-
     const refOpenCanvas = useRef(null);
 
     const handleGetMovieSeries = async () => {
@@ -20,22 +19,17 @@ const Card = ({ filters }) => {
             const response = await getMovieSeries(filters);
             setMovieSeries(response.data);
 
-            let allMovies = Object.values(response.data).flat();
-            let unwatchedMovies = allMovies.filter(m => !m.msWatched);
-            const randomIndex = Math.floor(Math.random() * unwatchedMovies.length);
-            if (unwatchedMovies.length > 0) {
-                setNextToWatch(unwatchedMovies[randomIndex]);
-            } else {
-                setNextToWatch(null);
-            };
-        } catch (err) {
-            console.error(err);
+            const unwatched = Object.values(response.data).flat().filter(m => !m.msWatched);
+            const random = unwatched.length ? unwatched[Math.floor(Math.random() * unwatched.length)] : null;
+            setNextToWatch(random);
+        } catch (error) {
+            toast.error(error.message || "Failed to fetch movie/series.");
         };
     };
 
     const updateMovieSeries = (currentMovieSeies) => {
-        refOpenCanvas.current.click();
         setEditMoviSeries({ _id: currentMovieSeies._id, emsName: currentMovieSeies.msName, emsAbout: currentMovieSeies.msAbout, emsPoster: currentMovieSeies.msPoster, emsLink: currentMovieSeies.msLink, emsSeason: currentMovieSeies.msSeason, emsFormat: currentMovieSeies.msFormat, emsIndustry: currentMovieSeies.msIndustry, emsReleaseDate: currentMovieSeies.msReleaseDate, emsGenre: currentMovieSeies.msGenre, emsRating: currentMovieSeies.msRating, emsUploadedBy: currentMovieSeies.msUploadedBy });
+        refOpenCanvas.current.click();
     };
 
     const handleDeleteMovieSeries = async (id) => {
@@ -47,11 +41,7 @@ const Card = ({ filters }) => {
                 handleGetMovieSeries();
             };
         } catch (error) {
-            if (error.status === 400) {
-                toast.error("Server cannot or will not process request right now, try again after sometimes");
-            } else {
-                toast.error(error.message);
-            };
+            toast.error(error.message || "Error deleting movie/series");
         };
     };
 
@@ -64,11 +54,7 @@ const Card = ({ filters }) => {
                 handleGetMovieSeries();
             };
         } catch (error) {
-            if (error.status === 400) {
-                toast.error("Server cannot or will not process request right now, try again after sometimes");
-            } else {
-                toast.error(error.message);
-            };
+            toast.error(error.message || "Error updating movie/series watched status");
         };
     };
 
@@ -83,12 +69,12 @@ const Card = ({ filters }) => {
 
             <div className="container">
                 {movieSeries && Object.keys(movieSeries).length > 0 ? (
-                    Object?.entries(movieSeries)?.reverse()?.map(([year, movies]) => (
+                    Object?.entries(movieSeries)?.reverse()?.map(([year, moviesseries]) => (
                         <div key={year} className="mt-3">
                             <h4 className="">Year: {year}</h4>
                             <hr />
                             <div className="row">
-                                {movies?.map((element) => (
+                                {moviesseries?.map((element) => (
                                     <div className="col-md-3 mt-3" key={element._id}>
                                         <div className="card position-relative">
                                             <span className="position-absolute top-n10 end-0 badge rounded-pill bg-warning text-black">

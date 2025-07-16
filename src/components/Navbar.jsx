@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <>
             <nav className="navbar">
-                <div className="container-fluid d-flex justify-content-around w-100">
+                <div className="container-fluid d-flex justify-content-around align-items-center">
                     <Link className="navbar-brand hello-hood" to="/">
                         HelloHood
                     </Link>

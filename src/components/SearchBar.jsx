@@ -8,7 +8,13 @@ const SearchBar = ({ updateFilter, searchValue }) => {
         setSearch(searchValue);
     }, [searchValue]);
 
-    const handleSearch = () => updateFilter("s", search);
+    const handleSearch = () => {
+        if (search.trim()) updateFilter("s", search.trim());
+    };
+
+    const handleKeyDown = (e) => {
+        if (e.key === "Enter") handleSearch();
+    };
 
     return (
         <>
@@ -17,7 +23,7 @@ const SearchBar = ({ updateFilter, searchValue }) => {
                     <div className="mx-auto">
                         <div className="h4 mb-3">Search for movies, web series here...</div>
                         <div className="d-flex">
-                            <input type="search" className="form-control me-2" placeholder="Search the movies, web series..." value={search} onChange={(e) => setSearch(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") handleSearch() }} />
+                            <input type="search" className="form-control me-2" placeholder="Search the movies, web series..." value={search} onChange={(e) => setSearch(e.target.value)} onKeyDown={handleKeyDown} />
                             <button className="btn btn-dark btn-212529" type="button" onClick={handleSearch}>
                                 <i className="fa-solid fa-magnifying-glass"></i>
                             </button>

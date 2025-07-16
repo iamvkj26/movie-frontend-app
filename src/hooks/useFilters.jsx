@@ -1,25 +1,25 @@
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router";
 
-const defaultFilters = { s: "", f: "", i: "", g: "", w: "false" };
+const defaultFilters = { w: "false", s: "", f: "", i: "", g: "", };
 
 export const useFilters = () => {
 
     const location = useLocation();
     const navigate = useNavigate();
 
-    const [filters, setFilters] = useState(null);
+    const [filters, setFilters] = useState(defaultFilters);
     const [ready, setReady] = useState(false);
 
     useEffect(() => {
         const params = new URLSearchParams(location.search);
-        const s = params.get("s") || "";
-        const f = params.get("f") || "";
-        const i = params.get("i") || "";
-        const g = params.get("g") || "";
-        const w = params.get("w") || "false";
-
-        setFilters({ s, f, i, g, w });
+        setFilters({
+            w: params.get("w") || "false",
+            s: params.get("s") || "",
+            f: params.get("f") || "",
+            i: params.get("i") || "",
+            g: params.get("g") || ""
+        });
         setReady(true);
     }, [location.search]);
 
@@ -27,21 +27,16 @@ export const useFilters = () => {
         if (!filters) return;
 
         const params = new URLSearchParams();
-        if (filters.s) params.set("s", filters.s);
-        if (filters.f) params.set("f", filters.f);
-        if (filters.i) params.set("i", filters.i);
-        if (filters.g) params.set("g", filters.g);
+        Object.entries(filters).forEach(([key, value]) => {
+            if (value && key) params.set(key, value);
+        });
 
         navigate({ search: params.toString() }, { replace: true });
     }, [filters, navigate]);
 
-    const updateFilter = (key, value) => {
-        setFilters((prev) => ({ ...prev, [key]: value }));
-    };
+    const updateFilter = (key, value) => setFilters((prev) => ({ ...prev, [key]: value }));
 
-    const resetFilters = () => {
-        setFilters({ ...defaultFilters });
-    };
+    const resetFilters = () => setFilters({ ...defaultFilters });
 
     return { filters, ready, updateFilter, resetFilters };
 };
