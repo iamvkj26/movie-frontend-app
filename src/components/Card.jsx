@@ -3,7 +3,7 @@ import moment from "moment";
 import { Link } from "react-router";
 import { toast } from "react-hot-toast";
 import { getMovieSeries, deleteMovieSeries, watchedMovieSeries } from "../api/movieseries";
-import EditMovieSeries from "./EditMovieSeries";
+import EditMovieSeries from "../pages/EditMovieSeries";
 import NextWatch from "./NextWatch";
 
 const Card = ({ filters }) => {
