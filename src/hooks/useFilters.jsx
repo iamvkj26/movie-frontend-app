@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from "react-router";
 
 const defaultFilters = { w: "false", s: "", f: "", i: "", g: "", };
 
-export const useFilters = () => {
+const useFilters = () => {
 
     const location = useLocation();
     const navigate = useNavigate();
@@ -40,3 +40,5 @@ export const useFilters = () => {
 
     return { filters, ready, updateFilter, resetFilters };
 };
+
+export default useFilters;

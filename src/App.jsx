@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router";
 import { Toaster } from "react-hot-toast";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import All from "./pages/All";
+import Index from "./pages/Index";
 import AddMovieSeries from "./pages/AddMovieSeries";
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
                 <Navbar />
                 <main className="flex-grow-1">
                     <Routes>
-                        <Route path="/" element={<All />} />
+                        <Route path="/" element={<Index />} />
                         <Route path="/addMovieSeries" element={<AddMovieSeries />} />
                     </Routes>
                 </main>

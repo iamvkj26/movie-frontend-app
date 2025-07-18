@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import moment from "moment";
+import { formatDate } from "../utils/formatDate";
 
 const NextWatch = ({ nextToWatch }) => {
 
@@ -22,7 +22,7 @@ const NextWatch = ({ nextToWatch }) => {
                                         <p className="text-secondary small">
                                             ⭐ <strong>{msRating}</strong> | 🎭 {msGenre?.join(", ")}
                                         </p>
-                                        <p className="text-danger small">{moment(msReleaseDate).format("DD MMMM YYYY")}</p>
+                                        <p className="text-danger small">{formatDate(msReleaseDate)}</p>
                                         <Link className="btn btn-sm btn-watch text-decoration-none gap-1" to={msLink} target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-play"></i></Link>
                                     </div>
                                 </div>

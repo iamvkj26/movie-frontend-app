@@ -3,7 +3,7 @@ const FormInput = ({ col, label, type = "text", id, name, value, onChange, place
     return (
         <>
             <div className={`mb-3 ${col}`}>
-                <label htmlFor={id} className="form-label">{label}</label>
+                <label htmlFor={id} className="form-label fw-semibold">{label}</label>
                 {isTextarea ? (
                     <textarea itemType={type} className="form-control" rows={rows} id={id} name={name} value={value} onChange={onChange} placeholder={placeholder} autoComplete="off" required />
                 ) : isSelect ? (
