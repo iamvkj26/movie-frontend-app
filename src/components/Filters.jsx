@@ -33,19 +33,19 @@ const Filters = ({ updateFilter, resetFilters }) => {
                                     {[
                                         { label: "Action", value: "action", emoji: "🎬" },
                                         { label: "Adventure", value: "adventure", emoji: "🧭" },
-                                        { label: "Biopic", value: "biopic", emoji: "✨" },
-                                        { label: "Drama", value: "drama", emoji: "🎭" },
-                                        { label: "Romance", value: "romance", emoji: "💖" },
-                                        { label: "Comedy", value: "comedy", emoji: "😂" },
-                                        { label: "Horror", value: "horror", emoji: "👻" },
-                                        { label: "Thriller", value: "thriller", emoji: "👁️" },
-                                        { label: "Crime", value: "crime", emoji: "⚖️" },
-                                        { label: "Si-Fi", value: "si-fi", emoji: "🤖" },
-                                        { label: "Fantasy", value: "fantasy", emoji: "🧙" },
-                                        { label: "Mystery", value: "mystery", emoji: "🕵️" },
                                         { label: "Animation", value: "animation", emoji: "🎞️" },
+                                        { label: "Biopic", value: "biopic", emoji: "✨" },
+                                        { label: "Comedy", value: "comedy", emoji: "😂" },
+                                        { label: "Crime", value: "crime", emoji: "⚖️" },
                                         { label: "Documentary", value: "documentary", emoji: "📚" },
-                                        { label: "Other", value: "other", emoji: "🔖" }
+                                        { label: "Drama", value: "drama", emoji: "🎭" },
+                                        { label: "Fantasy", value: "fantasy", emoji: "🧙" },
+                                        { label: "Horror", value: "horror", emoji: "👻" },
+                                        { label: "Mystery", value: "mystery", emoji: "🕵️" },
+                                        { label: "Other", value: "other", emoji: "🔖" },
+                                        { label: "Romance", value: "romance", emoji: "💖" },
+                                        { label: "Si-Fi", value: "si-fi", emoji: "🤖" },
+                                        { label: "Thriller", value: "thriller", emoji: "👁️" }
                                     ].map(({ label, value, emoji }) => (
                                         <li key={label}>
                                             <Link className="dropdown-item" onClick={() => updateFilter("g", value)}>

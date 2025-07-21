@@ -1,5 +1,95 @@
 {
     "data": {
+        "1986": [
+            {
+                "_id": "687941f602b39b34b790d36a",
+                "msName": "Top Gun",
+                "msAbout": "For Lieutenant Pete 'Maverick' Mitchell and his friend and co-pilot Nick 'Goose' Bradshaw, being accepted into an elite training school for fighter pilots is a dream come true. But a tragedy, as well as personal demons, will threaten Pete's dreams of becoming an ace pilot.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/fmXOY1bdRJ9CmzroeaTXRyr6qyz.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/top-gun/1971001341",
+                "msGenre": [
+                    "Action",
+                    "Drama"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "1986-05-16",
+                "msRating": 7,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "1993": [
+            {
+                "_id": "687b44b54fefc8a09e0d558e",
+                "msName": "Jurassic Park",
+                "msAbout": "A wealthy entrepreneur secretly creates a theme park featuring living dinosaurs drawn from prehistoric DNA. Before opening day, he invites a team of experts and his two eager grandchildren to experience the park and help calm anxious investors. However, the park is anything but amusing as the security systems go off-line and the dinosaurs escape.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/bRKmwU9eXZI5dKT11Zx1KsayiLW.jpg",
+                "msLink": "https://www.primevideo.com/detail/Jurassic-Park/0JCWGHZ0Q8MZVYTZCAK272PAZI",
+                "msGenre": [
+                    "Adventure",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "1993-06-11",
+                "msRating": 8.2,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": true,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "1996": [
+            {
+                "_id": "687b8a964fefc8a09e0d5750",
+                "msName": "Mission: Impossible",
+                "msAbout": "When Ethan Hunt, the leader of a crack espionage team whose perilous operation has gone awry with no explanation, discovers that a mole has penetrated the CIA, he's surprised to learn that he's the prime suspect. To clear his name, Hunt now must ferret out the real double agent and, in the process, even the score.",
+                "msPoster": "https://image.tmdb.org/t/p/original/pyQqxuDYmkyNnjC131bmt1bzShW.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/mission-impossible/1971001344",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Thriller"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "1996-05-22",
+                "msRating": 7.2,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "1997": [
+            {
+                "_id": "687b45784fefc8a09e0d5594",
+                "msName": "The Lost World: Jurassic Park",
+                "msAbout": "Four years after Jurassic Park's genetically bred dinosaurs ran amok, multimillionaire John Hammond shocks chaos theorist Ian Malcolm by revealing that he has been breeding more beasties at a secret location. Malcolm, his paleontologist ladylove and a wildlife videographer join an expedition to document the lethal lizards' natural behavior in this action-packed thriller.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/jElpCJkSaRPYwIMwZY28gOKV7BK.jpg",
+                "msLink": "https://www.primevideo.com/detail/The-Lost-World-Jurassic-Park/0HBVBURM9ANWFDF0FT29XAG9CR",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "1997-05-22",
+                "msRating": 6.6,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
         "1999": [
             {
                 "_id": "687374150ca443ea99fbc8b7",
@@ -42,6 +132,74 @@
                 "__v": 0
             }
         ],
+        "2000": [
+            {
+                "_id": "687b8b7a4fefc8a09e0d5753",
+                "msName": "Mission: Impossible II",
+                "msAbout": "With computer genius Luther Stickell at his side and a beautiful thief on his mind, agent Ethan Hunt races across Australia and Spain to stop a former IMF agent from unleashing a genetically engineered biological weapon called Chimera. This mission, should Hunt choose to accept it, plunges him into the center of an international crisis of terrifying magnitude.",
+                "msPoster": "https://image.tmdb.org/t/p/original/12mI7kU22nJrmtAgGcDP8tbAz4a.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/mission-impossible-ii/1971001490",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Thriller"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2000-05-24",
+                "msRating": 6.1,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "2001": [
+            {
+                "_id": "687b461c4fefc8a09e0d5597",
+                "msName": "Jurassic Park III",
+                "msAbout": "In need of funds for research, Dr. Alan Grant accepts a large sum of money to accompany Paul and Amanda Kirby on an aerial tour of the infamous Isla Sorna. It isn't long before all hell breaks loose and the stranded wayfarers must fight for survival as a host of new -- and even more deadly -- dinosaurs try to make snacks of them.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/oQXj4NUfS3r3gHXtDOzcJgj1lLc.jpg",
+                "msLink": "https://www.primevideo.com/detail/Jurassic-Park-III/0LQ9HVMF9AA9OC0CBJJ83Z0UPU",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Si-Fi",
+                    "Thriller"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2001-07-18",
+                "msRating": 6,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687b64d57699781fff3be877",
+                "msName": "Sprited Away",
+                "msAbout": "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
+                "msLink": "https://www.netflix.com/in/title/60023642",
+                "msGenre": [
+                    "Animation",
+                    "Family",
+                    "Fantasy"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2001-07-20",
+                "msRating": 8.6,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": true,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
         "2002": [
             {
                 "_id": "687257d00037d6197417eed6",
@@ -62,6 +220,27 @@
                 "msWatched": true,
                 "msWatchedAt": null,
                 "__v": 0
+            },
+            {
+                "_id": "687b59014fefc8a09e0d5603",
+                "msName": "The Transporter",
+                "msAbout": "Former Special Forces officer Frank Martin will deliver anything to anyone for the right price, and his no-questions-asked policy puts him in high demand. But when he realizes his latest cargo is alive, it sets in motion a dangerous chain of events. The bound and gagged Lai is being smuggled to France by a shady American businessman, and Frank works to save her as his own illegal activities are uncovered by a French detective.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/xmuCaJJjGbUns8pwMD7M0C0O1uP.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/the-transporter/1770000773",
+                "msGenre": [
+                    "Action",
+                    "Crime",
+                    "Thriller"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2002-10-11",
+                "msRating": 6.8,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
             }
         ],
         "2003": [
@@ -72,10 +251,10 @@
                 "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/9TGHDvWrqKBzwDxDodHYXEmOE6J.jpg",
                 "msLink": "https://www.hotstar.com/in/movies/the-matrix-reloaded/1971000535",
                 "msGenre": [
-                    "Adventure",
                     "Action",
-                    "Thriller",
-                    "Si-Fi"
+                    "Adventure",
+                    "Si-Fi",
+                    "Thriller"
                 ],
                 "msFormat": "Movie",
                 "msIndustry": "Hollywood",
@@ -94,10 +273,10 @@
                 "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/t1wm4PgOQ8e4z1C6tk1yDNrps4T.jpg",
                 "msLink": "https://www.hotstar.com/in/movies/the-matrix-revolutions/1971000534",
                 "msGenre": [
-                    "Adventure",
                     "Action",
-                    "Thriller",
-                    "Si-Fi"
+                    "Adventure",
+                    "Si-Fi",
+                    "Thriller"
                 ],
                 "msFormat": "Movie",
                 "msIndustry": "Hollywood",
@@ -111,6 +290,28 @@
             }
         ],
         "2004": [
+            {
+                "_id": "687b64287699781fff3be873",
+                "msName": "Monster",
+                "msAbout": "Kenzou Tenma, a Japanese brain surgeon in Germany, finds his life in utter turmoil after getting involved with a psychopath that was once a former patient.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/n5XNKXnoXpoXyfiCtXHOf8q8PFM.jpg",
+                "msLink": "https://www.netflix.com/in/title/81409869",
+                "msGenre": [
+                    "Animation",
+                    "Crime",
+                    "Drama",
+                    "Mystery"
+                ],
+                "msFormat": "Series",
+                "msIndustry": "Other",
+                "msSeason": 1,
+                "msReleaseDate": "2004-04-06",
+                "msRating": 8.7,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": true,
+                "msWatchedAt": null,
+                "__v": 0
+            },
             {
                 "_id": "687379090ca443ea99fbc8d6",
                 "msName": "The Girl Next Door",
@@ -132,6 +333,120 @@
                 "__v": 0
             }
         ],
+        "2005": [
+            {
+                "_id": "687b59b94fefc8a09e0d5606",
+                "msName": "Transporter 2",
+                "msAbout": "Professional driver, and former Special Forces officer, Frank Martin is living in Miami, where he is temporarily filling in for a friend as the chauffeur for a government narcotics control policy director and his family. The young boy in the family is targeted for kidnapping, and Frank immediately becomes involved in protecting the child and exposing the kidnappers.",
+                "msPoster": "https://image.tmdb.org/t/p/original/5W3TWyxU9pTcK6xd4KxOMh975xZ.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/transporter-2/1770000710",
+                "msGenre": [
+                    "Action",
+                    "Crime",
+                    "Thriller"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2005-09-02",
+                "msRating": 6.3,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "2006": [
+            {
+                "_id": "687b639d7699781fff3be86f",
+                "msName": "Death Note",
+                "msAbout": "Light Yagami is an ace student with great prospects—and he’s bored out of his mind. But all that changes when he finds the Death Note, a notebook dropped by a rogue Shinigami death god. Any human whose name is written in the notebook dies, and Light has vowed to use the power of the Death Note to rid the world of evil. But will Light succeed in his noble goal, or will the Death Note turn him into the very thing he fights against?",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/qdNlRsnpr9yfmIJ76qQBM91E3dn.jpg",
+                "msLink": "https://www.netflix.com/in/title/70204970",
+                "msGenre": [
+                    "Animation",
+                    "Fantasy",
+                    "Mystery",
+                    "Si-Fi"
+                ],
+                "msFormat": "Series",
+                "msIndustry": "Other",
+                "msSeason": 1,
+                "msReleaseDate": "2006-10-04",
+                "msRating": 8.9,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": true,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687b8c374fefc8a09e0d5756",
+                "msName": "Mission: Impossible III",
+                "msAbout": "Retired from active duty, and training recruits for the Impossible Mission Force, agent Ethan Hunt faces the toughest foe of his career: Owen Davian, an international broker of arms and information, who's as cunning as he is ruthless. Davian emerges to threaten Hunt and all that he holds dear including the woman Hunt loves.`",
+                "msPoster": "https://image.tmdb.org/t/p/original/uXThDsEdXfepDiDlsIvuUQJ82bl.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/mission-impossible-iii/1971001505",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Thriller"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2006-05-26",
+                "msRating": 6.9,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "2007": [
+            {
+                "_id": "687b4de54fefc8a09e0d55db",
+                "msName": "Transformers",
+                "msAbout": "Young teenager Sam Witwicky becomes involved in the ancient struggle between two extraterrestrial factions of transforming robots – the heroic Autobots and the evil Decepticons. Sam holds the clue to unimaginable power and the Decepticons will stop at nothing to retrieve it.",
+                "msPoster": "https://image.tmdb.org/t/p/original/wN69FlaHK9eEhBCwiuzweLVXiNv.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/transformers/1971001504",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2007-07-03",
+                "msRating": 7.1,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "2008": [
+            {
+                "_id": "687b5a514fefc8a09e0d5609",
+                "msName": "Transporter 3",
+                "msAbout": "Frank Martin puts the driving gloves on to deliver Valentina, the kidnapped daughter of a Ukrainian government official, from Marseilles to Odessa on the Black Sea. En route, he has to contend with thugs who want to intercept Valentina's safe delivery and not let his personal feelings get in the way of his dangerous objective.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/o4w9VF3GRZuXe9NHHvZ07pJespl.jpg",
+                "msLink": "https://www.primevideo.com/detail/Transporter-3/0M0VLEXBGN1ZWYAGHPE16GKY0T",
+                "msGenre": [
+                    "Action",
+                    "Crime",
+                    "Thriller"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2008-11-26",
+                "msRating": 6.1,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
         "2009": [
             {
                 "_id": "68764d91273f03479105574f",
@@ -140,8 +455,8 @@
                 "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/3rt6upSI2RHV3IAFg1fW4DUNuuk.jpg",
                 "msLink": "https://www.hotstar.com/in/movies/13-padamoodu/1000055660",
                 "msGenre": [
-                    "Mystery",
-                    "Horror"
+                    "Horror",
+                    "Mystery"
                 ],
                 "msFormat": "Movie",
                 "msIndustry": "Bollywood",
@@ -150,6 +465,27 @@
                 "msRating": 7.4,
                 "msUploadedBy": "Vijayant Joshi",
                 "msWatched": true,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687a3de15fb4b92edd1cded6",
+                "msName": "Inglourious Basterds",
+                "msAbout": "In Nazi-occupied France during World War II, a group of Jewish-American soldiers known as \"The Basterds\" are chosen specifically to spread fear throughout the Third Reich by scalping and brutally killing Nazis. The Basterds, lead by Lt. Aldo Raine soon cross paths with a French-Jewish teenage girl who runs a movie theater in Paris which is targeted by the soldiers",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/7sfbEnaARXDDhKm0CZ7D7uc2sbo.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/inglourious-basterds/1971000494",
+                "msGenre": [
+                    "Drama",
+                    "Thriller",
+                    "War"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2009-08-21",
+                "msRating": 8.4,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
                 "msWatchedAt": null,
                 "__v": 0
             },
@@ -170,6 +506,27 @@
                 "msReleaseDate": "2009-07-31",
                 "msRating": 6.8,
                 "msUploadedBy": "Vijayant Joshi",
+                "msWatched": true,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687b4eca4fefc8a09e0d55de",
+                "msName": "Transformers: Revenge of the Fallen",
+                "msAbout": "Sam Witwicky leaves the Autobots behind for a normal life. But when his mind is filled with cryptic symbols, the Decepticons target him and he is dragged back into the Transformers' war.",
+                "msPoster": "https://image.tmdb.org/t/p/original/lDTavm9japNeHk5BsrB13qbGvBk.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/transformers-revenge-of-the-fallen/1971001334",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2009-06-24",
+                "msRating": 6,
+                "msUploadedBy": "Vijayant Joshi",
                 "msWatched": false,
                 "msWatchedAt": null,
                 "__v": 0
@@ -184,8 +541,8 @@
                 "msLink": "https://www.hotstar.com/in/movies/inception/1971000530",
                 "msGenre": [
                     "Action",
-                    "Si-Fi",
-                    "Adventure"
+                    "Adventure",
+                    "Si-Fi"
                 ],
                 "msFormat": "Movie",
                 "msIndustry": "Hollywood",
@@ -205,14 +562,58 @@
                 "msLink": "https://www.hotstar.com/in/movies/shutter-island/1971001342",
                 "msGenre": [
                     "Drama",
-                    "Thriller",
-                    "Mystery"
+                    "Mystery",
+                    "Thriller"
                 ],
                 "msFormat": "Movie",
                 "msIndustry": "Hollywood",
                 "msSeason": 0,
                 "msReleaseDate": "2010-02-19",
                 "msRating": 8.2,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            }
+        ],
+        "2011": [
+            {
+                "_id": "687b8cf44fefc8a09e0d575e",
+                "msName": "Mission: Impossible IV - (Ghost Protocol)",
+                "msAbout": "Ethan Hunt and his team are racing against time to track down a dangerous terrorist named Hendricks, who has gained access to Russian nuclear launch codes and is planning a strike on the United States. An attempt to stop him ends in an explosion causing severe destruction to the Kremlin and the IMF to be implicated in the bombing, forcing the President to disavow them. No longer being aided by the government, Ethan and his team chase Hendricks around the globe, although they might still be too late to stop a disaster.",
+                "msPoster": "https://image.tmdb.org/t/p/original/ytc79IXrfz5OHnyCXkPH0N9pD8c.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/mission-impossible-ghost-protocol/1971001496",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Thriller"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2011-12-21",
+                "msRating": 7.4,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687b4f3e4fefc8a09e0d55e1",
+                "msName": "Transformers: Dark of the Moon",
+                "msAbout": "The Autobots continue to work for NEST, now no longer in secret. But after discovering a strange artifact during a mission in Chernobyl, it becomes apparent to Optimus Prime that the United States government has been less than forthright with them.",
+                "msPoster": "https://image.tmdb.org/t/p/original/dXHq7EpDSqxgPqqxZHdbOcRO12x.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/transformers-dark-of-the-moon/1971001500",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2011-06-29",
+                "msRating": 6.2,
                 "msUploadedBy": "Vijayant Joshi",
                 "msWatched": false,
                 "msWatchedAt": null,
@@ -227,16 +628,38 @@
                 "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/9b0Im7SfedHiajTwzSL9zGyBI7M.jpg",
                 "msLink": "https://www.hotstar.com/in/movies/battleship/1971000735",
                 "msGenre": [
-                    "Thriller",
                     "Action",
                     "Adventure",
-                    "Si-Fi"
+                    "Si-Fi",
+                    "Thriller"
                 ],
                 "msFormat": "Movie",
                 "msIndustry": "Hollywood",
                 "msSeason": 0,
                 "msReleaseDate": "2012-04-13",
                 "msRating": 5.8,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "6879404202b39b34b790d355",
+                "msName": "Jack Reacher",
+                "msAbout": "One morning in an ordinary town, five people are shot dead in a seemingly random attack. All evidence points to a single suspect: an ex-military sniper who is quickly brought into custody. The interrogation yields one written note: 'Get Jack Reacher!'. Reacher, an enigmatic ex-Army investigator, believes the authorities have the right man but agrees to help the sniper's defense attorney. However, the more Reacher delves into the case, the less clear-cut it appears. So begins an extraordinary chase for the truth, pitting Jack Reacher against an unexpected enemy, with a skill for violence and a secret to keep.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/uQBbjrLVsUibWxNDGA4Czzo8lwz.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/jack-reacher/1971001485",
+                "msGenre": [
+                    "Action",
+                    "Crime",
+                    "Drama",
+                    "Thriller"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2012-12-21",
+                "msRating": 7,
                 "msUploadedBy": "Vijayant Joshi",
                 "msWatched": false,
                 "msWatchedAt": null,
@@ -272,9 +695,9 @@
                 "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/8h3UJbJzAoMB916asMdvUiy0W0Y.jpg",
                 "msLink": "https://www.hotstar.com/in/movies/don-jon/1971311490",
                 "msGenre": [
-                    "Romance",
                     "Comedy",
-                    "Drama"
+                    "Drama",
+                    "Romance"
                 ],
                 "msFormat": "Movie",
                 "msIndustry": "Hollywood",
@@ -293,9 +716,9 @@
                 "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/kZ2nZw8D681aphje8NJi8EfbL1U.jpg",
                 "msLink": "https://www.primevideo.com/detail/Gravity/0MW3B1AN9EBQN5F5825WH831MA",
                 "msGenre": [
+                    "Drama",
                     "Si-Fi",
-                    "Thriller",
-                    "Drama"
+                    "Thriller"
                 ],
                 "msFormat": "Movie",
                 "msIndustry": "Hollywood",
@@ -325,12 +748,52 @@
                 "msReleaseDate": "2013-03-01",
                 "msRating": 6.9,
                 "msUploadedBy": "Vijayant Joshi",
-                "msWatched": false,
+                "msWatched": true,
                 "msWatchedAt": null,
                 "__v": 0
             }
         ],
         "2014": [
+            {
+                "_id": "687b67d64fefc8a09e0d56d1",
+                "msName": "Annabelle",
+                "msAbout": "A couple begins to experience terrifying supernatural occurrences involving a vintage doll shortly after their home is invaded by satanic cultists.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/yLsuU2P2SpDYFwtZQ7dtfVAf6TE.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/annabelle/1971000592",
+                "msGenre": [
+                    "Horror"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2014-10-03",
+                "msRating": 5.5,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": true,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687b47b44fefc8a09e0d55a0",
+                "msName": "Godzilla",
+                "msAbout": "Ford Brody, a Navy bomb expert, has just reunited with his family in San Francisco when he is forced to go to Japan to help his estranged father, Joe. Soon, both men are swept up in an escalating crisis when an ancient alpha predator arises from the sea to combat malevolent adversaries that threaten the survival of humanity. The creatures leave colossal destruction in their wake, as they make their way toward their final battleground: San Francisco.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/tphkjmQq8WebuVwNXelmjLUXuPJ.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/godzilla/1971000539",
+                "msGenre": [
+                    "Action",
+                    "Drama",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2014-05-16",
+                "msRating": 6.4,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
             {
                 "_id": "68764cc9273f03479105574a",
                 "msName": "Interstellar",
@@ -338,10 +801,10 @@
                 "msPoster": "https://image.tmdb.org/t/p/original/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
                 "msLink": "https://www.primevideo.com/region/eu/detail/Interstellar/0PUNMGZEWOMYFKR1XIGOLTL2YM",
                 "msGenre": [
-                    "Si-Fi",
+                    "Action",
                     "Adventure",
                     "Intense",
-                    "Action"
+                    "Si-Fi"
                 ],
                 "msFormat": "Movie",
                 "msIndustry": "Hollywood",
@@ -354,6 +817,51 @@
                 "__v": 0
             },
             {
+                "_id": "687b677f7699781fff3be87d",
+                "msName": "Parasyte: The Maxim",
+                "msAbout": "A species of parasitic aliens descends on Earth and quickly infiltrates humanity by entering the brains of vulnerable targets; insatiable beings that gain total control of their host and are capable of transforming themselves to feed on unsuspecting prey. High school student Shinichi Izumi falls victim to one of these parasites, but the creature fails to take over his brain and ends up in his right hand.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/cXBfjZSdJelu2r0wKD7qCxS71kb.jpg",
+                "msLink": "https://www.netflix.com/in/title/80191008",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Animation",
+                    "Drama",
+                    "Fantasy",
+                    "Si-Fi"
+                ],
+                "msFormat": "Series",
+                "msIndustry": "Hollywood",
+                "msSeason": 1,
+                "msReleaseDate": "2014-10-02",
+                "msRating": 8.2,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687b4ff14fefc8a09e0d55ea",
+                "msName": "Transformers: Age of Extinction",
+                "msAbout": "As humanity picks up the pieces after the battle of Chicago, a shadowy group reveals itself in an attempt to control the direction of history…while an ancient, powerful new menace sets Earth in its crosshairs. With help from Cade Yeager, Optimus Prime and the Autobots rise to meet their most fearsome challenge yet.",
+                "msPoster": "https://image.tmdb.org/t/p/original/3Vp88zGOQQrvQlpkcbJ6FUNYF8W.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/transformers-age-of-extinction/1971001501",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2014-06-27",
+                "msRating": 5.6,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
                 "_id": "68724edd0037d6197417ee79",
                 "msName": "True Detective",
                 "msAbout": "An American anthology police detective series utilizing multiple timelines in which investigations seem to unearth personal and professional secrets of those involved, both within or outside the law.",
@@ -361,9 +869,9 @@
                 "msLink": "https://www.hotstar.com/in/shows/true-detective/1971002860",
                 "msGenre": [
                     "Crime",
+                    "Detective",
                     "Mystery",
-                    "Thriller",
-                    "Detective"
+                    "Thriller"
                 ],
                 "msFormat": "Series",
                 "msIndustry": "Hollywood",
@@ -386,8 +894,8 @@
                 "msGenre": [
                     "Action",
                     "Adventure",
-                    "Fantasy",
-                    "Drama"
+                    "Drama",
+                    "Fantasy"
                 ],
                 "msFormat": "Movie",
                 "msIndustry": "Other",
@@ -408,8 +916,8 @@
                 "msGenre": [
                     "Action",
                     "Adventure",
-                    "Thriller",
-                    "Si-Fi"
+                    "Si-Fi",
+                    "Thriller"
                 ],
                 "msFormat": "Movie",
                 "msIndustry": "Hollywood",
@@ -417,6 +925,26 @@
                 "msReleaseDate": "2015-06-12",
                 "msRating": 6.9,
                 "msUploadedBy": "Trisha Sharma",
+                "msWatched": true,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687b8d904fefc8a09e0d5761",
+                "msName": "Mission: Impossible V - (Rogue Nation)",
+                "msAbout": "Ethan and team take on their most impossible mission yet—eradicating 'The Syndicate', an International and highly-skilled rogue organization committed to destroying the IMF.",
+                "msPoster": "https://image.tmdb.org/t/p/original/f7hf9ABDfi0RwCq460nbTxMEfGm.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/mission-impossible-rogue-nation/1971001506",
+                "msGenre": [
+                    "Action",
+                    "Adventure"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2015-07-31",
+                "msRating": 7.4,
+                "msUploadedBy": "Vijayant Joshi",
                 "msWatched": false,
                 "msWatchedAt": null,
                 "__v": 0
@@ -447,8 +975,8 @@
                 "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/5l6LzyRpinZ74GTiM9qdHdg5hYT.jpg",
                 "msLink": "https://www.hotstar.com/in/movies/the-martian/1770002321",
                 "msGenre": [
-                    "Drama",
                     "Adventure",
+                    "Drama",
                     "Si-Fi"
                 ],
                 "msFormat": "Movie",
@@ -456,6 +984,27 @@
                 "msSeason": 0,
                 "msReleaseDate": "2015-10-02",
                 "msRating": 8,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687b5b124fefc8a09e0d560c",
+                "msName": "The Transporter Refueled",
+                "msAbout": "The fast-paced action movie is again set in the criminal underworld in France, where Frank Martin is known as The Transporter, because he is the best driver and mercenary money can buy. In this installment, he meets Anna and they attempt to take down a group of ruthless Russian human traffickers who also have kidnapped Frank’s father.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/7FlegRMzzGUKHpEuXGGF5jOiA6G.jpg",
+                "msLink": "https://www.primevideo.com/detail/The-Transporter-Refueled/0QMGKE8CE21ZG0SX05SOTPZU1D",
+                "msGenre": [
+                    "Action",
+                    "Crime",
+                    "Thriller"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2015-09-04",
+                "msRating": 5.2,
                 "msUploadedBy": "Vijayant Joshi",
                 "msWatched": false,
                 "msWatchedAt": null,
@@ -485,15 +1034,37 @@
                 "__v": 0
             },
             {
+                "_id": "687940f502b39b34b790d358",
+                "msName": "Jack Reacher: Never Go Back",
+                "msAbout": "Years after resigning command of an elite military police unit, the nomadic, righter-of-wrongs Reacher is drawn back into the life he left behind when his friend and successor, Major Susan Turner is framed for espionage. Reacher will stop at nothing to prove her innocence and to expose the real perpetrators behind the killings of his former soldiers.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/cOg3UT2NYWHZxp41vpxAnVCOC4M.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/jack-reacher-never-go-back/1971001486",
+                "msGenre": [
+                    "Action",
+                    "Crime",
+                    "Drama",
+                    "Thriller"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2016-10-21",
+                "msRating": 6.2,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
                 "_id": "68764b7c273f034791055747",
                 "msName": "Neerja",
                 "msAbout": "Neerja is a portrayal on the life of the courageous Neerja Bhanot, who sacrificed her life while protecting the lives of 359 passengers on the Pan Am flight 73 in 1986. The flight was hijacked by a terrorist organization.",
                 "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/alDRJWHI1TfqB9ev6cMbVE5P92x.jpg",
                 "msLink": "https://www.hotstar.com/in/movies/neerja/1000090704",
                 "msGenre": [
+                    "Biopic",
                     "Drama",
-                    "Thriller",
-                    "Biopic"
+                    "Thriller"
                 ],
                 "msFormat": "Movie",
                 "msIndustry": "Bollywood",
@@ -515,8 +1086,8 @@
                 "msLink": "https://www.hotstar.com/in/movies/alien-covenant/1770016999",
                 "msGenre": [
                     "Horror",
-                    "Thriller",
-                    "Si-Fi"
+                    "Si-Fi",
+                    "Thriller"
                 ],
                 "msFormat": "Movie",
                 "msIndustry": "Hollywood",
@@ -525,6 +1096,25 @@
                 "msRating": 6.4,
                 "msUploadedBy": "Vijayant Joshi",
                 "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687b697b4fefc8a09e0d56dc",
+                "msName": "Annabelle: Creation",
+                "msAbout": "Several years after the tragic death of their little girl, a doll maker and his wife welcome a nun and several girls from a shuttered orphanage into their home, soon becoming the target of the doll maker's possessed creation Annabelle.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/tb86j8jVCVsdZnzf8I6cIi65IeM.jpg",
+                "msLink": "https://www.primevideo.com/detail/Annabelle-Creation/0LKV9QFH3ZD0HVUCAG8ECMTC8E",
+                "msGenre": [
+                    "Horror"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2017-08-11",
+                "msRating": 6.5,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": true,
                 "msWatchedAt": null,
                 "__v": 0
             },
@@ -557,9 +1147,9 @@
                 "msLink": "https://www.hotstar.com/in/movies/dunkirk/1971000528",
                 "msGenre": [
                     "Action",
-                    "War",
+                    "Military",
                     "Survival",
-                    "Military"
+                    "War"
                 ],
                 "msFormat": "Movie",
                 "msIndustry": "Hollywood",
@@ -591,9 +1181,72 @@
                 "msWatched": false,
                 "msWatchedAt": null,
                 "__v": 0
+            },
+            {
+                "_id": "687b48494fefc8a09e0d55a3",
+                "msName": "Kong: Skull Island",
+                "msAbout": "Explore the mysterious and dangerous home of the king of the apes as a team of explorers ventures deep inside the treacherous, primordial island.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/r2517Vz9EhDhj88qwbDVj8DCRZN.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/kong-skull-island/1971000527",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Fantasy"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2017-03-10",
+                "msRating": 6.7,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687b506c4fefc8a09e0d55ed",
+                "msName": "Transformers: The Last Knight",
+                "msAbout": "Humans and Transformers are at war. Optimus Prime is gone. The key to saving our future lies buried in the secrets of the past, in the hidden history of Transformers on Earth. Saving our world falls upon the shoulders of an unlikely alliance: Cade Yeager; Bumblebee; an English Lord; and an Oxford Professor.",
+                "msPoster": "https://image.tmdb.org/t/p/original/A2C8cB9y7fUUtnw172jIbw42j1K.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/transformers-the-last-knight/1971001487",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2017-06-21",
+                "msRating": 5.2,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
             }
         ],
         "2018": [
+            {
+                "_id": "687b51304fefc8a09e0d55f0",
+                "msName": "Bumblebee",
+                "msAbout": "On the run in the year 1987, Bumblebee finds refuge in a junkyard in a small Californian beach town. Charlie, on the cusp of turning 18 and trying to find her place in the world, discovers Bumblebee, battle-scarred and broken. When Charlie revives him, she quickly learns this is no ordinary yellow VW bug.",
+                "msPoster": "https://image.tmdb.org/t/p/original/lIBrRQRcXk9H06jJjYFFkteECsU.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/bumblebee/1971001354",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2018-12-21",
+                "msRating": 6.7,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
             {
                 "_id": "687624b0273f034791055700",
                 "msName": "Jurassic World: Fallen Kingdom",
@@ -603,8 +1256,8 @@
                 "msGenre": [
                     "Action",
                     "Adventure",
-                    "Thriller",
-                    "Si-Fi"
+                    "Si-Fi",
+                    "Thriller"
                 ],
                 "msFormat": "Movie",
                 "msIndustry": "Hollywood",
@@ -624,9 +1277,9 @@
                 "msLink": "https://www.primevideo.com/detail/KGF-Chapter-1-Hindi/0S3QBNP7336VVT7JJCVVIRHA1L",
                 "msGenre": [
                     "Action",
-                    "Thriller",
                     "Adventure",
-                    "Crime"
+                    "Crime",
+                    "Thriller"
                 ],
                 "msFormat": "Movie",
                 "msIndustry": "Other",
@@ -639,14 +1292,34 @@
                 "__v": 0
             },
             {
+                "_id": "687b8e684fefc8a09e0d576b",
+                "msName": "Mission: Impossible VI - (Fallout)",
+                "msAbout": "When an IMF mission ends badly, the world is faced with dire consequences. As Ethan Hunt takes it upon himself to fulfill his original briefing, the CIA begin to question his loyalty and his motives. The IMF team find themselves in a race against time, hunted by assassins while trying to prevent a global catastrophe.",
+                "msPoster": "https://image.tmdb.org/t/p/original/x3GWAhkIaPEn0QBcghwLXAkiAqR.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/mission-impossible-fallout/1971001332",
+                "msGenre": [
+                    "Action",
+                    "Adventure"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2018-07-27",
+                "msRating": 7.7,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
                 "_id": "68724fe80037d6197417ee7c",
                 "msName": "Venom",
                 "msAbout": "Investigative journalist Eddie Brock attempts a comeback following a scandal, but accidentally becomes the host of Venom, a violent, super powerful alien symbiote. Soon, he must rely on his newfound powers to protect the world from a shadowy organization looking for a symbiote of their own.",
                 "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/p4if93blsrhU5NUlHxUlEySTPak.jpg",
                 "msLink": "https://www.hotstar.com/in/movies/venom/1971001874",
                 "msGenre": [
-                    "Si-Fi",
-                    "Action"
+                    "Action",
+                    "Si-Fi"
                 ],
                 "msFormat": "Movie",
                 "msIndustry": "Hollywood",
@@ -654,12 +1327,31 @@
                 "msReleaseDate": "2018-10-05",
                 "msRating": 6.6,
                 "msUploadedBy": "Vijayant Joshi",
-                "msWatched": false,
+                "msWatched": true,
                 "msWatchedAt": null,
                 "__v": 0
             }
         ],
         "2019": [
+            {
+                "_id": "687b69f64fefc8a09e0d56df",
+                "msName": "Annabelle Comes Home",
+                "msAbout": "Determined to keep Annabelle from wreaking more havoc, demonologists Ed and Lorraine Warren bring the possessed doll to the locked artifacts room in their home, placing her “safely” behind sacred glass and enlisting a priest’s holy blessing. But an unholy night of horror awaits as Annabelle awakens the evil spirits in the room, who all set their sights on a new target the Warrens' ten-year-old daughter, Judy, and her friends.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/qWsHMrbg9DsBY3bCMk9jyYCRVRs.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/annabelle-comes-home/1971000622",
+                "msGenre": [
+                    "Horror"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2019-06-26",
+                "msRating": 5.9,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": true,
+                "msWatchedAt": null,
+                "__v": 0
+            },
             {
                 "_id": "68724daa0037d6197417ee73",
                 "msName": "Chernobyl",
@@ -669,8 +1361,8 @@
                 "msGenre": [
                     "Drama",
                     "Historical",
-                    "Survival",
-                    "Intense"
+                    "Intense",
+                    "Survival"
                 ],
                 "msFormat": "Series",
                 "msIndustry": "Hollywood",
@@ -699,6 +1391,26 @@
                 "msReleaseDate": "2019-02-08",
                 "msRating": 6.5,
                 "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687b492a4fefc8a09e0d55b1",
+                "msName": "Godzilla: King of the Monsters",
+                "msAbout": "Follows the heroic efforts of the crypto-zoological agency Monarch as its members face off against a battery of god-sized monsters, including the mighty Godzilla, who collides with Mothra, Rodan, and his ultimate nemesis, the three-headed King Ghidorah. When these ancient super-species, thought to be mere myths, rise again, they all vie for supremacy, leaving humanity's very existence hanging in the balance.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/mzOHg7Q5q9yUmY0b9Esu8Qe6Nnm.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/godzilla-king-of-the-monsters/1971000537",
+                "msGenre": [
+                    "Action",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2019-05-31",
+                "msRating": 6,
+                "msUploadedBy": "Trisha Sharma",
                 "msWatched": false,
                 "msWatchedAt": null,
                 "__v": 0
@@ -761,7 +1473,7 @@
                 "msReleaseDate": "2020-10-09",
                 "msRating": 9.2,
                 "msUploadedBy": "Trisha Sharma",
-                "msWatched": false,
+                "msWatched": true,
                 "msWatchedAt": null,
                 "__v": 0
             },
@@ -772,9 +1484,9 @@
                 "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/7p0nbWCGsHf2sgxJer2AuCx6zwF.jpg",
                 "msLink": "https://www.hotstar.com/in/shows/special-ops/1260022894",
                 "msGenre": [
-                    "Mystery",
+                    "Crime",
                     "Drama",
-                    "Crime"
+                    "Mystery"
                 ],
                 "msFormat": "Series",
                 "msIndustry": "Bollywood",
@@ -793,9 +1505,9 @@
                 "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/aMiPwPQjQI1EZN3xP2V0sSU37dc.jpg",
                 "msLink": "https://www.hotstar.com/in/shows/the-outsider/1971002981",
                 "msGenre": [
+                    "Crime",
                     "Drama",
-                    "Mystery",
-                    "Crime"
+                    "Mystery"
                 ],
                 "msFormat": "Series",
                 "msIndustry": "Hollywood",
@@ -810,13 +1522,35 @@
         ],
         "2021": [
             {
+                "_id": "687b49a94fefc8a09e0d55b4",
+                "msName": "Godzilla vs. Kong",
+                "msAbout": "In a time when monsters walk the Earth, humanity’s fight for its future sets Godzilla and Kong on a collision course that will see the two most powerful forces of nature on the planet collide in a spectacular battle for the ages.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/pgqgaUx1cJb5oZQQ5v0tNARCeBp.jpg",
+                "msLink": "https://www.primevideo.com/detail/Godzilla-vs-Kong/0FES0C5RR43DIQEITGEEW77YIB",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2021-03-31",
+                "msRating": 6.3,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
                 "_id": "687249660037d6197417ee4e",
                 "msName": "Special Ops: The Himmat Story",
                 "msAbout": "After the 2001 Parliament attack, a young and idealistic RA&W officer had a theory. In 2003, he had a mystery. This is the story of Himmat Singh.",
                 "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/nH5LDmNofN4p5mldUxxhVzfn4sk.jpg",
                 "msLink": "https://www.hotstar.com/in/shows/special-ops-1-5/1260071971",
                 "msGenre": [
-                    "Action & Adventure",
+                    "Action",
+                    "Adventure",
                     "Crime",
                     "Drama"
                 ],
@@ -858,9 +1592,9 @@
                 "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/1MJNcPZy46hIy2CmSqOeru0yr5C.jpg",
                 "msLink": "https://www.primevideo.com/detail/0IDPIWRVOMSGAQ81Y88AXQS1VC",
                 "msGenre": [
-                    "Si-Fi",
                     "Action",
-                    "Adventure"
+                    "Adventure",
+                    "Si-Fi"
                 ],
                 "msFormat": "Movie",
                 "msIndustry": "Hollywood",
@@ -900,8 +1634,8 @@
                 "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/jbAvCACjLf1ZG0unB2tdmx5HAf1.jpg",
                 "msLink": "https://www.primevideo.com/detail/Jurassic-World-Dominion/0RE082YLFEWM5NF6S779E6NZLL",
                 "msGenre": [
-                    "Adventure",
                     "Action",
+                    "Adventure",
                     "Si-Fi"
                 ],
                 "msFormat": "Movie",
@@ -922,9 +1656,9 @@
                 "msLink": "https://www.primevideo.com/detail/KGF-Chapter-2-Hindi/0OLFV66669RCQ9BSC7YCWOZA6S",
                 "msGenre": [
                     "Action",
-                    "Thriller",
                     "Adventure",
-                    "Crime"
+                    "Crime",
+                    "Thriller"
                 ],
                 "msFormat": "Movie",
                 "msIndustry": "Other",
@@ -953,7 +1687,7 @@
                 "msReleaseDate": "2022-03-25",
                 "msRating": 7.8,
                 "msUploadedBy": "Vijayant Joshi",
-                "msWatched": false,
+                "msWatched": true,
                 "msWatchedAt": null,
                 "__v": 0
             },
@@ -964,9 +1698,9 @@
                 "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/o7A1agEoXvwyyOmIbHnUhfnC34j.jpg",
                 "msLink": "https://www.hotstar.com/in/movies/rocketry-the-nambi-effect/1971010934",
                 "msGenre": [
+                    "Biopic",
                     "Drama",
-                    "History",
-                    "Biopic"
+                    "History"
                 ],
                 "msFormat": "Movie",
                 "msIndustry": "Bollywood",
@@ -992,6 +1726,26 @@
                 "msSeason": 1,
                 "msReleaseDate": "2022-04-10",
                 "msRating": 7.3,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687942e102b39b34b790d36d",
+                "msName": "Top Gun: Maverick",
+                "msAbout": "After more than thirty years of service as one of the Navy’s top aviators, and dodging the advancement in rank that would ground him, Pete “Maverick” Mitchell finds himself training a detachment of TOP GUN graduates for a specialized mission the likes of which no living pilot has ever seen.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/pQjHWJdbkHkPcAUKSkMum6AnYqn.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/top-gun-maverick/1271399288",
+                "msGenre": [
+                    "Action",
+                    "Drama"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2022-05-27",
+                "msRating": 8.2,
                 "msUploadedBy": "Vijayant Joshi",
                 "msWatched": false,
                 "msWatchedAt": null,
@@ -1062,6 +1816,49 @@
                 "__v": 0
             },
             {
+                "_id": "687b8f6f4fefc8a09e0d576e",
+                "msName": "Mission: Impossible - VII (Dead Reckoning)",
+                "msAbout": "Ethan Hunt and his IMF team embark on their most dangerous mission yet: To track down a terrifying new weapon that threatens all of humanity before it falls into the wrong hands. With control of the future and the world's fate at stake and dark forces from Ethan's past closing in, a deadly race around the globe begins. Confronted by a mysterious, all-powerful enemy, Ethan must consider that nothing can matter more than his mission not even the lives of those he cares about most.",
+                "msPoster": "https://image.tmdb.org/t/p/original/tyuBWhADudiwYY5po8YLrJmI46R.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/mission-impossible-dead-reckoning/1271425982",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Thriller"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2023-07-12",
+                "msRating": 7.6,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687b4bf04fefc8a09e0d55c6",
+                "msName": "Monarch: Legacy of Monsters",
+                "msAbout": "After surviving Godzilla's attack on San Francisco, Cate is shaken yet again by a shocking secret. Amid monstrous threats, she embarks on a globetrotting adventure to learn the truth about her family—and the mysterious organization known as Monarch.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/uwrQHMnXD2DA1rvaMZk4pavZ3CY.jpg",
+                "msLink": "https://www.primevideo.com/detail/Monarch-Legacy-of-Monsters/0LKCA36702YE3ZVHQWLAU6N1SD",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Fantasy",
+                    "Si-Fi"
+                ],
+                "msFormat": "Series",
+                "msIndustry": "Hollywood",
+                "msSeason": 1,
+                "msReleaseDate": "2023-11-17",
+                "msRating": 7,
+                "msUploadedBy": "Trisha Sharma",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
                 "_id": "68762756273f034791055712",
                 "msName": "Scam 2003: The Telgi Story",
                 "msAbout": "It will follow the life of Telgi, born in Khanapur in the state of Karnataka, as he became the mastermind behind one of India’s most ingenious scams, which spread across 18 states and shook the entire country.",
@@ -1076,6 +1873,29 @@
                 "msSeason": 1,
                 "msReleaseDate": "2023-09-01",
                 "msRating": 7.9,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687b4b434fefc8a09e0d55c3",
+                "msName": "Skull Island",
+                "msAbout": "Shipwrecked in the South Pacific, a group of explorers encounter a menagerie of fearsome creatures — including the giant ape who rules the island: Kong.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/8XApFlqookjHKWuScJgUoWnpFt8.jpg",
+                "msLink": "https://www.netflix.com/in/title/81312426",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Animation",
+                    "Fantasy",
+                    "Si-Fi"
+                ],
+                "msFormat": "Series",
+                "msIndustry": "Hollywood",
+                "msSeason": 1,
+                "msReleaseDate": "2023-06-22",
+                "msRating": 6.6,
                 "msUploadedBy": "Trisha Sharma",
                 "msWatched": false,
                 "msWatchedAt": null,
@@ -1088,16 +1908,37 @@
                 "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg",
                 "msLink": "https://www.hotstar.com/in/shows/the-last-of-us/1971002868",
                 "msGenre": [
-                    "Si-Fi",
                     "Action",
                     "Adventure",
-                    "Fantasy"
+                    "Fantasy",
+                    "Si-Fi"
                 ],
                 "msFormat": "Series",
                 "msIndustry": "Hollywood",
                 "msSeason": 1,
                 "msReleaseDate": "2023-01-15",
                 "msRating": 8.6,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687b51c34fefc8a09e0d55f3",
+                "msName": "Transformers: Rise of the Beasts",
+                "msAbout": "When a new threat capable of destroying the entire planet emerges, Optimus Prime and the Autobots must team up with a powerful faction known as the Maximals. With the fate of humanity hanging in the balance, humans Noah and Elena will do whatever it takes to help the Transformers as they engage in the ultimate battle to save Earth.",
+                "msPoster": "https://image.tmdb.org/t/p/original/xgkHIC9AdgOSlejFdufAuWAqYhh.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/transformers-rise-of-the-beasts/1271403121",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2023-06-09",
+                "msRating": 6,
                 "msUploadedBy": "Vijayant Joshi",
                 "msWatched": false,
                 "msWatchedAt": null,
@@ -1113,8 +1954,8 @@
                 "msLink": "https://www.hotstar.com/in/movies/alien-romulus/1271337435",
                 "msGenre": [
                     "Horror",
-                    "Thriller",
-                    "Si-Fi"
+                    "Si-Fi",
+                    "Thriller"
                 ],
                 "msFormat": "Movie",
                 "msIndustry": "Hollywood",
@@ -1122,6 +1963,27 @@
                 "msReleaseDate": "2024-08-16",
                 "msRating": 7.1,
                 "msUploadedBy": "Vijayant Joshi",
+                "msWatched": false,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687b4a204fefc8a09e0d55b7",
+                "msName": "Godzilla x Kong: The New Empire",
+                "msAbout": "Following their explosive showdown, Godzilla and Kong must reunite against a colossal undiscovered threat hidden within our world, challenging their very existence – and our own.",
+                "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/vAoubdb2TeqA9joJ7FBcchUMSC3.jpg",
+                "msLink": "https://www.hotstar.com/in/movies/godzilla-x-kong-the-new-empire/1971011187",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Si-Fi"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2024-03-29",
+                "msRating": 6,
+                "msUploadedBy": "Trisha Sharma",
                 "msWatched": false,
                 "msWatchedAt": null,
                 "__v": 0
@@ -1174,8 +2036,8 @@
                 "msLink": "https://www.netflix.com/in/title/81680567",
                 "msGenre": [
                     "Action",
-                    "Si-Fi",
-                    "Adventure"
+                    "Adventure",
+                    "Si-Fi"
                 ],
                 "msFormat": "Movie",
                 "msIndustry": "Hollywood",
@@ -1196,9 +2058,9 @@
                 "msPoster": "https://media.themoviedb.org/t/p/w440_and_h660_face/q0fGCmjLu42MPlSO9OYWpI5w86I.jpg",
                 "msLink": "https://www.primevideo.com/detail/Jurassic-World-Rebirth/0LDEOBW5YKKQBSLD80CPD0J6UY",
                 "msGenre": [
-                    "Si-Fi",
+                    "Action",
                     "Adventure",
-                    "Action"
+                    "Si-Fi"
                 ],
                 "msFormat": "Movie",
                 "msIndustry": "Hollywood",
@@ -1224,6 +2086,27 @@
                 "msSeason": 0,
                 "msReleaseDate": "2025-06-29",
                 "msRating": 6.8,
+                "msUploadedBy": "Vijayant Joshi",
+                "msWatched": true,
+                "msWatchedAt": null,
+                "__v": 0
+            },
+            {
+                "_id": "687b907f4fefc8a09e0d5771",
+                "msName": "Mission: Impossible VII – (The Final Reckoning)",
+                "msAbout": "Ethan Hunt and team continue their search for the terrifying AI known as the Entity — which has infiltrated intelligence networks all over the globe — with the world's governments and a mysterious ghost from Hunt's past on their trail. Joined by new allies and armed with the means to shut the Entity down for good, Hunt is in a race against time to prevent the world as we know it from changing forever.",
+                "msPoster": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/z53D72EAOxGRqdr7KXXWp9dJiDe.jpg",
+                "msLink": "https://www.primevideo.com/region/eu/detail/Mission-Impossible---The-Final-Reckoning/0KT5HNE3OBR4TOFORPUHDR4G9U",
+                "msGenre": [
+                    "Action",
+                    "Adventure",
+                    "Thriller"
+                ],
+                "msFormat": "Movie",
+                "msIndustry": "Hollywood",
+                "msSeason": 0,
+                "msReleaseDate": "2025-05-23",
+                "msRating": 7.4,
                 "msUploadedBy": "Vijayant Joshi",
                 "msWatched": false,
                 "msWatchedAt": null,
@@ -1256,10 +2139,10 @@
                 "msPoster": "https://image.tmdb.org/t/p/original/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg",
                 "msLink": "https://www.hotstar.com/in/shows/the-last-of-us/1971002868",
                 "msGenre": [
-                    "Si-Fi",
                     "Action",
                     "Adventure",
-                    "Fantasy"
+                    "Fantasy",
+                    "Si-Fi"
                 ],
                 "msFormat": "Series",
                 "msIndustry": "Hollywood",
@@ -1273,7 +2156,7 @@
             }
         ]
     },
-    "totalYears": 20,
-    "totalData": 59,
+    "totalYears": 31,
+    "totalData": 100,
     "message": "The MovieSeries fetched, sorted A-Z."
 }
