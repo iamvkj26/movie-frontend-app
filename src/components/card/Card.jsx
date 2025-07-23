@@ -23,7 +23,7 @@ const Card = ({ filters }) => {
             <NextWatch
                 nextToWatch={nextToWatch}
             />
-            <div className="container">
+            <div className="container mb-5">
                 <MovieCardList
                     movieSeries={movieSeries}
                     deleteId={deleteMoviSeries}

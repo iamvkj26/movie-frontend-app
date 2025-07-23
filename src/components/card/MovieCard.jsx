@@ -13,7 +13,7 @@ const MovieCard = ({ movie, onEdit, onDelete, deleteId, confirmDelete, cancelDel
             <div className="card-body">
                 <h5 className="card-title fw-medium">
                     <strong>
-                        {movie.msName}{movie.msSeason ? ` - (Season ${movie.msSeason})` : ""}
+                        {movie.msName}{movie.msSeason === "0" ? "" : ` - (Season ${movie.msSeason})`}
                     </strong>
                 </h5>
                 <p className="card-text small clamp-text" title={movie.msAbout}>

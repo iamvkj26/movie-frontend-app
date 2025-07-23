@@ -16,7 +16,7 @@ const NextWatch = ({ nextToWatch }) => {
                                 <div className="d-flex align-items-center gap-3">
                                     <img className="next-watch-image" src={msPoster} alt="poster" />
                                     <div>
-                                        <h6 className="text-warning">🎥 Next to Watch</h6>
+                                        <h6 className="text-secondary">🎥 Watch Next...</h6>
                                         <h5><strong>{msName}</strong></h5>
                                         <h6 className="text-muted small">{msAbout?.slice(0, 65)}...</h6>
                                         <p className="text-secondary small">
