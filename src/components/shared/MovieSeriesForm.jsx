@@ -35,7 +35,7 @@ const MovieSeriesForm = ({ movieData, onChange, loading, onSubmit, isEdit = fals
                 id="link"
                 value={movieData.msLink}
                 onChange={onChange}
-                placeholder="Eg: https://www.primevideo.com/region/eu/detail/Interstellar/0PUNMGZEWOMYFKR1XIGOLTL2YM"
+                placeholder="Eg: https://www.primevideo.com/detail/0PUNMGZEWOMYFKR1XIGOLTL2YM"
             />
             <FormInput
                 col="col-6"
@@ -65,7 +65,7 @@ const MovieSeriesForm = ({ movieData, onChange, loading, onSubmit, isEdit = fals
                 id="genre"
                 value={movieData.msGenre?.join(", ")}
                 onChange={onChange}
-                placeholder="Eg: Science Fiction, Adventure, Intense, Action"
+                placeholder="Eg: Action, Adventure, Intense, Si-Fi"
             />
             <FormInput
                 col="col-6"

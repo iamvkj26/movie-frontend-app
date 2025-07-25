@@ -125,11 +125,6 @@ p {
     color: white !important;
 }
 
-.btn-watch {
-    border: none;
-    background: linear-gradient(to right, #ffc107 0%, #000000 60%);
-}
-
 .blockquote-footer {
     margin-top: 0;
     margin-bottom: 0;

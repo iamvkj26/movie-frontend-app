@@ -40,7 +40,6 @@ const Filters = ({ updateFilter, resetFilters }) => {
                                         { label: "Documentary", value: "documentary", emoji: "📚" },
                                         { label: "Drama", value: "drama", emoji: "🎭" },
                                         { label: "Fantasy", value: "fantasy", emoji: "🧙" },
-                                        { label: "Hard Romance", value: "hard-romance", emoji: "❤️‍🔥" },
                                         { label: "Horror", value: "horror", emoji: "👻" },
                                         { label: "Mystery", value: "mystery", emoji: "🕵️" },
                                         { label: "Other", value: "other", emoji: "🔖" },
