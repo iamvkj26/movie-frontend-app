@@ -37,6 +37,14 @@ body {
     font-size: 15px;
 }
 
+.text-items {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+}
+
 .search-background {
     height: 150px;
 }

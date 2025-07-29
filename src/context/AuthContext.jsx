@@ -1,23 +1,26 @@
 import { createContext, useState, useContext } from "react";
+import secureLocalStorage from "react-secure-storage";
+import { toast } from "react-hot-toast";
 
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
 
     const [auth, setAuthState] = useState({
-        token: localStorage.getItem("token"), role: JSON.parse(localStorage.getItem("role"))
+        token: secureLocalStorage.getItem("token"), role: JSON.parse(secureLocalStorage.getItem("role"))
     });
 
     const setAuth = (token, role) => {
-        localStorage.setItem("token", token);
-        localStorage.setItem("role", JSON.stringify(role));
+        secureLocalStorage.setItem("token", token);
+        secureLocalStorage.setItem("role", JSON.stringify(role));
         setAuthState({ token, role });
     };
 
     const clearAuth = () => {
-        localStorage.removeItem("token");
-        localStorage.removeItem("role");
+        secureLocalStorage.removeItem("token");
+        secureLocalStorage.removeItem("role");
         setAuthState({ token: null, role: "" });
+        toast.success("Logged out successfully.");
     };
 
     return (
