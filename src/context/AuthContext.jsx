@@ -4,7 +4,7 @@ import { toast } from "react-hot-toast";
 
 const AuthContext = createContext();
 
-export const AuthProvider = ({ children }) => {
+const AuthProvider = ({ children }) => {
 
     const [auth, setAuthState] = useState({
         token: secureLocalStorage.getItem("token"), role: JSON.parse(secureLocalStorage.getItem("role"))
@@ -21,6 +21,7 @@ export const AuthProvider = ({ children }) => {
         secureLocalStorage.removeItem("role");
         setAuthState({ token: null, role: "" });
         toast.success("Logged out successfully.");
+        setTimeout(() => window.location.href = "/", 100);
     };
 
     return (
@@ -30,4 +31,6 @@ export const AuthProvider = ({ children }) => {
     );
 };
 
-export const useAuth = () => useContext(AuthContext);
+const useAuth = () => useContext(AuthContext);
+
+export { AuthProvider, useAuth };

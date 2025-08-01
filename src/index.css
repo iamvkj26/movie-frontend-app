@@ -137,3 +137,46 @@ p {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card-grid .movie-card-wrapper {
+    flex: 0 0 calc(20% - 1rem);
+}
+
+@media (max-width: 768px) {
+    .card-grid .movie-card-wrapper {
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
+
+.movie-card {
+    position: relative;
+    cursor: pointer;
+    border: none;
+}
+
+.movie-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.movie-details-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    overflow-y: auto;
+}
+
+.movie-card:hover .movie-details-overlay {
+    opacity: 1;
+}

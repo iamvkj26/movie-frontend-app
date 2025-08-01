@@ -11,15 +11,15 @@ const MovieCard = ({ movie, onEdit, onDelete, deleteId, confirmDelete, cancelDel
 
     return (
         <>
-            <div className="col-md-3 mt-3">
-                <div className="card position-relative">
+            <div className="movie-card-wrapper">
+                <div className="movie-card card position-relative">
                     <span className="position-absolute top-n10 end-0 badge rounded-pill bg-warning text-black">
                         <i className="fa-solid fa-star"></i> {movie.msRating}
                     </span>
                     <Link to={movie.msLink} target="_blank" rel="noopener noreferrer">
                         <img src={movie.msPoster} className="card-img-top" alt="poster" />
                     </Link>
-                    <div className="card-body">
+                    <div className="movie-details-overlay card-body">
                         <h5 className="card-title fw-medium">
                             <strong>
                                 {movie.msName}{movie.msSeason === "0" ? "" : ` - (Season ${movie.msSeason})`}

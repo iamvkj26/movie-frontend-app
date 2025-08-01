@@ -7,7 +7,7 @@ const MovieCardList = ({ movieSeries, onEdit, onDelete, deleteId, confirmDelete,
                 <div key={year} className="mt-3">
                     <div className="h4">Year: {year}</div>
                     <hr />
-                    <div className="row">
+                    <div className="card-grid">
                         {list.map(movie => (
                             <MovieCard
                                 movie={movie}
