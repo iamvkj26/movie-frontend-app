@@ -3,10 +3,11 @@ import { Toaster } from "react-hot-toast";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Index from "./pages/Index";
-import AddMovieSeries from "./pages/AddMovieSeries";
 import Login from "./auth/Login";
-import ProtectedRoute from "./routes/ProtectedRoute";
 import GuestRoute from "./routes/GuestRoute";
+import AddMovieSeries from "./pages/AddMovieSeries";
+import ProtectedRoute from "./routes/ProtectedRoute";
+import MovieCardDetails from "./components/card/MovieCardDetails";
 
 const App = () => {
 
@@ -18,8 +19,9 @@ const App = () => {
                 <main className="flex-grow-1">
                     <Routes>
                         <Route path="/" element={<Index />} />
-                        <Route path="/addMovieSeries" element={<ProtectedRoute><AddMovieSeries /></ProtectedRoute>} />
                         <Route path="/login" element={<GuestRoute><Login /></GuestRoute>} />
+                        <Route path="/addMovieSeries" element={<ProtectedRoute><AddMovieSeries /></ProtectedRoute>} />
+                        <Route path="/details/:id" element={<MovieCardDetails />} />
                     </Routes>
                 </main>
                 <Footer />

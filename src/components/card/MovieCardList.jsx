@@ -1,6 +1,6 @@
 import MovieCard from "./MovieCard";
 
-const MovieCardList = ({ movieSeries, onEdit, onDelete, deleteId, confirmDelete, cancelDelete, onWatched }) => (
+const MovieCardList = ({ movieSeries }) => (
     <>
         {Object.keys(movieSeries).length > 0 ? (
             Object.entries(movieSeries).reverse().map(([year, list]) => (
@@ -12,12 +12,6 @@ const MovieCardList = ({ movieSeries, onEdit, onDelete, deleteId, confirmDelete,
                             <MovieCard
                                 movie={movie}
                                 key={movie._id}
-                                onEdit={onEdit}
-                                onDelete={onDelete}
-                                deleteId={deleteId}
-                                confirmDelete={confirmDelete}
-                                cancelDelete={cancelDelete}
-                                onWatched={onWatched}
                             />
                         ))}
                     </div>

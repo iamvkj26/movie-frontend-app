@@ -1,4 +1,6 @@
-const MovieCardActions = ({ movie, deleteId, onEdit, requestDelete, confirmDelete, cancelDelete }) => (
+import { formatDate } from "../../utils/formatDate";
+
+const MovieCardActions = ({ movie, onEdit, deleteId, requestDelete, confirmDelete, cancelDelete, onWatched }) => (
     <div className="d-flex justify-content-end align-items-center px-2 mb-2">
         <div className="d-flex gap-2 card-actions">
             <span className="badge text-141414">
@@ -15,6 +17,12 @@ const MovieCardActions = ({ movie, deleteId, onEdit, requestDelete, confirmDelet
                     <i className="fa-solid fa-trash cp" onClick={requestDelete}></i>
                 </span>
             )}
+            <div className="form-check mt-1 mb-1">
+                <input className="form-check-input" type="checkbox" checked={movie.msWatched} onChange={() => onWatched(movie._id)} />
+                <label className="form-check-label text-secondary small" title={movie.msWatchedAt ? `Watched on: ${formatDate(movie.msWatchedAt)}` : ""}>
+                    {movie.msWatched ? "Watched" : "Mark as Watched"}
+                </label>
+            </div>
         </div>
     </div>
 );
