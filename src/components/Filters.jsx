@@ -17,7 +17,7 @@ const Filters = ({ updateFilter, resetFilters }) => {
                                 { label: "Bollywood", key: "i", value: "bollywood", icon: "fa-star", color: "text-warning" },
                                 { label: "Hollywood", key: "i", value: "hollywood", icon: "fa-clapperboard", color: "text-black" },
                                 { label: "Other", key: "i", value: "other", icon: "fa-globe", color: "text-info" },
-                                { label: "Watched", key: "w", value: true, icon: "fa-check-double", color: "text-success" }
+                                { label: "Watched", key: "w", value: "true", icon: "fa-check-double", color: "text-success" }
                             ].map(({ label, key, value, icon, color }) => (
                                 <li className="nav-item" key={label}>
                                     <Link className="nav-link" onClick={() => updateFilter(key, value)}>

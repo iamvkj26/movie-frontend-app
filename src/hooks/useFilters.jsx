@@ -11,7 +11,10 @@ const useFilters = () => {
     const [filters, setFilters] = useState(defaultFilters);
     const [ready, setReady] = useState(false);
 
+    const isHome = location.pathname === "/";
+
     useEffect(() => {
+        if (!isHome) return;
         const params = new URLSearchParams(location.search);
         setFilters({
             w: params.get("w") || "false",
@@ -21,10 +24,10 @@ const useFilters = () => {
             g: params.get("g") || ""
         });
         setReady(true);
-    }, [location.search]);
+    }, [location.search, isHome]);
 
     useEffect(() => {
-        if (!filters) return;
+        if (!filters || !isHome) return;
 
         const params = new URLSearchParams();
         Object.entries(filters).forEach(([key, value]) => {
@@ -32,7 +35,7 @@ const useFilters = () => {
         });
 
         navigate({ search: params.toString() }, { replace: true });
-    }, [filters, navigate]);
+    }, [filters, navigate, isHome]);
 
     const updateFilter = (key, value) => setFilters((prev) => ({ ...prev, [key]: value }));
 

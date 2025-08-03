@@ -1,15 +1,17 @@
 import { useState, useRef, useEffect } from "react";
+import { useNavigate } from "react-router";
 import { toast } from "react-hot-toast";
 import { updateMovieSeries } from "../api/movieseries";
 import useMovieForm from "../hooks/useMovieForm";
 import MovieSeriesForm from "../components/shared/MovieSeriesForm";
 
-const EditMovieSeries = ({ refOpenCanvas, editMovieSeries, handleGetMovieSeries }) => {
+const EditMovieSeries = ({ refOpenCanvas, editMovieSeries }) => {
 
     const { formData, setFormData, onChange } = useMovieForm(editMovieSeries);
 
     const [loading, setLoading] = useState(false);
     const refCloseCanvas = useRef(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         if (editMovieSeries) {
@@ -26,7 +28,7 @@ const EditMovieSeries = ({ refOpenCanvas, editMovieSeries, handleGetMovieSeries 
                 toast.success(response.data.message);
                 setLoading(false);
                 refCloseCanvas.current.click();
-                handleGetMovieSeries();
+                navigate("/");
             };
         } catch (error) {
             if (error.status === 400) toast.error("Server cannot process request right now, try again after sometimes.");
@@ -38,7 +40,7 @@ const EditMovieSeries = ({ refOpenCanvas, editMovieSeries, handleGetMovieSeries 
         };
     };
 
-    if (!editMovieSeries) return null; // Don't render if nothing to edit
+    if (!editMovieSeries) return null;
 
     return (
         <>

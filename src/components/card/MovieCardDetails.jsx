@@ -11,7 +11,7 @@ const MovieCardDetails = () => {
 
     const { movie } = useLocation().state;
     const { role } = useAuth();
-    const { handleGetMovieSeries, handleDeleteMovieSeries, handleWatchedMovieSeries } = useMovieSeries();
+    const { handleDeleteMovieSeries, handleWatchedMovieSeries } = useMovieSeries();
 
     const [editMovieSeries, setEditMoviSeries] = useState({ msName: "", msAbout: "", msPoster: "", msLink: "", msSeason: "", msFormat: "", msIndustry: "", msReleaseDate: "", msGenre: [], msRating: "", msUploadedBy: "" });
     const [deleteMoviSeries, setDeleteMoviSeries] = useState(null);
@@ -61,8 +61,9 @@ const MovieCardDetails = () => {
                             </div> : <div></div>
                     }
                     <hr className="border-danger border-2 opacity-75" />
+                    <div className="h3 text-start text-ff0000">Watch {movie.msName} trailer:</div>
                     <div className="mb-3">
-                        <iframe width="100%" height="800" src="https://www.youtube.com/embed/ZnapjfATb6w" title="YouTube trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        <iframe width="100%" height="800" src={movie.msTrailer} title="YouTube trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                     <div className="text-end blockquote-footer mt-3 mb-3">{movie.msUploadedBy}</div>
                 </div>
@@ -70,7 +71,6 @@ const MovieCardDetails = () => {
             <EditMovieSeries
                 refOpenCanvas={refOpenCanvas}
                 editMovieSeries={editMovieSeries}
-                handleGetMovieSeries={handleGetMovieSeries}
             />
         </>
     );

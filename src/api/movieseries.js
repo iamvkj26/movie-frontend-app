@@ -14,14 +14,17 @@ export const login = async (credentials) => {
 
 export const postMovieSeries = async (addData) => {
     try {
-        return await api.post("/movieseries/post", addData);
+        return await api.post("/admin/post", addData);
     } catch (error) {
         console.error(error.message);
         throw new Error(extractErrorMessage(error));
     };
 };
 
-export const getMovieSeries = async ({ w = "", s = "", f = "", i = "", g = "" }) => {
+export const getMovieSeries = async (filters = {}) => {
+
+    const { w = "", s = "", f = "", i = "", g = "" } = filters;
+
     try {
         const query = new URLSearchParams();
 
@@ -41,7 +44,7 @@ export const getMovieSeries = async ({ w = "", s = "", f = "", i = "", g = "" })
 
 export const updateMovieSeries = async (_id, msName, msAbout, msPoster, msLink, msSeason, msFormat, msIndustry, msReleaseDate, msGenre, msRating, msUploadedBy) => {
     try {
-        return await api.patch(`/movieseries/update/${_id}`, { msName, msAbout, msPoster, msLink, msSeason, msFormat, msIndustry, msReleaseDate, msGenre, msRating, msUploadedBy });
+        return await api.patch(`/admin/update/${_id}`, { msName, msAbout, msPoster, msLink, msSeason, msFormat, msIndustry, msReleaseDate, msGenre, msRating, msUploadedBy });
     } catch (error) {
         console.error(error.message);
         throw new Error(extractErrorMessage(error));
@@ -50,7 +53,7 @@ export const updateMovieSeries = async (_id, msName, msAbout, msPoster, msLink, 
 
 export const deleteMovieSeries = async (id) => {
     try {
-        return await api.delete(`/movieseries/delete/${id}`);
+        return await api.delete(`/admin/delete/${id}`);
     } catch (error) {
         console.error(error.message);
         throw new Error(extractErrorMessage(error));
@@ -59,7 +62,7 @@ export const deleteMovieSeries = async (id) => {
 
 export const watchedMovieSeries = async (id) => {
     try {
-        return await api.patch(`/movieseries/watched/${id}`);
+        return await api.patch(`/admin/watched/${id}`);
     } catch (error) {
         console.error(error.message);
         throw new Error(extractErrorMessage(error));
