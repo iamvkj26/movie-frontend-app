@@ -39,5 +39,5 @@ git clone https://github.com/iamvkj26/movie-frontend-app.git
 cd movie-frontend-app
 npm install
 npm run dev
-
+```
 ![RIP Project](./public/assets/image/project.png)
