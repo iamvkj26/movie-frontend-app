@@ -1,9 +1,43 @@
-# React + Vite
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-Currently, two official plugins are available:
+# 🎬 HelloHood (React Frontend) — [DISCONTINUED]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> ⚠️ This project is **discontinued** due to security and scalability considerations.  
+> Admin and user-facing functionalities have been moved to separate applications to improve maintainability and performance.
 
-## Expanding the ESLint configuration
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📌 Notice
+
+This React frontend project previously handled both public and admin functionalities for managing and displaying movie/series data. As the project evolved, we decided to **split it into two separate apps**:
+
+- A **public-facing web app** to browse and filter movies/series.
+- A **secured admin panel** to manage content with authentication and role-based access.
+
+The backend has also been refactored into:
+- A **public API** (read-only endpoints).
+- A **CRM/admin API** (protected write endpoints with authentication).
+
+---
+
+## 📂 Project Overview (before split)
+
+- **Built With:** React, React Router, Bootstrap, Axios, Context API
+- **Features:**
+  - Home page with filterable movie/series list
+  - Details page for individual entries
+  - Admin actions: Add, Edit, Delete, Mark as Watched
+  - Contact form submission
+- **API Source:** Node.js + Express + MongoDB backend
+
+---
+
+## 🛠️ Getting Started (Legacy Setup)
+
+> ⚠️ Use only for reference. This frontend is no longer actively maintained.
+
+```bash
+git clone https://github.com/iamvkj26/movie-frontend-app.git
+cd movie-frontend-app
+npm install
+npm run dev
+
+![RIP Project](./public/assets/image/project.png)

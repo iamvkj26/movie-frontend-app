@@ -9,12 +9,9 @@ const Footer = () => {
                         <div>
                             2025 © <Link className="text-primary fw-semibold" to="/">HelloHood</Link> | All Rights Reserved.
                         </div>
-                        <div className="d-flex gap-2">
-                            <Link className="text-info fw-semibold text-decoration-none" to="/">
-                                About
-                            </Link>
-                            <Link className="text-info fw-semibold text-decoration-none" to="/" >
-                                Contact Us
+                        <div>
+                            <Link to="/addMovieSeries" className="text-info fw-semibold text-decoration-none">
+                                + Add Movie/Series
                             </Link>
                         </div>
                     </div>

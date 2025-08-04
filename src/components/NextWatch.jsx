@@ -4,7 +4,7 @@ import { formatDate } from "../utils/formatDate";
 const NextWatch = ({ nextToWatch }) => {
 
     if (!nextToWatch) return null;
-    const { msPoster, msName, msAbout, msRating, msGenre, msReleaseDate, msLink } = nextToWatch;
+    const { msPoster, msName, msAbout, msRating, msGenre, msReleaseDate, msLink, msSeason } = nextToWatch;
 
     return (
         <>
@@ -14,16 +14,17 @@ const NextWatch = ({ nextToWatch }) => {
                         <div className="col-md-12">
                             <div className="bg-141414 py-3 px-3 rounded">
                                 <div className="d-flex align-items-center gap-3">
-                                    <img className="next-watch-image" src={msPoster} alt="poster" />
+                                    <Link className="text-decoration-none" to={msLink} target="_blank" rel="noopener noreferrer">
+                                        <img className="next-watch-image" src={msPoster} alt={msName} />
+                                    </Link>
                                     <div>
                                         <h6 className="text-secondary">🎥 Watch Next...</h6>
-                                        <h5><strong>{msName}</strong></h5>
+                                        <h5><strong>{msName}{msSeason === "0" ? "" : ` - (Season ${msSeason})`}</strong></h5>
                                         <h6 className="text-muted small">{msAbout?.slice(0, 65)}...</h6>
                                         <p className="text-secondary small">
                                             ⭐ <strong>{msRating}</strong> | 🎭 {msGenre?.join(", ")}
                                         </p>
                                         <p className="text-danger small">{formatDate(msReleaseDate)}</p>
-                                        <Link className="btn btn-sm btn-watch text-decoration-none gap-1" to={msLink} target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-play"></i></Link>
                                     </div>
                                 </div>
                             </div>
